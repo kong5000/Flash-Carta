@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreData
-let CARD_COUNT = 12
+let CARD_COUNT = 5
 class ExerciseViewModel: ObservableObject {
 
 //  Check if any cards are due today
@@ -33,7 +33,7 @@ class ExerciseViewModel: ObservableObject {
                     self.preloadData()
                     result = try self.container.viewContext.fetch(fetchRequest)
                 }
-                self.cards = Array(result.prefix(12))
+                self.cards = result
                 self.getCards()
             } catch {
                 print("Error fetching data: \(error)")
