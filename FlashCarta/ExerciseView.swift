@@ -18,24 +18,19 @@ extension View {
 
 struct ExerciseView: View {
     @StateObject private var viewModel = ExerciseViewModel()
-           
-    @State private var timeRemaining = 100
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+               
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
     
     var body: some View {
         ZStack{
             VStack{
-                Text("Time \(timeRemaining)")
-                    .font(.largeTitle)
-                    .padding()
                 ZStack{
                     ForEach(0..<viewModel.exerciseCards.count, id: \.self){ index in
-                        CardView(card: viewModel.exerciseCards[index]){
+                        CardView(card: viewModel.exerciseCards[index]){ difficulty in
                             withAnimation{
-                                removeCard(at: index)
+                                viewModel.handleCard(difficulty: difficulty, card: viewModel.exerciseCards[index], index: index)
+                               
                             }
                             
                         }
@@ -44,12 +39,6 @@ struct ExerciseView: View {
                         .accessibilityHidden(index < viewModel.exerciseCards.count - 1)
                     }
                 }
-            }
-        }
-        .onReceive(timer){ time in
-            guard isActive else { return }
-            if timeRemaining > 0 {
-                timeRemaining -= 1
             }
         }
         .onChange(of: scenePhase){
@@ -61,15 +50,6 @@ struct ExerciseView: View {
         }
     }
     
-    func removeCard(at index: Int){
-        let today = Date()
-        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: today)
-
-        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: today)
-
-        viewModel.updateCard(card: viewModel.exerciseCards[index], nextReview: tomorrow!)
-        viewModel.exerciseCards.remove(at: index)
-    }
 }
 
 #Preview {

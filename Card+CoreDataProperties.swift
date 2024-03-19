@@ -17,10 +17,10 @@ extension Card {
     }
 
     @NSManaged public var definition: String
-    @NSManaged public var difficulty: Int16
+    @NSManaged public var difficulty: Int64
     @NSManaged public var nextReview: Date?
     @NSManaged public var partOfSpeech: String
-    @NSManaged public var rank: Int16
+    @NSManaged public var rank: Int64
     @NSManaged public var word: String
 
 }

@@ -17,7 +17,8 @@ struct CardView: View {
     let speechSynthesizer = AVSpeechSynthesizer()
 
     let card: Card
-    var removal: (() -> Void)? = nil
+    var removal: ((Difficulty) -> Void)? = nil
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 25.0)
@@ -36,7 +37,9 @@ struct CardView: View {
                 .shadow(radius: 10)
             
             VStack{
-                Text("\(offSet.height) \(offSet.width)")
+//                Text("\(offSet.height) \(offSet.width)")
+                Text("\(card.difficulty)")
+                Text("\(card.rank)")
                 Text(card.nextReview?.formatted() ?? "New")
                 Text(card.word)
                     .font(.largeTitle)
@@ -73,20 +76,19 @@ struct CardView: View {
                 }
                 .onEnded{ _ in
                     if abs(offSet.height) > 45 {
-                        removal?()
+                        removal?(.medium)
                         print("middle")
                     }
                     else if abs(offSet.width) > 100 {
-                        removal?()
                         if(offSet.width > 100){
-                            print("RIght")
+                            removal?(.easy)
+
                         }else{
-                            print("Left")
+                            removal?(.hard)
                         }
                     }else{
                         withAnimation{
                             offSet = .zero
-
                         }
                     }
                 }

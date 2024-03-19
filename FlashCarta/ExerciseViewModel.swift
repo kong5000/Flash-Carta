@@ -8,6 +8,11 @@
 import Foundation
 import CoreData
 let CARD_COUNT = 5
+
+enum Difficulty {
+    case hard, medium, easy
+}
+
 class ExerciseViewModel: ObservableObject {
 
 //  Check if any cards are due today
@@ -33,7 +38,8 @@ class ExerciseViewModel: ObservableObject {
                     self.preloadData()
                     result = try self.container.viewContext.fetch(fetchRequest)
                 }
-                self.cards = result
+//                self.cards = result
+                self.cards = Array(result[0..<20])
                 self.getCards()
             } catch {
                 print("Error fetching data: \(error)")
@@ -78,7 +84,7 @@ class ExerciseViewModel: ObservableObject {
                 for row in rows {
                     let columns = row.components(separatedBy: ",")
                     let card = Card(context: container.viewContext)
-                    card.rank = Int16(columns[0]) ?? -1
+                    card.rank = Int64(Int(columns[0]) ?? -1)
                     card.word = columns[1]
                     card.partOfSpeech = columns[2]
                     card.definition = columns[3]
@@ -114,7 +120,7 @@ class ExerciseViewModel: ObservableObject {
     
     
     func nonDueCards() -> [Card]{
-        var nonDue = cards.filter{
+        let nonDue = cards.filter{
             if let date = $0.nextReview {
                 return date > Date()
             }
@@ -141,8 +147,30 @@ class ExerciseViewModel: ObservableObject {
             }else{
                 //Not enough unseen cards left, draw from the non due cards
                 cardsToDraw = CARD_COUNT - unseenCards.count - dueCards.count
-                self.exerciseCards = Array(nonDueCards[0..<cardsToDraw]) + unseenCards + dueCards
+                self.exerciseCards = (Array(nonDueCards[0..<cardsToDraw]) + unseenCards + dueCards).sorted(by: { card1, card2 in
+                    return card1.rank > card2.rank
+                })
             }
         }
+    }
+    
+    func handleCard(difficulty: Difficulty, card: Card, index: Int){
+        switch difficulty {
+            case .easy:
+                if card.difficulty == 0 {
+                    card.difficulty = 2
+                }else{
+                    card.difficulty = card.difficulty * 2
+                }
+            case.medium:
+                card.difficulty = 1
+            case.hard:
+                card.difficulty = 0
+        }
+        
+        let today = Date()
+        let nextReviewDate = Calendar.current.date(byAdding: .day, value: Int(card.difficulty), to: today)
+        updateCard(card: card, nextReview: nextReviewDate!)
+        exerciseCards.remove(at: index)
     }
 }

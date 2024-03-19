@@ -66,7 +66,7 @@ class DataController: ObservableObject {
                 for row in rows {
                     let columns = row.components(separatedBy: ",")
                     let card = Card(context: container.viewContext)
-                    card.rank = Int16(columns[0]) ?? -1
+                    card.rank = Int64(columns[0]) ?? -1
                     card.word = columns[1]
                     card.partOfSpeech = columns[2]
                     card.definition = columns[3]
