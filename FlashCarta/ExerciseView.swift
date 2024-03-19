@@ -30,9 +30,7 @@ struct ExerciseView: View {
                         CardView(card: viewModel.exerciseCards[index]){ difficulty in
                             withAnimation{
                                 viewModel.handleCard(difficulty: difficulty, card: viewModel.exerciseCards[index], index: index)
-                               
                             }
-                            
                         }
                         .stacked(at: index, in: viewModel.exerciseCards.count)
                         .allowsHitTesting(index == viewModel.exerciseCards.count - 1)

@@ -22,7 +22,7 @@ class ExerciseViewModel: ObservableObject {
     
     
     var cards = [Card]()
-    var exerciseCards = [Card]()
+    @Published var exerciseCards = [Card]()
     
     let container = NSPersistentContainer(name: "Model")
     
@@ -153,7 +153,7 @@ class ExerciseViewModel: ObservableObject {
             }
         }
     }
-    
+
     func handleCard(difficulty: Difficulty, card: Card, index: Int){
         switch difficulty {
             case .easy:
