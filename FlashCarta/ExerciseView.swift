@@ -25,16 +25,21 @@ struct ExerciseView: View {
     var body: some View {
         ZStack{
             VStack{
+                Text("\(viewModel.exerciseCards.count)")
                 ZStack{
                     ForEach(0..<viewModel.exerciseCards.count, id: \.self){ index in
                         CardView(card: viewModel.exerciseCards[index]){ difficulty in
-                            withAnimation{
                                 viewModel.handleCard(difficulty: difficulty, card: viewModel.exerciseCards[index], index: index)
-                            }
+                            
                         }
                         .stacked(at: index, in: viewModel.exerciseCards.count)
                         .allowsHitTesting(index == viewModel.exerciseCards.count - 1)
                         .accessibilityHidden(index < viewModel.exerciseCards.count - 1)
+                    }
+                    if viewModel.exerciseCards.isEmpty {
+                        Button("Next exercise") {
+                            viewModel.getCards()
+                        }
                     }
                 }
             }

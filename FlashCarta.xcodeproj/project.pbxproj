@@ -23,6 +23,7 @@
 		534CEE032BAA00DD009907FC /* FlashCartaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE022BAA00DD009907FC /* FlashCartaApp.swift */; };
 		534CEE0C2BAA5084009907FC /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE0A2BAA5084009907FC /* Card+CoreDataClass.swift */; };
 		534CEE0D2BAA5084009907FC /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE0B2BAA5084009907FC /* Card+CoreDataProperties.swift */; };
+		534CEE0F2BAB0D34009907FC /* SoundUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE0E2BAB0D34009907FC /* SoundUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		534CEE022BAA00DD009907FC /* FlashCartaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlashCartaApp.swift; path = "../../IOS Apps/FlashCard/FlashCard/FlashCartaApp.swift"; sourceTree = "<group>"; };
 		534CEE0A2BAA5084009907FC /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
 		534CEE0B2BAA5084009907FC /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		534CEE0E2BAB0D34009907FC /* SoundUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				534CEDE72BAA00CF009907FC /* CardTemp.swift */,
 				534CEDF42BAA00CF009907FC /* CardView.swift */,
 				534CEDF12BAA00CF009907FC /* DataController.swift */,
+				534CEE0E2BAB0D34009907FC /* SoundUtility.swift */,
 				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
 				534CEDF22BAA00CF009907FC /* ExerciseView.swift */,
 				534CEDF32BAA00CF009907FC /* ExerciseViewModel.swift */,
@@ -195,6 +198,7 @@
 				534CEDFE2BAA00CF009907FC /* DataController.swift in Sources */,
 				534CEDF52BAA00CF009907FC /* DeckIconView.swift in Sources */,
 				534CEE012BAA00CF009907FC /* CardView.swift in Sources */,
+				534CEE0F2BAB0D34009907FC /* SoundUtility.swift in Sources */,
 				534CEDF82BAA00CF009907FC /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +371,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

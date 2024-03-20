@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import AVFoundation
 
 struct CardView: View {
     @Environment(\.accessibilityDifferentiateWithoutColor) var
@@ -14,7 +13,6 @@ struct CardView: View {
     
     @State private var isShowingAnswer = false
     @State private var offSet = CGSize.zero
-    let speechSynthesizer = AVSpeechSynthesizer()
 
     let card: Card
     var removal: ((Difficulty) -> Void)? = nil
@@ -37,9 +35,8 @@ struct CardView: View {
                 .shadow(radius: 10)
             
             VStack{
-//                Text("\(offSet.height) \(offSet.width)")
-                Text("\(card.difficulty)")
-                Text("\(card.rank)")
+                Text("Difficulty: \(card.difficulty)")
+                Text("Frequency Rank \(card.rank)")
                 Text(card.nextReview?.formatted() ?? "New")
                 Text(card.word)
                     .font(.largeTitle)
@@ -51,9 +48,7 @@ struct CardView: View {
                         .foregroundStyle(.secondary)
                     
                     Button("VOICE"){
-                        let utterance = AVSpeechUtterance(string: card.word)
-                        utterance.voice = AVSpeechSynthesisVoice(language: "pt-BR")
-                        speechSynthesizer.speak(utterance)
+                        SoundUtility.speak(card: card)
                     }
                 }
       
@@ -70,6 +65,7 @@ struct CardView: View {
                   : 2 - Double(abs(offSet.width / 50)))
         .accessibilityAddTraits(.isButton)
         .gesture(
+            isShowingAnswer ?
             DragGesture()
                 .onChanged{ gesture in
                     offSet = gesture.translation
@@ -82,7 +78,6 @@ struct CardView: View {
                     else if abs(offSet.width) > 100 {
                         if(offSet.width > 100){
                             removal?(.easy)
-
                         }else{
                             removal?(.hard)
                         }
@@ -92,6 +87,7 @@ struct CardView: View {
                         }
                     }
                 }
+            : nil
         )
         .onTapGesture {
             isShowingAnswer.toggle()

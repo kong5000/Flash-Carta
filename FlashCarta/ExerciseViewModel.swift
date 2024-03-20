@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+
 let CARD_COUNT = 5
 
 enum Difficulty {
@@ -39,7 +40,7 @@ class ExerciseViewModel: ObservableObject {
                     result = try self.container.viewContext.fetch(fetchRequest)
                 }
 //                self.cards = result
-                self.cards = Array(result[0..<20])
+                self.cards = result
                 self.getCards()
             } catch {
                 print("Error fetching data: \(error)")
@@ -153,7 +154,7 @@ class ExerciseViewModel: ObservableObject {
             }
         }
     }
-
+    @MainActor
     func handleCard(difficulty: Difficulty, card: Card, index: Int){
         switch difficulty {
             case .easy:
@@ -170,7 +171,7 @@ class ExerciseViewModel: ObservableObject {
         
         let today = Date()
         let nextReviewDate = Calendar.current.date(byAdding: .day, value: Int(card.difficulty), to: today)
-        updateCard(card: card, nextReview: nextReviewDate!)
         exerciseCards.remove(at: index)
+        updateCard(card: card, nextReview: nextReviewDate!)
     }
 }
