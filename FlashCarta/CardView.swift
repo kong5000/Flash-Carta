@@ -22,8 +22,8 @@ struct CardView: View {
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(
                     abs(offSet.height) > abs(offSet.width) ?
-                        .white.opacity(1 - Double(abs(offSet.height / 50)))
-                    : .white.opacity(1 - Double(abs(offSet.width / 50)))
+                    Theme.primary.opacity(1 - Double(abs(offSet.height / 50)))
+                    : Theme.primary.opacity(1 - Double(abs(offSet.width / 50)))
                 )
                 .background(
                     abs(offSet.height) > abs(offSet.width) ?
@@ -54,25 +54,27 @@ struct CardView: View {
                 }.padding()
                 Text(card.word)
                     .font(.largeTitle)
-                    .foregroundStyle(.black)
+                    .foregroundStyle(Theme.secondary)
                 
-                if isShowingAnswer {
-                    Text(card.definition)
-                        .font(.title)
-                        .foregroundStyle(.secondary)
-                        .padding()
-                    
-                }
+                
+                Text(card.definition)
+                    .font(.title)
+                    .foregroundStyle(Theme.dark)
+                    .opacity(isShowingAnswer ? 1.0 : 0)
+                    .padding()
+                
+                
                 Spacer()
                 
             }
+            .foregroundColor(Theme.secondary)
             .padding(20)
             .multilineTextAlignment(.center)
         }
         .frame(height:450)
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(.blue, lineWidth: 4)
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(Theme.secondary, lineWidth: 4)
         )
         .padding()
         .rotationEffect(.degrees(Double(offSet.width / 8.0)))
@@ -108,7 +110,9 @@ struct CardView: View {
             : nil
         )
         .onTapGesture {
-            isShowingAnswer.toggle()
+            if(!isShowingAnswer){
+                isShowingAnswer.toggle()
+            }
         }
     }
 }

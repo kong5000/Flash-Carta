@@ -24,6 +24,7 @@
 		534CEE0C2BAA5084009907FC /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE0A2BAA5084009907FC /* Card+CoreDataClass.swift */; };
 		534CEE0D2BAA5084009907FC /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE0B2BAA5084009907FC /* Card+CoreDataProperties.swift */; };
 		534CEE0F2BAB0D34009907FC /* SoundUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE0E2BAB0D34009907FC /* SoundUtility.swift */; };
+		534CEE112BAB5882009907FC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE102BAB5882009907FC /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		534CEE0A2BAA5084009907FC /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
 		534CEE0B2BAA5084009907FC /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		534CEE0E2BAB0D34009907FC /* SoundUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundUtility.swift; sourceTree = "<group>"; };
+		534CEE102BAB5882009907FC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				534CEDE72BAA00CF009907FC /* CardTemp.swift */,
 				534CEDF42BAA00CF009907FC /* CardView.swift */,
 				534CEDF12BAA00CF009907FC /* DataController.swift */,
+				534CEE102BAB5882009907FC /* Theme.swift */,
 				534CEE0E2BAB0D34009907FC /* SoundUtility.swift */,
 				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
 				534CEDF22BAA00CF009907FC /* ExerciseView.swift */,
@@ -192,6 +195,7 @@
 				534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */,
 				534CEE0C2BAA5084009907FC /* Card+CoreDataClass.swift in Sources */,
 				534CEE0D2BAA5084009907FC /* Card+CoreDataProperties.swift in Sources */,
+				534CEE112BAB5882009907FC /* Theme.swift in Sources */,
 				534CEE032BAA00DD009907FC /* FlashCartaApp.swift in Sources */,
 				534CEDF62BAA00CF009907FC /* CardTemp.swift in Sources */,
 				534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */,

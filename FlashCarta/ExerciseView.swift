@@ -21,11 +21,20 @@ struct ExerciseView: View {
                
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
-    
+    @State private var animateBackground = true
     var body: some View {
         ZStack{
+            Theme.primary
+                .ignoresSafeArea()
+//            LinearGradient(colors: [.blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)
+//                .ignoresSafeArea()
+//                .hueRotation(.degrees(animateBackground ? 45 : 0))
+//                .onAppear{
+//                    withAnimation(.easeInOut(duration: 2).repeatForever()) {
+//                        animateBackground.toggle()
+//                    }
+//                }
             VStack{
-                Text("\(viewModel.exerciseCards.count)")
                 ZStack{
                     ForEach(0..<viewModel.exerciseCards.count, id: \.self){ index in
                         CardView(card: viewModel.exerciseCards[index]){ difficulty in
@@ -44,6 +53,10 @@ struct ExerciseView: View {
                 }
             }
         }
+//        .background{
+//            LinearGradient(colors: [.blue, .red], startPoint: .topLeading, endPoint: .bottomTrailing)
+//                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+//        }
         .onChange(of: scenePhase){
             if scenePhase == .active {
                 isActive = true
