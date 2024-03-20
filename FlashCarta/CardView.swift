@@ -9,11 +9,11 @@ import SwiftUI
 
 struct CardView: View {
     @Environment(\.accessibilityDifferentiateWithoutColor) var
-        accesbilityDifferentiatwWithoutColor
+    accesbilityDifferentiatwWithoutColor
     
     @State private var isShowingAnswer = false
     @State private var offSet = CGSize.zero
-
+    
     let card: Card
     var removal: ((Difficulty) -> Void)? = nil
     
@@ -35,9 +35,23 @@ struct CardView: View {
                 .shadow(radius: 10)
             
             VStack{
-                Text("Difficulty: \(card.difficulty)")
-                Text("Frequency Rank \(card.rank)")
-                Text(card.nextReview?.formatted() ?? "New")
+                HStack{
+                    Text("Rank \(card.rank)")
+                        .bold()
+                    Spacer()
+                    Text("Noun")
+                    Spacer()
+                    Text("Edit")
+                }
+                Spacer()
+                Button {
+                    SoundUtility.speak(card: card)
+                    
+                } label: {
+                    Image(systemName: "speaker.wave.2.circle")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                }.padding()
                 Text(card.word)
                     .font(.largeTitle)
                     .foregroundStyle(.black)
@@ -46,17 +60,21 @@ struct CardView: View {
                     Text(card.definition)
                         .font(.title)
                         .foregroundStyle(.secondary)
+                        .padding()
                     
-                    Button("VOICE"){
-                        SoundUtility.speak(card: card)
-                    }
                 }
-      
+                Spacer()
+                
             }
             .padding(20)
             .multilineTextAlignment(.center)
         }
-        .frame(width: 450, height:250)
+        .frame(height:450)
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(.blue, lineWidth: 4)
+        )
+        .padding()
         .rotationEffect(.degrees(Double(offSet.width / 8.0)))
         .offset(x: offSet.width * 5)
         .offset(y: offSet.height * 5)
