@@ -9,13 +9,46 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ZStack{
+                Theme.primary
+                    .ignoresSafeArea()
+                    .opacity(0.85)
+       
+                VStack{
+
+                    VStack{
+     
+                        NavigationLink {
+                            ExerciseView()
+                        } label: {
+                            VStack{
+                                LottieView(animationFileName: "stack_animation", loopMode: .loop)
+                                           .frame(width: 100, height: 100)
+                                Text("Learn")
+                            }
+                
+                        }
+                        Spacer()
+                        HStack{
+                            Spacer()
+                            DeckIconView()
+                            DeckIconView()
+                            Spacer()
+                        }
+                        HStack{
+                            DeckIconView()
+                            Spacer()
+                            DeckIconView()
+                            Spacer()
+                            DeckIconView()
+                        }
+                        Spacer()
+                    }
+                }
+            }
+    
         }
-        .padding()
     }
 }
 

@@ -30,11 +30,12 @@ struct DeckIconView: View {
                     .animation(.easeOut, value: progress)
                 Image("book_blue")
                     .resizable()
-                    .frame(width: 100, height:100)
+                    .frame(width: 70, height:70)
             }
+            .padding()
             .frame(width: 125, height:125)
             Text("1-100")
-                .font(.title)
+                .font(.headline)
         }
     }
 }

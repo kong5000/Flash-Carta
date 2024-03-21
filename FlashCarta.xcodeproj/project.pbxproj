@@ -25,6 +25,11 @@
 		534CEE0D2BAA5084009907FC /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE0B2BAA5084009907FC /* Card+CoreDataProperties.swift */; };
 		534CEE0F2BAB0D34009907FC /* SoundUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE0E2BAB0D34009907FC /* SoundUtility.swift */; };
 		534CEE112BAB5882009907FC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE102BAB5882009907FC /* Theme.swift */; };
+		534CEE132BAC7718009907FC /* stack.png in Resources */ = {isa = PBXBuildFile; fileRef = 534CEE122BAC7718009907FC /* stack.png */; };
+		534CEE162BAC7B63009907FC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 534CEE152BAC7B63009907FC /* Lottie */; };
+		534CEE182BAC7BC0009907FC /* stack_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 534CEE172BAC7BC0009907FC /* stack_lottie.json */; };
+		534CEE1A2BAC7BDB009907FC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE192BAC7BDB009907FC /* LottieView.swift */; };
+		534CEE1C2BAC7FA1009907FC /* stack_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 534CEE1B2BAC7FA1009907FC /* stack_animation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,10 @@
 		534CEE0B2BAA5084009907FC /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		534CEE0E2BAB0D34009907FC /* SoundUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundUtility.swift; sourceTree = "<group>"; };
 		534CEE102BAB5882009907FC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		534CEE122BAC7718009907FC /* stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stack.png; sourceTree = "<group>"; };
+		534CEE172BAC7BC0009907FC /* stack_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_lottie.json; sourceTree = "<group>"; };
+		534CEE192BAC7BDB009907FC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		534CEE1B2BAC7FA1009907FC /* stack_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_animation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534CEE162BAC7B63009907FC /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,20 +92,24 @@
 			isa = PBXGroup;
 			children = (
 				534CEE022BAA00DD009907FC /* FlashCartaApp.swift */,
-				534CEDF02BAA00CF009907FC /* book_blue.png */,
 				534CEDE72BAA00CF009907FC /* CardTemp.swift */,
 				534CEDF42BAA00CF009907FC /* CardView.swift */,
 				534CEDF12BAA00CF009907FC /* DataController.swift */,
 				534CEE102BAB5882009907FC /* Theme.swift */,
 				534CEE0E2BAB0D34009907FC /* SoundUtility.swift */,
 				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
+				534CEDDA2BAA00AE009907FC /* ContentView.swift */,
 				534CEDF22BAA00CF009907FC /* ExerciseView.swift */,
 				534CEDF32BAA00CF009907FC /* ExerciseViewModel.swift */,
+				534CEE1B2BAC7FA1009907FC /* stack_animation.json */,
+				534CEE172BAC7BC0009907FC /* stack_lottie.json */,
 				534CEDE92BAA00CF009907FC /* Model.xcdatamodeld */,
 				534CEDEF2BAA00CF009907FC /* portuguese_2500.csv */,
+				534CEDF02BAA00CF009907FC /* book_blue.png */,
+				534CEE122BAC7718009907FC /* stack.png */,
 				534CEDEE2BAA00CF009907FC /* Preview Content */,
-				534CEDDA2BAA00AE009907FC /* ContentView.swift */,
 				534CEDDC2BAA00B0009907FC /* Assets.xcassets */,
+				534CEE192BAC7BDB009907FC /* LottieView.swift */,
 				534CEDDE2BAA00B0009907FC /* Preview Content */,
 			);
 			path = FlashCarta;
@@ -134,6 +148,9 @@
 			dependencies = (
 			);
 			name = FlashCarta;
+			packageProductDependencies = (
+				534CEE152BAC7B63009907FC /* Lottie */,
+			);
 			productName = FlashCarta;
 			productReference = 534CEDD52BAA00AE009907FC /* FlashCarta.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 534CEDCC2BAA00AE009907FC;
+			packageReferences = (
+				534CEE142BAC7B63009907FC /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 534CEDD62BAA00AE009907FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,10 +196,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534CEE182BAC7BC0009907FC /* stack_lottie.json in Resources */,
+				534CEE1C2BAC7FA1009907FC /* stack_animation.json in Resources */,
 				534CEDFB2BAA00CF009907FC /* Preview Assets.xcassets in Resources */,
 				534CEDE02BAA00B0009907FC /* Preview Assets.xcassets in Resources */,
 				534CEDFD2BAA00CF009907FC /* book_blue.png in Resources */,
 				534CEDFC2BAA00CF009907FC /* portuguese_2500.csv in Resources */,
+				534CEE132BAC7718009907FC /* stack.png in Resources */,
 				534CEDDD2BAA00B0009907FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +225,7 @@
 				534CEDFE2BAA00CF009907FC /* DataController.swift in Sources */,
 				534CEDF52BAA00CF009907FC /* DeckIconView.swift in Sources */,
 				534CEE012BAA00CF009907FC /* CardView.swift in Sources */,
+				534CEE1A2BAC7BDB009907FC /* LottieView.swift in Sources */,
 				534CEE0F2BAB0D34009907FC /* SoundUtility.swift in Sources */,
 				534CEDF82BAA00CF009907FC /* Model.xcdatamodeld in Sources */,
 			);
@@ -411,6 +435,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		534CEE142BAC7B63009907FC /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		534CEE152BAC7B63009907FC /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 534CEE142BAC7B63009907FC /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		534CEDE92BAA00CF009907FC /* Model.xcdatamodeld */ = {

@@ -26,14 +26,7 @@ struct ExerciseView: View {
         ZStack{
             Theme.primary
                 .ignoresSafeArea()
-//            LinearGradient(colors: [.blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)
-//                .ignoresSafeArea()
-//                .hueRotation(.degrees(animateBackground ? 45 : 0))
-//                .onAppear{
-//                    withAnimation(.easeInOut(duration: 2).repeatForever()) {
-//                        animateBackground.toggle()
-//                    }
-//                }
+                .opacity(0.85)
             VStack{
                 ZStack{
                     ForEach(0..<viewModel.exerciseCards.count, id: \.self){ index in
