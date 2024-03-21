@@ -29,6 +29,18 @@ struct ExerciseView: View {
                 .ignoresSafeArea()
                 .opacity(0.85)
             VStack{
+                Text("LVL \(viewModel.level)")
+                    .font(.title)
+                    .foregroundStyle(Theme.secondary)
+                ProgressView(value: viewModel.levelProgress, total: Double(LEVEL_DIVIDER))
+                if !viewModel.exerciseCards.isEmpty {
+                    Text(viewModel.currentExerciseXP >= 0 ? "+\(viewModel.currentExerciseXP) XP" :
+                        "-\(abs(viewModel.currentExerciseXP)) XP")
+                    .font(.title2)
+                    .foregroundStyle(Theme.secondary)
+                }
+          
+                Spacer()
                 ZStack{
                     ForEach(0..<viewModel.exerciseCards.count, id: \.self){ index in
                         CardView(card: viewModel.exerciseCards[index]){ difficulty in
@@ -46,13 +58,19 @@ struct ExerciseView: View {
                         } label: {
                             VStack{
                                 StartIcon()
-                                Text("Start Exercise")
+                                Text("Start")
                                     .font(.title2)
                                     .foregroundStyle(Theme.secondary)
                             }
                         }
+                        .onAppear{
+                            withAnimation {
+                                viewModel.getTotalExperience()
+                            }
+                        }
                     }
                 }
+                Spacer()
             }
         }
 //        .background{

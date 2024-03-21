@@ -19,7 +19,7 @@ struct ContentView: View {
                         .tabItem {
                             Label("", systemImage: "square.stack.fill")
                         }
-                    ProgressView()
+                    StatsView()
                         .tabItem {
                             Label("", systemImage: "chart.pie.fill")
                         }

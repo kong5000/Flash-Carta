@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreData
-
+let LEVEL_DIVIDER = 50
 let CARD_COUNT = 5
 
 enum Difficulty {
@@ -24,6 +24,10 @@ class ExerciseViewModel: ObservableObject {
     
     var cards = [Card]()
     @Published var exerciseCards = [Card]()
+    @Published var experience = 0
+    @Published var currentExerciseXP = 0
+    @Published var level = 1
+    @Published var levelProgress = 0.0
     
     let container = NSPersistentContainer(name: "Model")
     
@@ -32,22 +36,52 @@ class ExerciseViewModel: ObservableObject {
             if let error {
                 print("Fade to load data \(error.localizedDescription)")
             }
-            let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
-            do {
-                var result = try self.container.viewContext.fetch(fetchRequest)
-                if(result.isEmpty){
-                    self.preloadData()
-                    result = try self.container.viewContext.fetch(fetchRequest)
-                }
-//                self.cards = result
-                self.cards = result
-//                self.getCards()
-            } catch {
-                print("Error fetching data: \(error)")
-            }
+            self.loadCards()
+            self.getTotalExperience()
         }
     }
     
+    func loadCards(){
+        do{
+            let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
+            var result = try self.container.viewContext.fetch(fetchRequest)
+            if(result.isEmpty){
+                self.preloadData()
+                result = try self.container.viewContext.fetch(fetchRequest)
+            }
+            self.cards = result
+        }catch{
+            print("Error fetching data: \(error)")
+        }
+    }
+    
+    func calculateExperience(card: Card) -> Int{
+        if card.difficulty == 1 {
+            return 1
+        }else if card.difficulty == 3 {
+            return 2
+        }else if card.difficulty == 9 {
+            return 3
+        }else if card.difficulty == 27 {
+            return 4
+        }else if card.difficulty > 27 {
+            return 5
+        }
+        return 0
+    }
+    
+    func getTotalExperience(){
+        var sum = 0
+        for card in self.cards {
+            sum += calculateExperience(card: card)
+        }
+        self.experience = sum
+        
+        self.level = self.experience / LEVEL_DIVIDER + 1
+        self.levelProgress = Double(self.experience % LEVEL_DIVIDER)
+    }
+            
+
     func save(context: NSManagedObjectContext){
         do{
             try context.save()
@@ -132,6 +166,9 @@ class ExerciseViewModel: ObservableObject {
     
     
     func getCards(count: Int = CARD_COUNT){
+        self.currentExerciseXP = 0
+        self.getTotalExperience()
+
         let dueCards = dueCards()
         let nonDueCards = nonDueCards()
         let unseenCards = unseenCards()
@@ -154,20 +191,25 @@ class ExerciseViewModel: ObservableObject {
             }
         }
     }
+    
     @MainActor
     func handleCard(difficulty: Difficulty, card: Card, index: Int){
+        let oldExperience = calculateExperience(card: card)
         switch difficulty {
             case .easy:
                 if card.difficulty == 0 {
-                    card.difficulty = 2
+                    card.difficulty = 3
                 }else{
-                    card.difficulty = card.difficulty * 2
+                    card.difficulty = card.difficulty * 3
                 }
             case.medium:
                 card.difficulty = 1
             case.hard:
                 card.difficulty = 0
         }
+        let newExperience = calculateExperience(card: card)
+        
+        self.currentExerciseXP += newExperience - oldExperience
         
         let today = Date()
         let nextReviewDate = Calendar.current.date(byAdding: .day, value: Int(card.difficulty), to: today)
