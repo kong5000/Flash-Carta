@@ -14,40 +14,21 @@ struct ContentView: View {
                 Theme.primary
                     .ignoresSafeArea()
                     .opacity(0.85)
-       
-                VStack{
-
-                    VStack{
-     
-                        NavigationLink {
-                            ExerciseView()
-                        } label: {
-                            VStack{
-                                LottieView(animationFileName: "stack_animation", loopMode: .loop)
-                                           .frame(width: 100, height: 100)
-                                Text("Learn")
-                            }
-                
+                TabView{
+                    ExerciseView()
+                        .tabItem {
+                            Label("", systemImage: "square.stack.fill")
                         }
-                        Spacer()
-                        HStack{
-                            Spacer()
-                            DeckIconView()
-                            DeckIconView()
-                            Spacer()
+                    ProgressView()
+                        .tabItem {
+                            Label("", systemImage: "chart.pie.fill")
                         }
-                        HStack{
-                            DeckIconView()
-                            Spacer()
-                            DeckIconView()
-                            Spacer()
-                            DeckIconView()
+                    SettingsView()
+                        .tabItem {
+                            Label("", systemImage: "gearshape")
                         }
-                        Spacer()
-                    }
-                }
+                }.accentColor(Theme.secondary)
             }
-    
         }
     }
 }

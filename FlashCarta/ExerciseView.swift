@@ -22,6 +22,7 @@ struct ExerciseView: View {
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
     @State private var animateBackground = true
+    @State private var started = false
     var body: some View {
         ZStack{
             Theme.primary
@@ -39,8 +40,16 @@ struct ExerciseView: View {
                         .accessibilityHidden(index < viewModel.exerciseCards.count - 1)
                     }
                     if viewModel.exerciseCards.isEmpty {
-                        Button("Next exercise") {
+                        Button {
                             viewModel.getCards()
+
+                        } label: {
+                            VStack{
+                                StartIcon()
+                                Text("Start Exercise")
+                                    .font(.title2)
+                                    .foregroundStyle(Theme.secondary)
+                            }
                         }
                     }
                 }

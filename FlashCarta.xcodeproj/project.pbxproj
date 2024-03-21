@@ -30,6 +30,9 @@
 		534CEE182BAC7BC0009907FC /* stack_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 534CEE172BAC7BC0009907FC /* stack_lottie.json */; };
 		534CEE1A2BAC7BDB009907FC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE192BAC7BDB009907FC /* LottieView.swift */; };
 		534CEE1C2BAC7FA1009907FC /* stack_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 534CEE1B2BAC7FA1009907FC /* stack_animation.json */; };
+		534CEE1E2BAC84C5009907FC /* StartIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE1D2BAC84C5009907FC /* StartIcon.swift */; };
+		534CEE202BAC86D7009907FC /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE1F2BAC86D7009907FC /* ProgressView.swift */; };
+		534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE212BAC8D90009907FC /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		534CEE172BAC7BC0009907FC /* stack_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_lottie.json; sourceTree = "<group>"; };
 		534CEE192BAC7BDB009907FC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		534CEE1B2BAC7FA1009907FC /* stack_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_animation.json; sourceTree = "<group>"; };
+		534CEE1D2BAC84C5009907FC /* StartIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartIcon.swift; sourceTree = "<group>"; };
+		534CEE1F2BAC86D7009907FC /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		534CEE212BAC8D90009907FC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				534CEE102BAB5882009907FC /* Theme.swift */,
 				534CEE0E2BAB0D34009907FC /* SoundUtility.swift */,
 				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
+				534CEE1D2BAC84C5009907FC /* StartIcon.swift */,
+				534CEE212BAC8D90009907FC /* SettingsView.swift */,
+				534CEE1F2BAC86D7009907FC /* ProgressView.swift */,
 				534CEDDA2BAA00AE009907FC /* ContentView.swift */,
 				534CEDF22BAA00CF009907FC /* ExerciseView.swift */,
 				534CEDF32BAA00CF009907FC /* ExerciseViewModel.swift */,
@@ -219,6 +228,7 @@
 				534CEE0C2BAA5084009907FC /* Card+CoreDataClass.swift in Sources */,
 				534CEE0D2BAA5084009907FC /* Card+CoreDataProperties.swift in Sources */,
 				534CEE112BAB5882009907FC /* Theme.swift in Sources */,
+				534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */,
 				534CEE032BAA00DD009907FC /* FlashCartaApp.swift in Sources */,
 				534CEDF62BAA00CF009907FC /* CardTemp.swift in Sources */,
 				534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */,
@@ -226,6 +236,8 @@
 				534CEDF52BAA00CF009907FC /* DeckIconView.swift in Sources */,
 				534CEE012BAA00CF009907FC /* CardView.swift in Sources */,
 				534CEE1A2BAC7BDB009907FC /* LottieView.swift in Sources */,
+				534CEE1E2BAC84C5009907FC /* StartIcon.swift in Sources */,
+				534CEE202BAC86D7009907FC /* ProgressView.swift in Sources */,
 				534CEE0F2BAB0D34009907FC /* SoundUtility.swift in Sources */,
 				534CEDF82BAA00CF009907FC /* Model.xcdatamodeld in Sources */,
 			);

@@ -41,7 +41,7 @@ class ExerciseViewModel: ObservableObject {
                 }
 //                self.cards = result
                 self.cards = result
-                self.getCards()
+//                self.getCards()
             } catch {
                 print("Error fetching data: \(error)")
             }
