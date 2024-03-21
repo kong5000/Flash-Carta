@@ -32,6 +32,7 @@ class ExerciseViewModel: ObservableObject {
     let container = NSPersistentContainer(name: "Model")
     
     init(){
+        SoundUtility.preloadSpeechSynthesizer()
         container.loadPersistentStores { desc, error in
             if let error {
                 print("Fade to load data \(error.localizedDescription)")

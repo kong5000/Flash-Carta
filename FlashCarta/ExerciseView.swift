@@ -57,7 +57,7 @@ struct ExerciseView: View {
 
                         } label: {
                             VStack{
-                                StartIcon()
+                                StartIcon(progress: viewModel.levelProgress / Double(LEVEL_DIVIDER))
                                 Text("Start")
                                     .font(.title2)
                                     .foregroundStyle(Theme.secondary)

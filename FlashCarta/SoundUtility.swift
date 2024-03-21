@@ -17,5 +17,10 @@ class SoundUtility {
         utterance.voice = AVSpeechSynthesisVoice(language: "pt-BR")
         speechSynthesizer.speak(utterance)
     }
-
+    
+    static func preloadSpeechSynthesizer() {
+        let utterance = AVSpeechUtterance(string: " ")
+        utterance.volume = 0 // Make the utterance silent.
+        speechSynthesizer.speak(utterance)
+    }
 }

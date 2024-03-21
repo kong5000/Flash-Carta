@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StartIcon: View {
+    var progress: Double
 
     var body: some View {
         VStack{
@@ -17,6 +18,16 @@ struct StartIcon: View {
                         Theme.secondary,
                         lineWidth: 10
                     )
+//                Circle()
+//                    .trim(from: 0, to: progress)
+//                    .stroke(
+//                        Theme.tertiary,
+//                        style: StrokeStyle(
+//                            lineWidth: 10,
+//                            lineCap: .round
+//                        )
+//                    )
+//                    .animation(.easeOut.speed(0.5), value: progress)
                 LottieView(animationFileName: "stack_animation", loopMode: .loop)
                     .frame(width: 100, height:100)
             }
@@ -26,6 +37,6 @@ struct StartIcon: View {
     }
 }
 
-#Preview {
-    StartIcon()
-}
+//#Preview {
+//    StartIcon()
+//}
