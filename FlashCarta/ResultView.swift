@@ -14,6 +14,8 @@ struct ResultView: View {
     var medium: Int
     var hard: Int
     var experiencePoints: Int
+    @State private var offSet = CGSize.zero
+    
     
     var body: some View {
         ZStack{
@@ -74,6 +76,25 @@ struct ResultView: View {
                 .stroke(Theme.secondary, lineWidth: 4)
         )
         .padding()
+        .rotationEffect(.degrees(Double(offSet.width / 8.0)))
+        .offset(x: offSet.width * 5)
+        .offset(y: offSet.height * 5)
+        .gesture(
+            DragGesture()
+                .onChanged{ gesture in
+                    offSet = gesture.translation
+                }
+                .onEnded{ _ in
+                    if abs(offSet.height) > 45 ||  abs(offSet.width) > 100{
+                        isShowing = false
+                    }
+                    else{
+                        withAnimation{
+                            offSet = .zero
+                        }
+                    }
+                }
+        )
     }
 }
 
