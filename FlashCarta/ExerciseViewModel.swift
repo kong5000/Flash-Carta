@@ -28,6 +28,11 @@ class ExerciseViewModel: ObservableObject {
     @Published var currentExerciseXP = 0
     @Published var level = 1
     @Published var levelProgress = 0.0
+    @Published var exerciseComplete = false
+    
+    var goodCount = 0
+    var mediumCount = 0
+    var hardCount = 0
     
     let container = NSPersistentContainer(name: "Model")
     
@@ -167,6 +172,10 @@ class ExerciseViewModel: ObservableObject {
     
     
     func getCards(count: Int = CARD_COUNT){
+        goodCount = 0
+        mediumCount = 0
+        hardCount = 0
+        self.exerciseComplete = false
         self.currentExerciseXP = 0
         self.getTotalExperience()
 
@@ -203,10 +212,13 @@ class ExerciseViewModel: ObservableObject {
                 }else{
                     card.difficulty = card.difficulty * 3
                 }
+                goodCount += 1
             case.medium:
                 card.difficulty = 1
+                mediumCount += 1
             case.hard:
                 card.difficulty = 0
+                hardCount += 1
         }
         let newExperience = calculateExperience(card: card)
         
@@ -216,5 +228,8 @@ class ExerciseViewModel: ObservableObject {
         let nextReviewDate = Calendar.current.date(byAdding: .day, value: Int(card.difficulty), to: today)
         exerciseCards.remove(at: index)
         updateCard(card: card, nextReview: nextReviewDate!)
+        if exerciseCards.count < 1 {
+            exerciseComplete = true
+        }
     }
 }

@@ -33,6 +33,7 @@
 		534CEE1E2BAC84C5009907FC /* StartIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE1D2BAC84C5009907FC /* StartIcon.swift */; };
 		534CEE202BAC86D7009907FC /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE1F2BAC86D7009907FC /* StatsView.swift */; };
 		534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE212BAC8D90009907FC /* SettingsView.swift */; };
+		53D78C132BB329BE005B80A6 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D78C122BB329BE005B80A6 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		534CEE1D2BAC84C5009907FC /* StartIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartIcon.swift; sourceTree = "<group>"; };
 		534CEE1F2BAC86D7009907FC /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		534CEE212BAC8D90009907FC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		53D78C122BB329BE005B80A6 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				534CEE102BAB5882009907FC /* Theme.swift */,
 				534CEE0E2BAB0D34009907FC /* SoundUtility.swift */,
 				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
+				53D78C122BB329BE005B80A6 /* ResultView.swift */,
 				534CEE1D2BAC84C5009907FC /* StartIcon.swift */,
 				534CEE212BAC8D90009907FC /* SettingsView.swift */,
 				534CEE1F2BAC86D7009907FC /* StatsView.swift */,
@@ -234,6 +237,7 @@
 				534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */,
 				534CEDFE2BAA00CF009907FC /* DataController.swift in Sources */,
 				534CEDF52BAA00CF009907FC /* DeckIconView.swift in Sources */,
+				53D78C132BB329BE005B80A6 /* ResultView.swift in Sources */,
 				534CEE012BAA00CF009907FC /* CardView.swift in Sources */,
 				534CEE1A2BAC7BDB009907FC /* LottieView.swift in Sources */,
 				534CEE1E2BAC84C5009907FC /* StartIcon.swift in Sources */,

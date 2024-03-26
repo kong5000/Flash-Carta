@@ -10,7 +10,7 @@ import SwiftData
 
 extension View {
     func stacked(at position: Int, in total: Int ) -> some View {
- 
+        
         let offset = Double(total - position)
         return self.offset(y: offset * 10)
     }
@@ -18,11 +18,13 @@ extension View {
 
 struct ExerciseView: View {
     @StateObject private var viewModel = ExerciseViewModel()
-               
+    
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
     @State private var animateBackground = true
     @State private var started = false
+    @State private var showResults = false
+    
     var body: some View {
         ZStack{
             Theme.primary
@@ -35,48 +37,53 @@ struct ExerciseView: View {
                 ProgressView(value: viewModel.levelProgress, total: Double(LEVEL_DIVIDER))
                 if !viewModel.exerciseCards.isEmpty {
                     Text(viewModel.currentExerciseXP >= 0 ? "+\(viewModel.currentExerciseXP) XP" :
-                        "-\(abs(viewModel.currentExerciseXP)) XP")
+                            "-\(abs(viewModel.currentExerciseXP)) XP")
                     .font(.title2)
                     .foregroundStyle(Theme.secondary)
                 }
-          
+                
                 Spacer()
                 ZStack{
-                    ForEach(0..<viewModel.exerciseCards.count, id: \.self){ index in
-                        CardView(card: viewModel.exerciseCards[index]){ difficulty in
+                    if !viewModel.exerciseComplete{
+                        if viewModel.exerciseCards.isEmpty {
+                            Button {
+                                viewModel.getCards()
+                                
+                            } label: {
+                                VStack{
+                                    StartIcon(progress: viewModel.levelProgress / Double(LEVEL_DIVIDER))
+                                    Text("Start")
+                                        .font(.title2)
+                                        .foregroundStyle(Theme.secondary)
+                                }
+                            }
+                            .onAppear{
+                                withAnimation {
+                                    viewModel.getTotalExperience()
+                                }
+                            }
+                        }
+                        ForEach(0..<viewModel.exerciseCards.count, id: \.self){ index in
+                            CardView(card: viewModel.exerciseCards[index]){ difficulty in
                                 viewModel.handleCard(difficulty: difficulty, card: viewModel.exerciseCards[index], index: index)
-                            
-                        }
-                        .stacked(at: index, in: viewModel.exerciseCards.count)
-                        .allowsHitTesting(index == viewModel.exerciseCards.count - 1)
-                        .accessibilityHidden(index < viewModel.exerciseCards.count - 1)
-                    }
-                    if viewModel.exerciseCards.isEmpty {
-                        Button {
-                            viewModel.getCards()
-
-                        } label: {
-                            VStack{
-                                StartIcon(progress: viewModel.levelProgress / Double(LEVEL_DIVIDER))
-                                Text("Start")
-                                    .font(.title2)
-                                    .foregroundStyle(Theme.secondary)
+                                
                             }
+                            .stacked(at: index, in: viewModel.exerciseCards.count)
+                            .allowsHitTesting(index == viewModel.exerciseCards.count - 1)
+                            .accessibilityHidden(index < viewModel.exerciseCards.count - 1)
                         }
-                        .onAppear{
-                            withAnimation {
-                                viewModel.getTotalExperience()
-                            }
-                        }
+                    }else{
+                        ResultView(isShowing: $viewModel.exerciseComplete,
+                                   good:viewModel.goodCount,
+                                   medium: viewModel.mediumCount,
+                                   hard: viewModel.hardCount,
+                                   experiencePoints: viewModel.currentExerciseXP
+                        )
                     }
                 }
                 Spacer()
             }
         }
-//        .background{
-//            LinearGradient(colors: [.blue, .red], startPoint: .topLeading, endPoint: .bottomTrailing)
-//                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-//        }
         .onChange(of: scenePhase){
             if scenePhase == .active {
                 isActive = true
