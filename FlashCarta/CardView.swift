@@ -13,11 +13,27 @@ struct CardView: View {
     
     @State private var isShowingAnswer = false
     @State private var offSet = CGSize.zero
+    @State private var playAnimation = false
     
     let card: Card
     var removal: ((Difficulty) -> Void)? = nil
-    
+
+    func playAnimationForTwoSeconds() {
+        if playAnimation == true {
+            return
+        }
+        playAnimation = true
+        SoundUtility.speak(card: card)
+
+        // Dispatch after 2 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.playAnimation = false
+        }
+    }
+
     var body: some View {
+        let words = card.definition.components(separatedBy: " ")
+
         ZStack{
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(
@@ -41,27 +57,49 @@ struct CardView: View {
                     Spacer()
                     Text("Noun")
                     Spacer()
-                    Text("Edit")
+                    Button {
+                        SoundUtility.speak(card: card)
+                        
+                    } label: {
+                        Image(systemName: "speaker.wave.2.circle")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                    }.padding()
                 }
                 Spacer()
-                Button {
-                    SoundUtility.speak(card: card)
-                    
-                } label: {
-                    Image(systemName: "speaker.wave.2.circle")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                }.padding()
                 Text(card.word)
                     .font(.largeTitle)
                     .foregroundStyle(Theme.secondary)
-                
-                
-                Text(card.definition)
-                    .font(.title)
-                    .foregroundStyle(Theme.dark)
-                    .opacity(isShowingAnswer ? 1.0 : 0)
-                    .padding()
+                if isShowingAnswer {
+                    Text(card.definition)
+                        .font(.title)
+                        .foregroundStyle(Theme.dark)
+                        .padding()
+                    HStack{
+                        LottieButton(isPlaying: $playAnimation, animationFileName: "wired-flat-693-singer-vocalist")
+                            .onTapGesture {
+                                playAnimationForTwoSeconds()
+                            }
+                        LottieView(animationFileName: "wired-flat-693-singer-vocalist", loopMode: .loop)
+                            .frame(width: 100, height:100)
+                        VStack(alignment: .leading){
+                            Text("Olá, tudo bem?")
+                                .font(.subheadline)
+                                .padding(12)
+                                .background(Theme.secondary)
+                                .foregroundStyle(Theme.dark)
+                                .clipShape(ChatBubble(top: true))
+                            Text("Hello, how are you?")
+                                .font(.subheadline)
+                                .padding(12)
+                                .background(Theme.dark)
+                                .foregroundStyle(Theme.secondary)
+                                .clipShape(ChatBubble(top: false))
+                            
+                        }
+
+                    }
+                }
                 
                 
                 Spacer()
@@ -111,7 +149,9 @@ struct CardView: View {
         )
         .onTapGesture {
             if(!isShowingAnswer){
-                isShowingAnswer.toggle()
+                withAnimation {
+                    isShowingAnswer.toggle()
+                }
             }
         }
     }

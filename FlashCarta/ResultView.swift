@@ -31,33 +31,36 @@ struct ResultView: View {
                             "-\(abs(experiencePoints)) XP")
                     .font(.title2)
                     .foregroundStyle(Theme.secondary)
-                    HStack(alignment:.bottom,spacing: 20){
-                        VStack{
+                    VStack( alignment: .leading,spacing: 20){
+                        HStack{
+                            Text("Today")
                             ForEach(0..<hard, id:\.self){_ in
                                 Color(.red)
                                     .frame(width: 15, height:10)
                             }
                         }
-                        VStack(){
+                        HStack(){
+                            Text("Tomorrow")
                             ForEach(0..<medium, id:\.self){_ in
                                 Color(.yellow)
                                     .frame(width: 15, height:10)
                             }
                         }
-                        VStack{
+                        HStack{
+                            Text("In 27 Days")
                             ForEach(0..<good, id:\.self){_ in
                                 Color(.green)
                                     .frame(width: 15, height:10)
                             }
                         }
                     }
+                    .frame(width: 150)
                     .padding()
                     .background{
                         RoundedRectangle(cornerRadius: 25.0)
                             .fill(
                                 Theme.secondary
                             )
-                        
                         
                     }
                     Button {
@@ -99,5 +102,5 @@ struct ResultView: View {
 }
 
 #Preview {
-    ResultView(isShowing: .constant(true), good: 10, medium: 3, hard: 2, experiencePoints: 10)
+    ResultView(isShowing: .constant(true), good: 3, medium: 3, hard: 2, experiencePoints: 10)
 }

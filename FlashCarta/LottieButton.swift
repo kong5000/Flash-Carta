@@ -1,17 +1,24 @@
 import Lottie
 import SwiftUI
 
-struct LottieView: UIViewRepresentable {
-    
+struct LottieButton: UIViewRepresentable {
+    @Binding var isPlaying: Bool
+
     var animationFileName: String
     var animationView: LottieAnimationView?
-    let loopMode: LottieLoopMode
     
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        
+    func updateUIView(_ uiView: UIView, context: Context) {
+        // Find the Lottie AnimationView in the subviews
+        if let animationView = uiView.subviews.first(where: { $0 is LottieAnimationView }) as? LottieAnimationView {
+            if isPlaying {
+                animationView.play()
+            } else {
+                animationView.stop()
+            }
+        }
     }
     
-    func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
+    func makeUIView(context: UIViewRepresentableContext<LottieButton>) -> UIView {
          let view = UIView(frame: .zero)
          
          let animationView = LottieAnimationView()
@@ -19,9 +26,9 @@ struct LottieView: UIViewRepresentable {
 
          animationView.animation = animation
          animationView.contentMode = .scaleAspectFit
-         animationView.loopMode = loopMode
+         animationView.loopMode = .playOnce
          animationView.play()
-         
+            
          animationView.translatesAutoresizingMaskIntoConstraints = false
          view.addSubview(animationView)
          

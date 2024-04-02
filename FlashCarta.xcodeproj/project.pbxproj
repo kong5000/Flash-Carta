@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533916FD2BBC4E4800A3CBB5 /* wired-flat-45-clock-time.json in Resources */ = {isa = PBXBuildFile; fileRef = 533916FC2BBC4E4800A3CBB5 /* wired-flat-45-clock-time.json */; };
+		533917002BBC6D4000A3CBB5 /* wired-flat-693-singer-vocalist.json in Resources */ = {isa = PBXBuildFile; fileRef = 533916FF2BBC6D4000A3CBB5 /* wired-flat-693-singer-vocalist.json */; };
+		533917022BBC6D8700A3CBB5 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533917012BBC6D8700A3CBB5 /* ChatBubble.swift */; };
+		533917042BBC732900A3CBB5 /* LottieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533917032BBC732900A3CBB5 /* LottieButton.swift */; };
 		534CEDDB2BAA00AE009907FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDDA2BAA00AE009907FC /* ContentView.swift */; };
 		534CEDDD2BAA00B0009907FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534CEDDC2BAA00B0009907FC /* Assets.xcassets */; };
 		534CEDE02BAA00B0009907FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534CEDDF2BAA00B0009907FC /* Preview Assets.xcassets */; };
@@ -37,6 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		533916FC2BBC4E4800A3CBB5 /* wired-flat-45-clock-time.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-45-clock-time.json"; sourceTree = "<group>"; };
+		533916FF2BBC6D4000A3CBB5 /* wired-flat-693-singer-vocalist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-693-singer-vocalist.json"; sourceTree = "<group>"; };
+		533917012BBC6D8700A3CBB5 /* ChatBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		533917032BBC732900A3CBB5 /* LottieButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieButton.swift; sourceTree = "<group>"; };
 		534CEDD52BAA00AE009907FC /* FlashCarta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCarta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534CEDDA2BAA00AE009907FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		534CEDDC2BAA00B0009907FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		533916FE2BBC4ED100A3CBB5 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				533916FF2BBC6D4000A3CBB5 /* wired-flat-693-singer-vocalist.json */,
+				533916FC2BBC4E4800A3CBB5 /* wired-flat-45-clock-time.json */,
+				534CEE1B2BAC7FA1009907FC /* stack_animation.json */,
+				534CEE172BAC7BC0009907FC /* stack_lottie.json */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
 		534CEDCC2BAA00AE009907FC = {
 			isa = PBXGroup;
 			children = (
@@ -112,16 +131,17 @@
 				534CEE1F2BAC86D7009907FC /* StatsView.swift */,
 				534CEDDA2BAA00AE009907FC /* ContentView.swift */,
 				534CEDF22BAA00CF009907FC /* ExerciseView.swift */,
+				533917012BBC6D8700A3CBB5 /* ChatBubble.swift */,
 				534CEDF32BAA00CF009907FC /* ExerciseViewModel.swift */,
-				534CEE1B2BAC7FA1009907FC /* stack_animation.json */,
-				534CEE172BAC7BC0009907FC /* stack_lottie.json */,
+				534CEE192BAC7BDB009907FC /* LottieView.swift */,
+				533917032BBC732900A3CBB5 /* LottieButton.swift */,
+				533916FE2BBC4ED100A3CBB5 /* lottie */,
 				534CEDE92BAA00CF009907FC /* Model.xcdatamodeld */,
 				534CEDEF2BAA00CF009907FC /* portuguese_2500.csv */,
 				534CEDF02BAA00CF009907FC /* book_blue.png */,
 				534CEE122BAC7718009907FC /* stack.png */,
 				534CEDEE2BAA00CF009907FC /* Preview Content */,
 				534CEDDC2BAA00B0009907FC /* Assets.xcassets */,
-				534CEE192BAC7BDB009907FC /* LottieView.swift */,
 				534CEDDE2BAA00B0009907FC /* Preview Content */,
 			);
 			path = FlashCarta;
@@ -208,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533916FD2BBC4E4800A3CBB5 /* wired-flat-45-clock-time.json in Resources */,
 				534CEE182BAC7BC0009907FC /* stack_lottie.json in Resources */,
 				534CEE1C2BAC7FA1009907FC /* stack_animation.json in Resources */,
 				534CEDFB2BAA00CF009907FC /* Preview Assets.xcassets in Resources */,
@@ -215,6 +236,7 @@
 				534CEDFD2BAA00CF009907FC /* book_blue.png in Resources */,
 				534CEDFC2BAA00CF009907FC /* portuguese_2500.csv in Resources */,
 				534CEE132BAC7718009907FC /* stack.png in Resources */,
+				533917002BBC6D4000A3CBB5 /* wired-flat-693-singer-vocalist.json in Resources */,
 				534CEDDD2BAA00B0009907FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,10 +257,12 @@
 				534CEE032BAA00DD009907FC /* FlashCartaApp.swift in Sources */,
 				534CEDF62BAA00CF009907FC /* CardTemp.swift in Sources */,
 				534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */,
+				533917022BBC6D8700A3CBB5 /* ChatBubble.swift in Sources */,
 				534CEDFE2BAA00CF009907FC /* DataController.swift in Sources */,
 				534CEDF52BAA00CF009907FC /* DeckIconView.swift in Sources */,
 				53D78C132BB329BE005B80A6 /* ResultView.swift in Sources */,
 				534CEE012BAA00CF009907FC /* CardView.swift in Sources */,
+				533917042BBC732900A3CBB5 /* LottieButton.swift in Sources */,
 				534CEE1A2BAC7BDB009907FC /* LottieView.swift in Sources */,
 				534CEE1E2BAC84C5009907FC /* StartIcon.swift in Sources */,
 				534CEE202BAC86D7009907FC /* StatsView.swift in Sources */,
