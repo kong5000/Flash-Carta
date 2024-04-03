@@ -12,8 +12,8 @@ class SoundUtility {
     
     static let speechSynthesizer = AVSpeechSynthesizer()
     
-    static func speak(card: Card){
-        let utterance = AVSpeechUtterance(string: card.word)
+    static func speak(text: String){
+        let utterance = AVSpeechUtterance(string: text)
         utterance.voice = AVSpeechSynthesisVoice(language: "pt-BR")
         speechSynthesizer.speak(utterance)
     }

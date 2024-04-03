@@ -51,6 +51,7 @@ class ExerciseViewModel: ObservableObject {
         do{
             let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
             var result = try self.container.viewContext.fetch(fetchRequest)
+
             if(result.isEmpty){
                 self.preloadData()
                 result = try self.container.viewContext.fetch(fetchRequest)
@@ -119,7 +120,7 @@ class ExerciseViewModel: ObservableObject {
     
     func preloadData(){
         do{
-            if let filepath = Bundle.main.path(forResource: "portuguese_2500", ofType: "csv"){
+            if let filepath = Bundle.main.path(forResource: "word_list", ofType: "csv"){
                 let contents = try String(contentsOfFile: filepath)
                 let rows = contents.components(separatedBy: "\n")
                 for row in rows {
@@ -129,6 +130,12 @@ class ExerciseViewModel: ObservableObject {
                     card.word = columns[1]
                     card.partOfSpeech = columns[2]
                     card.definition = columns[3]
+                    card.example = columns[4]
+     
+                    card.exampleTranslation = columns[5]
+                    if columns.count > 6 {
+                        card.animation = columns[6]
+                    }
 
                     save(context: container.viewContext)
                 }
@@ -182,8 +189,10 @@ class ExerciseViewModel: ObservableObject {
         let dueCards = dueCards()
         let nonDueCards = nonDueCards()
         let unseenCards = unseenCards()
-      
-        
+        print("due cards", dueCards.count)
+        print("non due cards", nonDueCards.count)
+        print("unseen cards", unseenCards.count)
+
         //If there are enough due cards, return them
         if dueCards.count >= CARD_COUNT {
             self.exerciseCards = Array(dueCards[0..<CARD_COUNT])

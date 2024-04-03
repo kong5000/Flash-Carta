@@ -23,7 +23,6 @@ struct CardView: View {
             return
         }
         playAnimation = true
-        SoundUtility.speak(card: card)
 
         // Dispatch after 2 seconds
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -58,7 +57,7 @@ struct CardView: View {
                     Text("Noun")
                     Spacer()
                     Button {
-                        SoundUtility.speak(card: card)
+                        SoundUtility.speak(text: card.word)
                         
                     } label: {
                         Image(systemName: "speaker.wave.2.circle")
@@ -79,16 +78,17 @@ struct CardView: View {
                         LottieButton(isPlaying: $playAnimation, animationFileName: "wired-flat-693-singer-vocalist")
                             .frame(width: 125, height:125)
                             .onTapGesture {
+                                SoundUtility.speak(text: card.example)
                                 playAnimationForTwoSeconds()
                             }
                         VStack(alignment: .leading){
-                            Text("Olá, tudo bem?")
+                            Text(card.example)
                                 .font(.subheadline)
                                 .padding(12)
                                 .background(Theme.secondary)
                                 .foregroundStyle(Theme.dark)
                                 .clipShape(ChatBubble(top: true))
-                            Text("Hello, how are you?")
+                            Text(card.exampleTranslation)
                                 .font(.subheadline)
                                 .padding(12)
                                 .background(Theme.dark)
@@ -147,6 +147,7 @@ struct CardView: View {
             : nil
         )
         .onTapGesture {
+            print("hello")
             if(!isShowingAnswer){
                 withAnimation {
                     isShowingAnswer.toggle()
