@@ -77,11 +77,10 @@ struct CardView: View {
                         .padding()
                     HStack{
                         LottieButton(isPlaying: $playAnimation, animationFileName: "wired-flat-693-singer-vocalist")
+                            .frame(width: 125, height:125)
                             .onTapGesture {
                                 playAnimationForTwoSeconds()
                             }
-                        LottieView(animationFileName: "wired-flat-693-singer-vocalist", loopMode: .loop)
-                            .frame(width: 100, height:100)
                         VStack(alignment: .leading){
                             Text("Olá, tudo bem?")
                                 .font(.subheadline)
