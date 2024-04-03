@@ -31,8 +31,7 @@ struct CardView: View {
     }
 
     var body: some View {
-        let words = card.definition.components(separatedBy: " ")
-
+        let words = card.definition.components(separatedBy: "**")
         ZStack{
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(
@@ -74,29 +73,35 @@ struct CardView: View {
                         .font(.title)
                         .foregroundStyle(Theme.dark)
                         .padding()
+                    Spacer()
+                    Rectangle()
+                        .fill(Theme.secondary)
+                           .frame(height: 2)
+                    Spacer()
+
                     HStack{
                         LottieButton(isPlaying: $playAnimation, animationFileName: "wired-flat-693-singer-vocalist")
-                            .frame(width: 125, height:125)
-                            .onTapGesture {
-                                SoundUtility.speak(text: card.example)
-                                playAnimationForTwoSeconds()
-                            }
+                            .frame(width: 120, height:120)
+                  
                         VStack(alignment: .leading){
-                            Text(card.example)
-                                .font(.subheadline)
+                            Text(.init(card.example))
+                                .font(.title3)
                                 .padding(12)
                                 .background(Theme.secondary)
                                 .foregroundStyle(Theme.dark)
                                 .clipShape(ChatBubble(top: true))
-                            Text(card.exampleTranslation)
-                                .font(.subheadline)
+                            Text(.init(card.exampleTranslation))
+                                .font(.title3)
                                 .padding(12)
                                 .background(Theme.dark)
                                 .foregroundStyle(Theme.secondary)
                                 .clipShape(ChatBubble(top: false))
-                            
                         }
-
+                        .padding()
+                    }
+                    .onTapGesture {
+                        SoundUtility.speak(text: card.example)
+                        playAnimationForTwoSeconds()
                     }
                 }
                 
@@ -108,7 +113,7 @@ struct CardView: View {
             .padding(20)
             .multilineTextAlignment(.center)
         }
-        .frame(height:450)
+        .frame(height:475)
         .overlay(
             RoundedRectangle(cornerRadius: 25)
                 .stroke(Theme.secondary, lineWidth: 4)
@@ -147,7 +152,7 @@ struct CardView: View {
             : nil
         )
         .onTapGesture {
-            print("hello")
+            print(words)
             if(!isShowingAnswer){
                 withAnimation {
                     isShowingAnswer.toggle()
@@ -155,5 +160,7 @@ struct CardView: View {
             }
         }
     }
+    
+
 }
 
