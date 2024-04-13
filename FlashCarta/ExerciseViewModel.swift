@@ -56,6 +56,12 @@ class ExerciseViewModel: ObservableObject {
                 self.preloadData()
                 result = try self.container.viewContext.fetch(fetchRequest)
             }
+            result = result.filter { card in
+                if card.animation != nil{
+                    return true
+                }
+                return false
+            }
             self.cards = result
         }catch{
             print("Error fetching data: \(error)")
@@ -93,6 +99,7 @@ class ExerciseViewModel: ObservableObject {
         do{
             try context.save()
         }catch{
+            print(error)
             print("Error saving data")
         }
     }
@@ -119,6 +126,7 @@ class ExerciseViewModel: ObservableObject {
     }
     
     func preloadData(){
+        print("pre loading!")
         do{
             if let filepath = Bundle.main.path(forResource: "word_list", ofType: "csv"){
                 let contents = try String(contentsOfFile: filepath)
@@ -126,6 +134,10 @@ class ExerciseViewModel: ObservableObject {
                 for row in rows {
                     let columns = row.components(separatedBy: ",")
                     let card = Card(context: container.viewContext)
+                    if(columns.count <= 1){
+                        continue
+                    }
+                    print(columns)
                     card.rank = Int64(Int(columns[0]) ?? -1)
                     card.word = columns[1]
                     card.partOfSpeech = columns[2]
@@ -134,7 +146,7 @@ class ExerciseViewModel: ObservableObject {
      
                     card.exampleTranslation = columns[5]
                     if columns.count > 6 {
-                        card.animation = columns[6]
+                        card.animation = columns[6].trimmingCharacters(in: .whitespacesAndNewlines)
                     }
 
                     save(context: container.viewContext)
@@ -208,6 +220,7 @@ class ExerciseViewModel: ObservableObject {
                     return card1.rank > card2.rank
                 })
             }
+            print(exerciseCards)
         }
     }
     

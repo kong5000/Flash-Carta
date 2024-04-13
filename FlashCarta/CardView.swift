@@ -23,6 +23,8 @@ struct CardView: View {
             return
         }
         playAnimation = true
+        SoundUtility.speak(text: card.example)
+
 
         // Dispatch after 2 seconds
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -31,7 +33,6 @@ struct CardView: View {
     }
 
     var body: some View {
-        let words = card.definition.components(separatedBy: "**")
         ZStack{
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(
@@ -69,40 +70,44 @@ struct CardView: View {
                     .font(.largeTitle)
                     .foregroundStyle(Theme.secondary)
                 if isShowingAnswer {
-                    Text(card.definition)
-                        .font(.title)
-                        .foregroundStyle(Theme.dark)
-                        .padding()
-                    Spacer()
-                    Rectangle()
-                        .fill(Theme.secondary)
-                           .frame(height: 2)
-                    Spacer()
+                    if let animation = card.animation {
+                        AnimatedCard(card: card)
+                    }else{
+                        Text(card.definition)
+                            .font(.title)
+                            .foregroundStyle(Theme.dark)
+                            .padding()
+                        Spacer()
+                        Rectangle()
+                            .fill(Theme.secondary)
+                               .frame(height: 2)
+                        Spacer()
 
-                    HStack{
-                        LottieButton(isPlaying: $playAnimation, animationFileName: "wired-flat-693-singer-vocalist")
-                            .frame(width: 120, height:120)
-                  
-                        VStack(alignment: .leading){
-                            Text(.init(card.example))
-                                .font(.title3)
-                                .padding(12)
-                                .background(Theme.secondary)
-                                .foregroundStyle(Theme.dark)
-                                .clipShape(ChatBubble(top: true))
-                            Text(.init(card.exampleTranslation))
-                                .font(.title3)
-                                .padding(12)
-                                .background(Theme.dark)
-                                .foregroundStyle(Theme.secondary)
-                                .clipShape(ChatBubble(top: false))
+                        HStack{
+                            LottieButton(isPlaying: $playAnimation, animationFileName: "wired-flat-693-singer-vocalist")
+                                .frame(width: 120, height:120)
+                      
+                            VStack(alignment: .leading){
+                                Text(.init(card.example))
+                                    .font(.subheadline)
+                                    .padding(12)
+                                    .background(Theme.secondary)
+                                    .foregroundStyle(Theme.dark)
+                                    .clipShape(ChatBubble(top: true))
+                                Text(.init(card.exampleTranslation))
+                                    .font(.subheadline)
+                                    .padding(12)
+                                    .background(Theme.dark)
+                                    .foregroundStyle(Theme.secondary)
+                                    .clipShape(ChatBubble(top: false))
+                            }
+                            .padding()
                         }
-                        .padding()
+                        .onTapGesture {
+                            playAnimationForTwoSeconds()
+                        }
                     }
-                    .onTapGesture {
-                        SoundUtility.speak(text: card.example)
-                        playAnimationForTwoSeconds()
-                    }
+ 
                 }
                 
                 
@@ -152,7 +157,6 @@ struct CardView: View {
             : nil
         )
         .onTapGesture {
-            print(words)
             if(!isShowingAnswer){
                 withAnimation {
                     isShowingAnswer.toggle()
