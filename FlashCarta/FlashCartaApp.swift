@@ -1,21 +1,17 @@
 //
-//  FlashCardApp.swift
-//  FlashCard
+//  FlashCartaApp.swift
+//  FlashCarta
 //
-//  Created by k on 2024-03-14.
+//  Created by Keith Ong on 2024-04-13.
 //
 
 import SwiftUI
-import SwiftData
 
 @main
 struct FlashCartaApp: App {
-    @StateObject private var dataController = DataController()
-    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environmentObject(dataController)
+        WindowGroup{
+            ExerciseView()
         }
     }
 }

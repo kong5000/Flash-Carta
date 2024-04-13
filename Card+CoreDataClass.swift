@@ -2,7 +2,7 @@
 //  Card+CoreDataClass.swift
 //  FlashCarta
 //
-//  Created by k on 2024-03-19.
+//  Created by Keith Ong on 2024-04-13.
 //
 //
 
@@ -11,5 +11,5 @@ import CoreData
 
 @objc(Card)
 public class Card: NSManagedObject {
-    
+
 }
