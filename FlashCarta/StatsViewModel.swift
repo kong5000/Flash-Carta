@@ -35,6 +35,7 @@ class StatsViewModel: ObservableObject {
             }
             
             self.groups.forEach { (key: Int, value: [Card]) in
+                print(key)
                 var groupTotal = 0
                 value.forEach { card in
                     groupTotal += Int(cbrt(Double(card.difficulty)))
