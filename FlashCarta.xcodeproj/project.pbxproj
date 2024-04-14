@@ -11,6 +11,7 @@
 		3CD502712BCAF6A300AC2EB1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5026F2BCAF6A300AC2EB1 /* Model.xcdatamodeld */; };
 		3CD5027B2BCAF8A600AC2EB1 /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */; };
 		3CD5027C2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5027A2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift */; };
+		3CD502812BCB65CD00AC2EB1 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */; };
 		533917022BBC6D8700A3CBB5 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533917012BBC6D8700A3CBB5 /* ChatBubble.swift */; };
 		533917042BBC732900A3CBB5 /* LottieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533917032BBC732900A3CBB5 /* LottieButton.swift */; };
 		533917062BBDB32C00A3CBB5 /* word_list.csv in Resources */ = {isa = PBXBuildFile; fileRef = 533917052BBDB32C00A3CBB5 /* word_list.csv */; };
@@ -97,7 +98,6 @@
 		534CEDDD2BAA00B0009907FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534CEDDC2BAA00B0009907FC /* Assets.xcassets */; };
 		534CEDE02BAA00B0009907FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534CEDDF2BAA00B0009907FC /* Preview Assets.xcassets */; };
 		534CEDF52BAA00CF009907FC /* DeckIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDE62BAA00CE009907FC /* DeckIconView.swift */; };
-		534CEDF62BAA00CF009907FC /* CardTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDE72BAA00CF009907FC /* CardTemp.swift */; };
 		534CEDFD2BAA00CF009907FC /* book_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 534CEDF02BAA00CF009907FC /* book_blue.png */; };
 		534CEDFE2BAA00CF009907FC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDF12BAA00CF009907FC /* DataController.swift */; };
 		534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDF22BAA00CF009907FC /* ExerciseView.swift */; };
@@ -121,6 +121,7 @@
 		3CD502702BCAF6A300AC2EB1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3CD5027A2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
 		533917012BBC6D8700A3CBB5 /* ChatBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		533917032BBC732900A3CBB5 /* LottieButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieButton.swift; sourceTree = "<group>"; };
 		533917052BBDB32C00A3CBB5 /* word_list.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = word_list.csv; sourceTree = "<group>"; };
@@ -208,7 +209,6 @@
 		534CEDDC2BAA00B0009907FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		534CEDDF2BAA00B0009907FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		534CEDE62BAA00CE009907FC /* DeckIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckIconView.swift; sourceTree = "<group>"; };
-		534CEDE72BAA00CF009907FC /* CardTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTemp.swift; sourceTree = "<group>"; };
 		534CEDF02BAA00CF009907FC /* book_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_blue.png; sourceTree = "<group>"; };
 		534CEDF12BAA00CF009907FC /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		534CEDF22BAA00CF009907FC /* ExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
@@ -238,6 +238,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CD5027F2BCB657A00AC2EB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				534CEE1D2BAC84C5009907FC /* StartIcon.swift */,
+				533917012BBC6D8700A3CBB5 /* ChatBubble.swift */,
+				534CEE192BAC7BDB009907FC /* LottieView.swift */,
+				533917032BBC732900A3CBB5 /* LottieButton.swift */,
+				533917072BBDD8B500A3CBB5 /* AnimatedAnswer.swift */,
+				534CEE212BAC8D90009907FC /* SettingsView.swift */,
+				534CEE1F2BAC86D7009907FC /* StatsView.swift */,
+				534CEDDA2BAA00AE009907FC /* ContentView.swift */,
+				534CEDF22BAA00CF009907FC /* ExerciseView.swift */,
+				534CEDF42BAA00CF009907FC /* CardView.swift */,
+				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
+				53D78C122BB329BE005B80A6 /* ResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		533916FE2BBC4ED100A3CBB5 /* lottie */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,27 +364,16 @@
 		534CEDD72BAA00AE009907FC /* FlashCarta */ = {
 			isa = PBXGroup;
 			children = (
-				533917072BBDD8B500A3CBB5 /* AnimatedAnswer.swift */,
+				3CD5027F2BCB657A00AC2EB1 /* Views */,
 				3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */,
-				534CEDE72BAA00CF009907FC /* CardTemp.swift */,
-				534CEDF42BAA00CF009907FC /* CardView.swift */,
 				534CEDF12BAA00CF009907FC /* DataController.swift */,
 				534CEE102BAB5882009907FC /* Theme.swift */,
 				534CEE0E2BAB0D34009907FC /* SoundUtility.swift */,
-				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
-				53D78C122BB329BE005B80A6 /* ResultView.swift */,
-				534CEE1D2BAC84C5009907FC /* StartIcon.swift */,
-				534CEE212BAC8D90009907FC /* SettingsView.swift */,
-				534CEE1F2BAC86D7009907FC /* StatsView.swift */,
-				534CEDDA2BAA00AE009907FC /* ContentView.swift */,
-				534CEDF22BAA00CF009907FC /* ExerciseView.swift */,
-				3CD5026F2BCAF6A300AC2EB1 /* Model.xcdatamodeld */,
-				533917012BBC6D8700A3CBB5 /* ChatBubble.swift */,
 				534CEDF32BAA00CF009907FC /* ExerciseViewModel.swift */,
 				5339183D2BBEF3E500A3CBB5 /* ShopView.swift */,
+				3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */,
 				533917052BBDB32C00A3CBB5 /* word_list.csv */,
-				534CEE192BAC7BDB009907FC /* LottieView.swift */,
-				533917032BBC732900A3CBB5 /* LottieButton.swift */,
+				3CD5026F2BCAF6A300AC2EB1 /* Model.xcdatamodeld */,
 				533916FE2BBC4ED100A3CBB5 /* lottie */,
 				534CEDF02BAA00CF009907FC /* book_blue.png */,
 				534CEE122BAC7718009907FC /* stack.png */,
@@ -547,7 +555,6 @@
 				533917082BBDD8B500A3CBB5 /* AnimatedAnswer.swift in Sources */,
 				534CEE112BAB5882009907FC /* Theme.swift in Sources */,
 				534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */,
-				534CEDF62BAA00CF009907FC /* CardTemp.swift in Sources */,
 				3CD502712BCAF6A300AC2EB1 /* Model.xcdatamodeld in Sources */,
 				534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */,
 				533917022BBC6D8700A3CBB5 /* ChatBubble.swift in Sources */,
@@ -558,6 +565,7 @@
 				53D78C132BB329BE005B80A6 /* ResultView.swift in Sources */,
 				534CEE012BAA00CF009907FC /* CardView.swift in Sources */,
 				533917042BBC732900A3CBB5 /* LottieButton.swift in Sources */,
+				3CD502812BCB65CD00AC2EB1 /* StatsViewModel.swift in Sources */,
 				534CEE1A2BAC7BDB009907FC /* LottieView.swift in Sources */,
 				534CEE1E2BAC84C5009907FC /* StartIcon.swift in Sources */,
 				534CEE202BAC86D7009907FC /* StatsView.swift in Sources */,

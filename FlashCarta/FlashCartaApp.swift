@@ -11,7 +11,7 @@ import SwiftUI
 struct FlashCartaApp: App {
     var body: some Scene {
         WindowGroup{
-            ExerciseView()
+            ContentView()
         }
     }
 }

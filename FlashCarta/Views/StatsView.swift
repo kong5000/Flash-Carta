@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct StatsView: View {
+    @StateObject var viewModel = StatsViewModel()
+    
     var body: some View {
         ZStack{
             Theme.primary

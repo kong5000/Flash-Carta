@@ -51,17 +51,17 @@ class ExerciseViewModel: ObservableObject {
         do{
             let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
             var result = try self.container.viewContext.fetch(fetchRequest)
-
+            print(result.count)
             if(result.isEmpty){
                 self.preloadData()
                 result = try self.container.viewContext.fetch(fetchRequest)
             }
-            result = result.filter { card in
-                if card.animation != nil{
-                    return true
-                }
-                return false
-            }
+//            result = result.filter { card in
+//                if card.animation != nil{
+//                    return true
+//                }
+//                return false
+//            }
             self.cards = result
         }catch{
             print("Error fetching data: \(error)")
@@ -137,7 +137,6 @@ class ExerciseViewModel: ObservableObject {
                     if(columns.count <= 1){
                         continue
                     }
-                    print(columns)
                     card.rank = Int64(Int(columns[0]) ?? -1)
                     card.word = columns[1]
                     card.partOfSpeech = columns[2]
@@ -201,9 +200,6 @@ class ExerciseViewModel: ObservableObject {
         let dueCards = dueCards()
         let nonDueCards = nonDueCards()
         let unseenCards = unseenCards()
-        print("due cards", dueCards.count)
-        print("non due cards", nonDueCards.count)
-        print("unseen cards", unseenCards.count)
 
         //If there are enough due cards, return them
         if dueCards.count >= CARD_COUNT {
@@ -220,6 +216,7 @@ class ExerciseViewModel: ObservableObject {
                     return card1.rank > card2.rank
                 })
             }
+            
             print(exerciseCards)
         }
     }
