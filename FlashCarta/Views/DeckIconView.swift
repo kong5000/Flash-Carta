@@ -15,13 +15,13 @@ struct DeckIconView: View {
             ZStack{
                 Circle()
                     .stroke(
-                        .gray,
+                        Theme.primary,
                         lineWidth: 10
                     )
                 Circle()
                     .trim(from: 0, to: progress)
                     .stroke(
-                        .black,
+                        Theme.secondary,
                         style: StrokeStyle(
                             lineWidth: 10,
                             lineCap: .round
