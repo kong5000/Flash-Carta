@@ -34,7 +34,7 @@ class ExerciseViewModel: ObservableObject {
     var mediumCount = 0
     var hardCount = 0
     
-    let container = NSPersistentContainer(name: "Model")
+    let container = CoreDataManager.shared.persistentContainer
     
     init(){
         SoundUtility.preloadSpeechSynthesizer()
@@ -126,7 +126,6 @@ class ExerciseViewModel: ObservableObject {
     }
     
     func preloadData(){
-        print("pre loading!")
         do{
             if let filepath = Bundle.main.path(forResource: "word_list", ofType: "csv"){
                 let contents = try String(contentsOfFile: filepath)
@@ -216,8 +215,6 @@ class ExerciseViewModel: ObservableObject {
                     return card1.rank > card2.rank
                 })
             }
-            
-            print(exerciseCards)
         }
     }
     

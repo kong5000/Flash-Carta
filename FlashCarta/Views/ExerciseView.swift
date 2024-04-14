@@ -27,9 +27,6 @@ struct ExerciseView: View {
     
     var body: some View {
         ZStack{
-            Theme.primary
-                .ignoresSafeArea()
-                .opacity(0.85)
             VStack{
                 Text("LVL \(viewModel.level)")
                     .font(.title)

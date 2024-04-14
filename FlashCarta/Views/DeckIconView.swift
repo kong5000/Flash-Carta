@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DeckIconView: View {
-    @State private var progress = 0.25
+    var progress: Double
 
     var body: some View {
         VStack{
@@ -40,6 +40,6 @@ struct DeckIconView: View {
     }
 }
 
-#Preview {
-    DeckIconView()
-}
+//#Preview {
+//    DeckIconView()
+//}

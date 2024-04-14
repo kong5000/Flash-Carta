@@ -10,22 +10,18 @@ import CoreData
 
 
 class StatsViewModel: ObservableObject {
-    let container = NSPersistentContainer(name: "Model")
+    let container = CoreDataManager.shared.persistentContainer
     var cards: [Card] = []
     var groups: [Int:[Card]] = [:]
-    var groupProgress : [Int:Double] = [:]
+    
+    @Published var groupProgress : [Int:Double] = [:]
     
     init() {
-        container.loadPersistentStores { desc, error in
-            if let error {
-                print("Fade to load data \(error.localizedDescription)")
-            }
-            self.loadCards()
-        }
- 
+        self.getProgress()
     }
-
-    func loadCards(){
+    
+    func getProgress(){
+        groups = [:]
         do{
             let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
             var result = try self.container.viewContext.fetch(fetchRequest)
@@ -37,7 +33,7 @@ class StatsViewModel: ObservableObject {
                     groups[groupIndex] = [card]
                 }
             }
-        
+            
             self.groups.forEach { (key: Int, value: [Card]) in
                 var groupTotal = 0
                 value.forEach { card in
@@ -46,7 +42,7 @@ class StatsViewModel: ObservableObject {
                 groupProgress[key] = Double(groupTotal) / 300.0
                 
             }
-            print(groupProgress)
+            print(groupProgress[0])
             self.cards = result
         }catch{
             print("Error fetching data: \(error)")

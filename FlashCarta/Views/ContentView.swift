@@ -9,27 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            ZStack{
-                Theme.primary
-                    .ignoresSafeArea()
-                    .opacity(0.85)
-                TabView{
+            TabView{
+                Group{
                     ExerciseView()
+                        .background(Theme.primary.opacity(0.85).ignoresSafeArea())
                         .tabItem {
                             Label("", systemImage: "square.stack.fill")
                         }
                     StatsView()
+                        .background(Theme.primary.opacity(0.85).ignoresSafeArea())
                         .tabItem {
                             Label("", systemImage: "chart.pie.fill")
                         }
                     SettingsView()
+                        .background(Theme.primary.opacity(0.85).ignoresSafeArea())
                         .tabItem {
                             Label("", systemImage: "gearshape")
+                                .frame(width: 202, height: 202)
                         }
-                }.accentColor(Theme.secondary)
-            }
-        }
+                }
+                .toolbarBackground(Theme.dark.opacity(0.80), for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
+
+            }.accentColor(Theme.secondary)
     }
 }
 

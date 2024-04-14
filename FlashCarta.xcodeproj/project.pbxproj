@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CBAC3082BCC6D82003BD9A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */; };
 		3CD5026E2BCAF5D300AC2EB1 /* FlashCartaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */; };
 		3CD502712BCAF6A300AC2EB1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5026F2BCAF6A300AC2EB1 /* Model.xcdatamodeld */; };
 		3CD5027B2BCAF8A600AC2EB1 /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */; };
@@ -117,6 +118,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCartaApp.swift; sourceTree = "<group>"; };
 		3CD502702BCAF6A300AC2EB1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 				534CEE0E2BAB0D34009907FC /* SoundUtility.swift */,
 				534CEDF32BAA00CF009907FC /* ExerciseViewModel.swift */,
 				5339183D2BBEF3E500A3CBB5 /* ShopView.swift */,
+				3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */,
 				3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */,
 				533917052BBDB32C00A3CBB5 /* word_list.csv */,
 				3CD5026F2BCAF6A300AC2EB1 /* Model.xcdatamodeld */,
@@ -554,6 +557,7 @@
 				534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */,
 				533917082BBDD8B500A3CBB5 /* AnimatedAnswer.swift in Sources */,
 				534CEE112BAB5882009907FC /* Theme.swift in Sources */,
+				3CBAC3082BCC6D82003BD9A0 /* DataManager.swift in Sources */,
 				534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */,
 				3CD502712BCAF6A300AC2EB1 /* Model.xcdatamodeld in Sources */,
 				534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */,
