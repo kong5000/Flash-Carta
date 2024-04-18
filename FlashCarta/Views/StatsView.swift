@@ -9,6 +9,8 @@ import SwiftUI
 
 struct StatsView: View {
     @StateObject var viewModel = StatsViewModel()
+    @EnvironmentObject private var store: DeckStore
+
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -23,6 +25,17 @@ struct StatsView: View {
                         DeckIconView(progress: viewModel.groupProgress[key] ?? 0.0, label: key)
                     }
                 }
+                ForEach(store.items){ item in
+                    
+                    Button("Buy Premium"){
+                        Task {
+                            await store.purchase(item)
+                        }
+                    }
+  
+
+
+                }
             }
         }
         .onAppear{
@@ -31,6 +44,6 @@ struct StatsView: View {
     }
 }
 
-#Preview {
-    StatsView()
-}
+//#Preview {
+//    StatsView()
+//}
