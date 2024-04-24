@@ -56,6 +56,7 @@ class ExerciseViewModel: ObservableObject {
                 self.preloadData()
                 result = try self.container.viewContext.fetch(fetchRequest)
             }
+            //TODO: Filter out cards based on premium membership
 //            result = result.filter { card in
 //                if card.animation != nil{
 //                    return true

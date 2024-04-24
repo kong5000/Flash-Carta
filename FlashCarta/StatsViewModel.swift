@@ -8,6 +8,7 @@
 import Foundation
 import CoreData
 
+let PREMIUM_DECK_CUTOFF = 6
 
 class StatsViewModel: ObservableObject {
     let container = CoreDataManager.shared.persistentContainer
@@ -15,6 +16,7 @@ class StatsViewModel: ObservableObject {
     var groups: [Int:[Card]] = [:]
     
     @Published var groupProgress : [Int:Double] = [:]
+    @Published var premiumProgress : [Int:Double] = [:]
     
     init() {
         self.getProgress()
@@ -35,15 +37,19 @@ class StatsViewModel: ObservableObject {
             }
             
             self.groups.forEach { (key: Int, value: [Card]) in
-                print(key)
                 var groupTotal = 0
                 value.forEach { card in
                     groupTotal += Int(cbrt(Double(card.difficulty)))
                 }
-                groupProgress[key] = Double(groupTotal) / 300.0
-                
+                if key >= PREMIUM_DECK_CUTOFF {
+                    premiumProgress[key] = Double(groupTotal) / 300.0
+
+                }else{
+                    groupProgress[key] = Double(groupTotal) / 300.0
+
+                }
             }
-            print(groupProgress[0])
+            
             self.cards = result
         }catch{
             print("Error fetching data: \(error)")

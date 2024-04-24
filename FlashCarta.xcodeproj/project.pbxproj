@@ -10,6 +10,7 @@
 		3C3FB1FB2BD16350006ADDDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3FB1FA2BD16350006ADDDB /* StoreKit.framework */; };
 		3C3FB1FE2BD165F7006ADDDB /* TestVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FB1FD2BD165F7006ADDDB /* TestVIew.swift */; };
 		3C3FB2002BD16FCB006ADDDB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FB1FF2BD16FCB006ADDDB /* Store.swift */; };
+		3C3FB2022BD17C49006ADDDB /* PurchaseSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FB2012BD17C49006ADDDB /* PurchaseSuccessView.swift */; };
 		3CBAC3082BCC6D82003BD9A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */; };
 		3CBAC30A2BCC759C003BD9A0 /* wired-flat-693-singer-vocalist.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CBAC3092BCC759C003BD9A0 /* wired-flat-693-singer-vocalist.json */; };
 		3CBAC30C2BCC7E48003BD9A0 /* wired-flat-112-book.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CBAC30B2BCC7E48003BD9A0 /* wired-flat-112-book.json */; };
@@ -127,6 +128,7 @@
 		3C3FB1FC2BD163E0006ADDDB /* DecksStoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = DecksStoreKitConfiguration.storekit; sourceTree = "<group>"; };
 		3C3FB1FD2BD165F7006ADDDB /* TestVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVIew.swift; sourceTree = "<group>"; };
 		3C3FB1FF2BD16FCB006ADDDB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		3C3FB2012BD17C49006ADDDB /* PurchaseSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSuccessView.swift; sourceTree = "<group>"; };
 		3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3CBAC3092BCC759C003BD9A0 /* wired-flat-693-singer-vocalist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wired-flat-693-singer-vocalist.json"; path = "../../../../Downloads/wired-flat-693-singer-vocalist.json"; sourceTree = "<group>"; };
 		3CBAC30B2BCC7E48003BD9A0 /* wired-flat-112-book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wired-flat-112-book.json"; path = "../../../../Downloads/wired-flat-112-book.json"; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				534CEDF42BAA00CF009907FC /* CardView.swift */,
 				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
 				53D78C122BB329BE005B80A6 /* ResultView.swift */,
+				3C3FB2012BD17C49006ADDDB /* PurchaseSuccessView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				534CEDDB2BAA00AE009907FC /* ContentView.swift in Sources */,
+				3C3FB2022BD17C49006ADDDB /* PurchaseSuccessView.swift in Sources */,
 				3CD5026E2BCAF5D300AC2EB1 /* FlashCartaApp.swift in Sources */,
 				534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */,
 				533917082BBDD8B500A3CBB5 /* AnimatedAnswer.swift in Sources */,
