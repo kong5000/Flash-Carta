@@ -16,7 +16,6 @@
 		3CBAC30C2BCC7E48003BD9A0 /* wired-flat-112-book.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CBAC30B2BCC7E48003BD9A0 /* wired-flat-112-book.json */; };
 		3CBAC3112BCC802E003BD9A0 /* green-book.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CBAC3102BCC802E003BD9A0 /* green-book.png */; };
 		3CD5026E2BCAF5D300AC2EB1 /* FlashCartaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */; };
-		3CD502712BCAF6A300AC2EB1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5026F2BCAF6A300AC2EB1 /* Model.xcdatamodeld */; };
 		3CD5027B2BCAF8A600AC2EB1 /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */; };
 		3CD5027C2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5027A2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift */; };
 		3CD502812BCB65CD00AC2EB1 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */; };
@@ -121,6 +120,7 @@
 		534CEE202BAC86D7009907FC /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE1F2BAC86D7009907FC /* StatsView.swift */; };
 		534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE212BAC8D90009907FC /* SettingsView.swift */; };
 		53D78C132BB329BE005B80A6 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D78C122BB329BE005B80A6 /* ResultView.swift */; };
+		7EA97B9F2BE4330100ED5529 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,7 +134,6 @@
 		3CBAC30B2BCC7E48003BD9A0 /* wired-flat-112-book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wired-flat-112-book.json"; path = "../../../../Downloads/wired-flat-112-book.json"; sourceTree = "<group>"; };
 		3CBAC3102BCC802E003BD9A0 /* green-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green-book.png"; path = "../../../Downloads/green-book.png"; sourceTree = "<group>"; };
 		3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCartaApp.swift; sourceTree = "<group>"; };
-		3CD502702BCAF6A300AC2EB1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3CD5027A2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
@@ -239,6 +238,7 @@
 		534CEE1F2BAC86D7009907FC /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		534CEE212BAC8D90009907FC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		53D78C122BB329BE005B80A6 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7EA97B9E2BE4330100ED5529 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,7 +403,7 @@
 				3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */,
 				3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */,
 				533917052BBDB32C00A3CBB5 /* word_list.csv */,
-				3CD5026F2BCAF6A300AC2EB1 /* Model.xcdatamodeld */,
+				7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */,
 				533916FE2BBC4ED100A3CBB5 /* lottie */,
 				534CEDF02BAA00CF009907FC /* book_blue.png */,
 				534CEE122BAC7718009907FC /* stack.png */,
@@ -588,12 +588,12 @@
 				3CD5026E2BCAF5D300AC2EB1 /* FlashCartaApp.swift in Sources */,
 				534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */,
 				533917082BBDD8B500A3CBB5 /* AnimatedAnswer.swift in Sources */,
+				7EA97B9F2BE4330100ED5529 /* Model.xcdatamodeld in Sources */,
 				3C3FB1FE2BD165F7006ADDDB /* TestVIew.swift in Sources */,
 				3C3FB2002BD16FCB006ADDDB /* Store.swift in Sources */,
 				534CEE112BAB5882009907FC /* Theme.swift in Sources */,
 				3CBAC3082BCC6D82003BD9A0 /* DataManager.swift in Sources */,
 				534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */,
-				3CD502712BCAF6A300AC2EB1 /* Model.xcdatamodeld in Sources */,
 				534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */,
 				533917022BBC6D8700A3CBB5 /* ChatBubble.swift in Sources */,
 				534CEDFE2BAA00CF009907FC /* DataController.swift in Sources */,
@@ -837,14 +837,14 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		3CD5026F2BCAF6A300AC2EB1 /* Model.xcdatamodeld */ = {
+		7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3CD502702BCAF6A300AC2EB1 /* Model.xcdatamodel */,
+				7EA97B9E2BE4330100ED5529 /* Model.xcdatamodel */,
 			);
-			currentVersion = 3CD502702BCAF6A300AC2EB1 /* Model.xcdatamodel */;
+			currentVersion = 7EA97B9E2BE4330100ED5529 /* Model.xcdatamodel */;
 			name = Model.xcdatamodeld;
-			path = /Users/keithong/Desktop/FlashCarta/FlashCarta/Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
