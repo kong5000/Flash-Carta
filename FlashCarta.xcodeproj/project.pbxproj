@@ -12,9 +12,6 @@
 		3C3FB2002BD16FCB006ADDDB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FB1FF2BD16FCB006ADDDB /* Store.swift */; };
 		3C3FB2022BD17C49006ADDDB /* PurchaseSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FB2012BD17C49006ADDDB /* PurchaseSuccessView.swift */; };
 		3CBAC3082BCC6D82003BD9A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */; };
-		3CBAC30A2BCC759C003BD9A0 /* wired-flat-693-singer-vocalist.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CBAC3092BCC759C003BD9A0 /* wired-flat-693-singer-vocalist.json */; };
-		3CBAC30C2BCC7E48003BD9A0 /* wired-flat-112-book.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CBAC30B2BCC7E48003BD9A0 /* wired-flat-112-book.json */; };
-		3CBAC3112BCC802E003BD9A0 /* green-book.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CBAC3102BCC802E003BD9A0 /* green-book.png */; };
 		3CD5026E2BCAF5D300AC2EB1 /* FlashCartaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */; };
 		3CD5027B2BCAF8A600AC2EB1 /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */; };
 		3CD5027C2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5027A2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift */; };
@@ -23,82 +20,6 @@
 		533917042BBC732900A3CBB5 /* LottieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533917032BBC732900A3CBB5 /* LottieButton.swift */; };
 		533917062BBDB32C00A3CBB5 /* word_list.csv in Resources */ = {isa = PBXBuildFile; fileRef = 533917052BBDB32C00A3CBB5 /* word_list.csv */; };
 		533917082BBDD8B500A3CBB5 /* AnimatedAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533917072BBDD8B500A3CBB5 /* AnimatedAnswer.swift */; };
-		533917F02BBDDE0300A3CBB5 /* wired-flat-1589-makeup-mirror.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917A32BBDDE0200A3CBB5 /* wired-flat-1589-makeup-mirror.json */; };
-		533917F12BBDDE0300A3CBB5 /* wired-flat-705-man-style-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917A42BBDDE0200A3CBB5 /* wired-flat-705-man-style-3.json */; };
-		533917F22BBDDE0300A3CBB5 /* wired-flat-274-male-and-two-female.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917A52BBDDE0200A3CBB5 /* wired-flat-274-male-and-two-female.json */; };
-		533917F32BBDDE0300A3CBB5 /* wired-flat-735-world-globe.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917A62BBDDE0200A3CBB5 /* wired-flat-735-world-globe.json */; };
-		533917F42BBDDE0300A3CBB5 /* wired-flat-1164-dog-walking.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917A72BBDDE0200A3CBB5 /* wired-flat-1164-dog-walking.json */; };
-		533917F52BBDDE0300A3CBB5 /* wired-flat-1921-parliament.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917A82BBDDE0200A3CBB5 /* wired-flat-1921-parliament.json */; };
-		533917F62BBDDE0300A3CBB5 /* wired-flat-2336-fossil-old-rock-geology.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917A92BBDDE0200A3CBB5 /* wired-flat-2336-fossil-old-rock-geology.json */; };
-		533917F72BBDDE0300A3CBB5 /* wired-flat-52-location-pin-on-square-map.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917AA2BBDDE0200A3CBB5 /* wired-flat-52-location-pin-on-square-map.json */; };
-		533917F82BBDDE0300A3CBB5 /* wired-flat-527-boy-young-men.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917AB2BBDDE0200A3CBB5 /* wired-flat-527-boy-young-men.json */; };
-		533917F92BBDDE0300A3CBB5 /* wired-flat-549-ice-cream-scoops.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917AC2BBDDE0200A3CBB5 /* wired-flat-549-ice-cream-scoops.json */; };
-		533917FA2BBDDE0300A3CBB5 /* wired-flat-755-invoice-receipt-validating-ticket.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917AD2BBDDE0200A3CBB5 /* wired-flat-755-invoice-receipt-validating-ticket.json */; };
-		533917FB2BBDDE0300A3CBB5 /* wired-flat-771-artist-painting-color-palette.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917AE2BBDDE0200A3CBB5 /* wired-flat-771-artist-painting-color-palette.json */; };
-		533917FC2BBDDE0300A3CBB5 /* wired-flat-1399-bring-forward.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917AF2BBDDE0200A3CBB5 /* wired-flat-1399-bring-forward.json */; };
-		533917FD2BBDDE0300A3CBB5 /* wired-flat-575-hotdog.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B02BBDDE0200A3CBB5 /* wired-flat-575-hotdog.json */; };
-		533917FE2BBDDE0300A3CBB5 /* wired-flat-874-car-fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B12BBDDE0200A3CBB5 /* wired-flat-874-car-fire.json */; };
-		533917FF2BBDDE0300A3CBB5 /* wired-flat-36-bulb.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B22BBDDE0200A3CBB5 /* wired-flat-36-bulb.json */; };
-		533918002BBDDE0300A3CBB5 /* wired-flat-1973-origami.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B32BBDDE0200A3CBB5 /* wired-flat-1973-origami.json */; };
-		533918012BBDDE0300A3CBB5 /* wired-flat-1170-cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B42BBDDE0200A3CBB5 /* wired-flat-1170-cat.json */; };
-		533918022BBDDE0300A3CBB5 /* wired-flat-187-suitcase.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B52BBDDE0200A3CBB5 /* wired-flat-187-suitcase.json */; };
-		533918032BBDDE0300A3CBB5 /* wired-flat-517-chocolate-bar.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B62BBDDE0200A3CBB5 /* wired-flat-517-chocolate-bar.json */; };
-		533918042BBDDE0300A3CBB5 /* wired-flat-1022-podium-conference.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B72BBDDE0200A3CBB5 /* wired-flat-1022-podium-conference.json */; };
-		533918052BBDDE0300A3CBB5 /* wired-flat-2613-calendar-subscription.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B82BBDDE0200A3CBB5 /* wired-flat-2613-calendar-subscription.json */; };
-		533918062BBDDE0300A3CBB5 /* wired-flat-797-counter.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917B92BBDDE0200A3CBB5 /* wired-flat-797-counter.json */; };
-		533918072BBDDE0300A3CBB5 /* wired-flat-683-female-customer-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917BA2BBDDE0200A3CBB5 /* wired-flat-683-female-customer-service.json */; };
-		533918082BBDDE0300A3CBB5 /* wired-flat-1834-field.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917BB2BBDDE0200A3CBB5 /* wired-flat-1834-field.json */; };
-		533918092BBDDE0300A3CBB5 /* wired-flat-447-water-drop.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917BC2BBDDE0300A3CBB5 /* wired-flat-447-water-drop.json */; };
-		5339180A2BBDDE0300A3CBB5 /* wired-flat-268-avatar-man.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917BD2BBDDE0300A3CBB5 /* wired-flat-268-avatar-man.json */; };
-		5339180B2BBDDE0300A3CBB5 /* stack_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917BE2BBDDE0300A3CBB5 /* stack_lottie.json */; };
-		5339180C2BBDDE0300A3CBB5 /* wired-flat-54-photo.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917BF2BBDDE0300A3CBB5 /* wired-flat-54-photo.json */; };
-		5339180D2BBDDE0300A3CBB5 /* wired-flat-424-question-bubble.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C02BBDDE0300A3CBB5 /* wired-flat-424-question-bubble.json */; };
-		5339180E2BBDDE0300A3CBB5 /* wired-flat-1421-rectangle.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C12BBDDE0300A3CBB5 /* wired-flat-1421-rectangle.json */; };
-		5339180F2BBDDE0300A3CBB5 /* wired-flat-199-download-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C22BBDDE0300A3CBB5 /* wired-flat-199-download-2.json */; };
-		533918102BBDDE0300A3CBB5 /* wired-flat-469-flag.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C32BBDDE0300A3CBB5 /* wired-flat-469-flag.json */; };
-		533918112BBDDE0300A3CBB5 /* wired-flat-1524-bricks-toy.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C42BBDDE0300A3CBB5 /* wired-flat-1524-bricks-toy.json */; };
-		533918122BBDDE0300A3CBB5 /* wired-flat-2525-finish-line.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C52BBDDE0300A3CBB5 /* wired-flat-2525-finish-line.json */; };
-		533918132BBDDE0300A3CBB5 /* wired-flat-604-plate-warm.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C62BBDDE0300A3CBB5 /* wired-flat-604-plate-warm.json */; };
-		533918142BBDDE0300A3CBB5 /* wired-flat-269-avatar-female.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C72BBDDE0300A3CBB5 /* wired-flat-269-avatar-female.json */; };
-		533918152BBDDE0300A3CBB5 /* wired-flat-426-brain.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C82BBDDE0300A3CBB5 /* wired-flat-426-brain.json */; };
-		533918162BBDDE0300A3CBB5 /* wired-flat-1821-night-sky-moon-stars.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917C92BBDDE0300A3CBB5 /* wired-flat-1821-night-sky-moon-stars.json */; };
-		533918172BBDDE0300A3CBB5 /* wired-flat-402-legal-balance-legal.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917CA2BBDDE0300A3CBB5 /* wired-flat-402-legal-balance-legal.json */; };
-		533918182BBDDE0300A3CBB5 /* wired-flat-804-sun.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917CB2BBDDE0300A3CBB5 /* wired-flat-804-sun.json */; };
-		533918192BBDDE0300A3CBB5 /* wired-flat-1779-treadmill.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917CC2BBDDE0300A3CBB5 /* wired-flat-1779-treadmill.json */; };
-		5339181B2BBDDE0300A3CBB5 /* wired-flat-671-male-doctor-care.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917CE2BBDDE0300A3CBB5 /* wired-flat-671-male-doctor-care.json */; };
-		5339181C2BBDDE0300A3CBB5 /* wired-flat-43-music-note.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917CF2BBDDE0300A3CBB5 /* wired-flat-43-music-note.json */; };
-		5339181D2BBDDE0300A3CBB5 /* wired-flat-2527-rised-hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D02BBDDE0300A3CBB5 /* wired-flat-2527-rised-hand.json */; };
-		5339181E2BBDDE0300A3CBB5 /* wired-flat-63-home.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D12BBDDE0300A3CBB5 /* wired-flat-63-home.json */; };
-		5339181F2BBDDE0300A3CBB5 /* wired-flat-2060-flight-seat.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D22BBDDE0300A3CBB5 /* wired-flat-2060-flight-seat.json */; };
-		533918202BBDDE0300A3CBB5 /* wired-flat-650-ballet-dancer.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D32BBDDE0300A3CBB5 /* wired-flat-650-ballet-dancer.json */; };
-		533918212BBDDE0300A3CBB5 /* wired-flat-1925-bridge.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D42BBDDE0300A3CBB5 /* wired-flat-1925-bridge.json */; };
-		533918222BBDDE0300A3CBB5 /* wired-flat-2142-history-book.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D52BBDDE0300A3CBB5 /* wired-flat-2142-history-book.json */; };
-		533918232BBDDE0300A3CBB5 /* wired-flat-1463-footman.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D62BBDDE0300A3CBB5 /* wired-flat-1463-footman.json */; };
-		533918242BBDDE0300A3CBB5 /* wired-flat-472-hourglass.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D72BBDDE0300A3CBB5 /* wired-flat-472-hourglass.json */; };
-		533918252BBDDE0300A3CBB5 /* wired-flat-1976-ruins.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D82BBDDE0300A3CBB5 /* wired-flat-1976-ruins.json */; };
-		533918262BBDDE0300A3CBB5 /* stack_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917D92BBDDE0300A3CBB5 /* stack_animation.json */; };
-		533918272BBDDE0300A3CBB5 /* wired-flat-2053-stockholm-city.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917DA2BBDDE0300A3CBB5 /* wired-flat-2053-stockholm-city.json */; };
-		533918282BBDDE0300A3CBB5 /* wired-flat-2341-religion-in-general.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917DB2BBDDE0300A3CBB5 /* wired-flat-2341-religion-in-general.json */; };
-		533918292BBDDE0300A3CBB5 /* wired-flat-846-car-site-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917DC2BBDDE0300A3CBB5 /* wired-flat-846-car-site-3.json */; };
-		5339182A2BBDDE0300A3CBB5 /* wired-flat-423-key.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917DD2BBDDE0300A3CBB5 /* wired-flat-423-key.json */; };
-		5339182B2BBDDE0300A3CBB5 /* wired-flat-106-map.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917DE2BBDDE0300A3CBB5 /* wired-flat-106-map.json */; };
-		5339182C2BBDDE0300A3CBB5 /* wired-flat-701-mustache-beard.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917DF2BBDDE0300A3CBB5 /* wired-flat-701-mustache-beard.json */; };
-		5339182D2BBDDE0300A3CBB5 /* wired-flat-1774-strenght.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E02BBDDE0300A3CBB5 /* wired-flat-1774-strenght.json */; };
-		5339182E2BBDDE0300A3CBB5 /* wired-flat-298-coins.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E12BBDDE0300A3CBB5 /* wired-flat-298-coins.json */; };
-		5339182F2BBDDE0300A3CBB5 /* wired-flat-486-school.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E22BBDDE0300A3CBB5 /* wired-flat-486-school.json */; };
-		533918302BBDDE0300A3CBB5 /* wired-flat-1510-reading-babies.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E32BBDDE0300A3CBB5 /* wired-flat-1510-reading-babies.json */; };
-		533918312BBDDE0300A3CBB5 /* wired-flat-1376-face-id.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E42BBDDE0300A3CBB5 /* wired-flat-1376-face-id.json */; };
-		533918322BBDDE0300A3CBB5 /* wired-flat-1508-breastfeeding.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E52BBDDE0300A3CBB5 /* wired-flat-1508-breastfeeding.json */; };
-		533918332BBDDE0300A3CBB5 /* wired-flat-630-couple-man-woman.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E62BBDDE0300A3CBB5 /* wired-flat-630-couple-man-woman.json */; };
-		533918342BBDDE0300A3CBB5 /* wired-flat-1529-parenting-parents-family.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E72BBDDE0300A3CBB5 /* wired-flat-1529-parenting-parents-family.json */; };
-		533918352BBDDE0300A3CBB5 /* wired-flat-1971-da-vinci.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E82BBDDE0300A3CBB5 /* wired-flat-1971-da-vinci.json */; };
-		533918362BBDDE0300A3CBB5 /* wired-flat-2139-dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917E92BBDDE0300A3CBB5 /* wired-flat-2139-dictionary.json */; };
-		533918372BBDDE0300A3CBB5 /* wired-flat-239-coffee.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917EA2BBDDE0300A3CBB5 /* wired-flat-239-coffee.json */; };
-		533918382BBDDE0300A3CBB5 /* wired-flat-411-news-newspaper.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917EB2BBDDE0300A3CBB5 /* wired-flat-411-news-newspaper.json */; };
-		533918392BBDDE0300A3CBB5 /* wired-flat-101-price-tag-dollar.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917EC2BBDDE0300A3CBB5 /* wired-flat-101-price-tag-dollar.json */; };
-		5339183A2BBDDE0300A3CBB5 /* wired-flat-1758-meter-measure.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917ED2BBDDE0300A3CBB5 /* wired-flat-1758-meter-measure.json */; };
-		5339183B2BBDDE0300A3CBB5 /* wired-flat-1478-chess-clock.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917EE2BBDDE0300A3CBB5 /* wired-flat-1478-chess-clock.json */; };
-		5339183C2BBDDE0300A3CBB5 /* wired-flat-652-old-person-walking-walker.json in Resources */ = {isa = PBXBuildFile; fileRef = 533917EF2BBDDE0300A3CBB5 /* wired-flat-652-old-person-walking-walker.json */; };
 		5339183E2BBEF3E500A3CBB5 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5339183D2BBEF3E500A3CBB5 /* ShopView.swift */; };
 		534CEDDB2BAA00AE009907FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDDA2BAA00AE009907FC /* ContentView.swift */; };
 		534CEDDD2BAA00B0009907FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534CEDDC2BAA00B0009907FC /* Assets.xcassets */; };
@@ -113,13 +34,89 @@
 		534CEE112BAB5882009907FC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE102BAB5882009907FC /* Theme.swift */; };
 		534CEE132BAC7718009907FC /* stack.png in Resources */ = {isa = PBXBuildFile; fileRef = 534CEE122BAC7718009907FC /* stack.png */; };
 		534CEE162BAC7B63009907FC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 534CEE152BAC7B63009907FC /* Lottie */; };
-		534CEE182BAC7BC0009907FC /* stack_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 534CEE172BAC7BC0009907FC /* stack_lottie.json */; };
 		534CEE1A2BAC7BDB009907FC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE192BAC7BDB009907FC /* LottieView.swift */; };
-		534CEE1C2BAC7FA1009907FC /* stack_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 534CEE1B2BAC7FA1009907FC /* stack_animation.json */; };
 		534CEE1E2BAC84C5009907FC /* StartIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE1D2BAC84C5009907FC /* StartIcon.swift */; };
 		534CEE202BAC86D7009907FC /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE1F2BAC86D7009907FC /* StatsView.swift */; };
 		534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE212BAC8D90009907FC /* SettingsView.swift */; };
 		53D78C132BB329BE005B80A6 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D78C122BB329BE005B80A6 /* ResultView.swift */; };
+		7E28F0222BE446E300F2A244 /* stack_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD32BE446E300F2A244 /* stack_animation.json */; };
+		7E28F0232BE446E300F2A244 /* stack_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD42BE446E300F2A244 /* stack_lottie.json */; };
+		7E28F0242BE446E300F2A244 /* wired-flat-36-bulb.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD52BE446E300F2A244 /* wired-flat-36-bulb.json */; };
+		7E28F0252BE446E300F2A244 /* wired-flat-43-music-note.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD62BE446E300F2A244 /* wired-flat-43-music-note.json */; };
+		7E28F0262BE446E300F2A244 /* wired-flat-52-location-pin-on-square-map.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD72BE446E300F2A244 /* wired-flat-52-location-pin-on-square-map.json */; };
+		7E28F0272BE446E300F2A244 /* wired-flat-54-photo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD82BE446E300F2A244 /* wired-flat-54-photo.json */; };
+		7E28F0282BE446E300F2A244 /* wired-flat-63-home.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD92BE446E300F2A244 /* wired-flat-63-home.json */; };
+		7E28F0292BE446E300F2A244 /* wired-flat-101-price-tag-dollar.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFDA2BE446E300F2A244 /* wired-flat-101-price-tag-dollar.json */; };
+		7E28F02A2BE446E300F2A244 /* wired-flat-106-map.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFDB2BE446E300F2A244 /* wired-flat-106-map.json */; };
+		7E28F02B2BE446E300F2A244 /* wired-flat-187-suitcase.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFDC2BE446E300F2A244 /* wired-flat-187-suitcase.json */; };
+		7E28F02C2BE446E300F2A244 /* wired-flat-199-download-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFDD2BE446E300F2A244 /* wired-flat-199-download-2.json */; };
+		7E28F02D2BE446E300F2A244 /* wired-flat-239-coffee.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFDE2BE446E300F2A244 /* wired-flat-239-coffee.json */; };
+		7E28F02E2BE446E300F2A244 /* wired-flat-268-avatar-man.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFDF2BE446E300F2A244 /* wired-flat-268-avatar-man.json */; };
+		7E28F02F2BE446E300F2A244 /* wired-flat-269-avatar-female.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE02BE446E300F2A244 /* wired-flat-269-avatar-female.json */; };
+		7E28F0302BE446E300F2A244 /* wired-flat-274-male-and-two-female.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE12BE446E300F2A244 /* wired-flat-274-male-and-two-female.json */; };
+		7E28F0312BE446E300F2A244 /* wired-flat-298-coins.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE22BE446E300F2A244 /* wired-flat-298-coins.json */; };
+		7E28F0322BE446E300F2A244 /* wired-flat-402-legal-balance-legal.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE32BE446E300F2A244 /* wired-flat-402-legal-balance-legal.json */; };
+		7E28F0332BE446E300F2A244 /* wired-flat-411-news-newspaper.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE42BE446E300F2A244 /* wired-flat-411-news-newspaper.json */; };
+		7E28F0342BE446E300F2A244 /* wired-flat-423-key.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE52BE446E300F2A244 /* wired-flat-423-key.json */; };
+		7E28F0352BE446E300F2A244 /* wired-flat-424-question-bubble.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE62BE446E300F2A244 /* wired-flat-424-question-bubble.json */; };
+		7E28F0362BE446E300F2A244 /* wired-flat-426-brain.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE72BE446E300F2A244 /* wired-flat-426-brain.json */; };
+		7E28F0372BE446E300F2A244 /* wired-flat-447-water-drop.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE82BE446E300F2A244 /* wired-flat-447-water-drop.json */; };
+		7E28F0382BE446E300F2A244 /* wired-flat-469-flag.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFE92BE446E300F2A244 /* wired-flat-469-flag.json */; };
+		7E28F0392BE446E300F2A244 /* wired-flat-472-hourglass.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFEA2BE446E300F2A244 /* wired-flat-472-hourglass.json */; };
+		7E28F03A2BE446E300F2A244 /* wired-flat-486-school.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFEB2BE446E300F2A244 /* wired-flat-486-school.json */; };
+		7E28F03B2BE446E300F2A244 /* wired-flat-517-chocolate-bar.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFEC2BE446E300F2A244 /* wired-flat-517-chocolate-bar.json */; };
+		7E28F03C2BE446E300F2A244 /* wired-flat-527-boy-young-men.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFED2BE446E300F2A244 /* wired-flat-527-boy-young-men.json */; };
+		7E28F03D2BE446E300F2A244 /* wired-flat-549-ice-cream-scoops.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFEE2BE446E300F2A244 /* wired-flat-549-ice-cream-scoops.json */; };
+		7E28F03E2BE446E300F2A244 /* wired-flat-575-hotdog.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFEF2BE446E300F2A244 /* wired-flat-575-hotdog.json */; };
+		7E28F03F2BE446E300F2A244 /* wired-flat-604-plate-warm.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF02BE446E300F2A244 /* wired-flat-604-plate-warm.json */; };
+		7E28F0402BE446E300F2A244 /* wired-flat-630-couple-man-woman.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF12BE446E300F2A244 /* wired-flat-630-couple-man-woman.json */; };
+		7E28F0412BE446E300F2A244 /* wired-flat-650-ballet-dancer.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF22BE446E300F2A244 /* wired-flat-650-ballet-dancer.json */; };
+		7E28F0422BE446E300F2A244 /* wired-flat-652-old-person-walking-walker.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF32BE446E300F2A244 /* wired-flat-652-old-person-walking-walker.json */; };
+		7E28F0432BE446E300F2A244 /* wired-flat-671-male-doctor-care.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF42BE446E300F2A244 /* wired-flat-671-male-doctor-care.json */; };
+		7E28F0442BE446E300F2A244 /* wired-flat-683-female-customer-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF52BE446E300F2A244 /* wired-flat-683-female-customer-service.json */; };
+		7E28F0452BE446E300F2A244 /* wired-flat-693-singer-vocalist.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF62BE446E300F2A244 /* wired-flat-693-singer-vocalist.json */; };
+		7E28F0462BE446E300F2A244 /* wired-flat-701-mustache-beard.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF72BE446E300F2A244 /* wired-flat-701-mustache-beard.json */; };
+		7E28F0472BE446E300F2A244 /* wired-flat-705-man-style-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF82BE446E300F2A244 /* wired-flat-705-man-style-3.json */; };
+		7E28F0482BE446E300F2A244 /* wired-flat-735-world-globe.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFF92BE446E300F2A244 /* wired-flat-735-world-globe.json */; };
+		7E28F0492BE446E300F2A244 /* wired-flat-755-invoice-receipt-validating-ticket.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFFA2BE446E300F2A244 /* wired-flat-755-invoice-receipt-validating-ticket.json */; };
+		7E28F04A2BE446E300F2A244 /* wired-flat-771-artist-painting-color-palette.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFFB2BE446E300F2A244 /* wired-flat-771-artist-painting-color-palette.json */; };
+		7E28F04B2BE446E300F2A244 /* wired-flat-797-counter.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFFC2BE446E300F2A244 /* wired-flat-797-counter.json */; };
+		7E28F04C2BE446E300F2A244 /* wired-flat-804-sun.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFFD2BE446E300F2A244 /* wired-flat-804-sun.json */; };
+		7E28F04D2BE446E300F2A244 /* wired-flat-846-car-site-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFFE2BE446E300F2A244 /* wired-flat-846-car-site-3.json */; };
+		7E28F04E2BE446E300F2A244 /* wired-flat-874-car-fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFFF2BE446E300F2A244 /* wired-flat-874-car-fire.json */; };
+		7E28F04F2BE446E300F2A244 /* wired-flat-1022-podium-conference.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0002BE446E300F2A244 /* wired-flat-1022-podium-conference.json */; };
+		7E28F0502BE446E300F2A244 /* wired-flat-1164-dog-walking.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0012BE446E300F2A244 /* wired-flat-1164-dog-walking.json */; };
+		7E28F0512BE446E300F2A244 /* wired-flat-1170-cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0022BE446E300F2A244 /* wired-flat-1170-cat.json */; };
+		7E28F0522BE446E300F2A244 /* wired-flat-1376-face-id.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0032BE446E300F2A244 /* wired-flat-1376-face-id.json */; };
+		7E28F0532BE446E300F2A244 /* wired-flat-1399-bring-forward.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0042BE446E300F2A244 /* wired-flat-1399-bring-forward.json */; };
+		7E28F0542BE446E300F2A244 /* wired-flat-1421-rectangle.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0052BE446E300F2A244 /* wired-flat-1421-rectangle.json */; };
+		7E28F0552BE446E300F2A244 /* wired-flat-1463-footman.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0062BE446E300F2A244 /* wired-flat-1463-footman.json */; };
+		7E28F0562BE446E300F2A244 /* wired-flat-1478-chess-clock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0072BE446E300F2A244 /* wired-flat-1478-chess-clock.json */; };
+		7E28F0572BE446E300F2A244 /* wired-flat-1508-breastfeeding.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0082BE446E300F2A244 /* wired-flat-1508-breastfeeding.json */; };
+		7E28F0582BE446E300F2A244 /* wired-flat-1510-reading-babies.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0092BE446E300F2A244 /* wired-flat-1510-reading-babies.json */; };
+		7E28F0592BE446E300F2A244 /* wired-flat-1524-bricks-toy.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F00A2BE446E300F2A244 /* wired-flat-1524-bricks-toy.json */; };
+		7E28F05A2BE446E300F2A244 /* wired-flat-1529-parenting-parents-family.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F00B2BE446E300F2A244 /* wired-flat-1529-parenting-parents-family.json */; };
+		7E28F05B2BE446E300F2A244 /* wired-flat-1589-makeup-mirror.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F00C2BE446E300F2A244 /* wired-flat-1589-makeup-mirror.json */; };
+		7E28F05C2BE446E300F2A244 /* wired-flat-1609-bungalow.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F00D2BE446E300F2A244 /* wired-flat-1609-bungalow.json */; };
+		7E28F05D2BE446E300F2A244 /* wired-flat-1758-meter-measure.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F00E2BE446E300F2A244 /* wired-flat-1758-meter-measure.json */; };
+		7E28F05E2BE446E300F2A244 /* wired-flat-1774-strenght.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F00F2BE446E300F2A244 /* wired-flat-1774-strenght.json */; };
+		7E28F05F2BE446E300F2A244 /* wired-flat-1779-treadmill.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0102BE446E300F2A244 /* wired-flat-1779-treadmill.json */; };
+		7E28F0602BE446E300F2A244 /* wired-flat-1821-night-sky-moon-stars.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0112BE446E300F2A244 /* wired-flat-1821-night-sky-moon-stars.json */; };
+		7E28F0612BE446E300F2A244 /* wired-flat-1834-field.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0122BE446E300F2A244 /* wired-flat-1834-field.json */; };
+		7E28F0622BE446E300F2A244 /* wired-flat-1921-parliament.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0132BE446E300F2A244 /* wired-flat-1921-parliament.json */; };
+		7E28F0632BE446E300F2A244 /* wired-flat-1925-bridge.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0142BE446E300F2A244 /* wired-flat-1925-bridge.json */; };
+		7E28F0642BE446E300F2A244 /* wired-flat-1971-da-vinci.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0152BE446E300F2A244 /* wired-flat-1971-da-vinci.json */; };
+		7E28F0652BE446E300F2A244 /* wired-flat-1973-origami.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0162BE446E300F2A244 /* wired-flat-1973-origami.json */; };
+		7E28F0662BE446E300F2A244 /* wired-flat-1976-ruins.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0172BE446E300F2A244 /* wired-flat-1976-ruins.json */; };
+		7E28F0672BE446E300F2A244 /* wired-flat-2053-stockholm-city.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0182BE446E300F2A244 /* wired-flat-2053-stockholm-city.json */; };
+		7E28F0682BE446E300F2A244 /* wired-flat-2060-flight-seat.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0192BE446E300F2A244 /* wired-flat-2060-flight-seat.json */; };
+		7E28F0692BE446E300F2A244 /* wired-flat-2139-dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F01A2BE446E300F2A244 /* wired-flat-2139-dictionary.json */; };
+		7E28F06A2BE446E300F2A244 /* wired-flat-2142-history-book.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F01B2BE446E300F2A244 /* wired-flat-2142-history-book.json */; };
+		7E28F06B2BE446E300F2A244 /* wired-flat-2336-fossil-old-rock-geology.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F01C2BE446E300F2A244 /* wired-flat-2336-fossil-old-rock-geology.json */; };
+		7E28F06C2BE446E300F2A244 /* wired-flat-2341-religion-in-general.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F01D2BE446E300F2A244 /* wired-flat-2341-religion-in-general.json */; };
+		7E28F06D2BE446E300F2A244 /* wired-flat-2525-finish-line.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F01E2BE446E300F2A244 /* wired-flat-2525-finish-line.json */; };
+		7E28F06E2BE446E300F2A244 /* wired-flat-2527-rised-hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F01F2BE446E300F2A244 /* wired-flat-2527-rised-hand.json */; };
+		7E28F06F2BE446E300F2A244 /* wired-flat-2613-calendar-subscription.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0202BE446E300F2A244 /* wired-flat-2613-calendar-subscription.json */; };
 		7EA97B9F2BE4330100ED5529 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -130,9 +127,6 @@
 		3C3FB1FF2BD16FCB006ADDDB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		3C3FB2012BD17C49006ADDDB /* PurchaseSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSuccessView.swift; sourceTree = "<group>"; };
 		3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		3CBAC3092BCC759C003BD9A0 /* wired-flat-693-singer-vocalist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wired-flat-693-singer-vocalist.json"; path = "../../../../Downloads/wired-flat-693-singer-vocalist.json"; sourceTree = "<group>"; };
-		3CBAC30B2BCC7E48003BD9A0 /* wired-flat-112-book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wired-flat-112-book.json"; path = "../../../../Downloads/wired-flat-112-book.json"; sourceTree = "<group>"; };
-		3CBAC3102BCC802E003BD9A0 /* green-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green-book.png"; path = "../../../Downloads/green-book.png"; sourceTree = "<group>"; };
 		3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCartaApp.swift; sourceTree = "<group>"; };
 		3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3CD5027A2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -141,82 +135,6 @@
 		533917032BBC732900A3CBB5 /* LottieButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieButton.swift; sourceTree = "<group>"; };
 		533917052BBDB32C00A3CBB5 /* word_list.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = word_list.csv; sourceTree = "<group>"; };
 		533917072BBDD8B500A3CBB5 /* AnimatedAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAnswer.swift; sourceTree = "<group>"; };
-		533917A32BBDDE0200A3CBB5 /* wired-flat-1589-makeup-mirror.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1589-makeup-mirror.json"; sourceTree = "<group>"; };
-		533917A42BBDDE0200A3CBB5 /* wired-flat-705-man-style-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-705-man-style-3.json"; sourceTree = "<group>"; };
-		533917A52BBDDE0200A3CBB5 /* wired-flat-274-male-and-two-female.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-274-male-and-two-female.json"; sourceTree = "<group>"; };
-		533917A62BBDDE0200A3CBB5 /* wired-flat-735-world-globe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-735-world-globe.json"; sourceTree = "<group>"; };
-		533917A72BBDDE0200A3CBB5 /* wired-flat-1164-dog-walking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1164-dog-walking.json"; sourceTree = "<group>"; };
-		533917A82BBDDE0200A3CBB5 /* wired-flat-1921-parliament.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1921-parliament.json"; sourceTree = "<group>"; };
-		533917A92BBDDE0200A3CBB5 /* wired-flat-2336-fossil-old-rock-geology.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2336-fossil-old-rock-geology.json"; sourceTree = "<group>"; };
-		533917AA2BBDDE0200A3CBB5 /* wired-flat-52-location-pin-on-square-map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-52-location-pin-on-square-map.json"; sourceTree = "<group>"; };
-		533917AB2BBDDE0200A3CBB5 /* wired-flat-527-boy-young-men.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-527-boy-young-men.json"; sourceTree = "<group>"; };
-		533917AC2BBDDE0200A3CBB5 /* wired-flat-549-ice-cream-scoops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-549-ice-cream-scoops.json"; sourceTree = "<group>"; };
-		533917AD2BBDDE0200A3CBB5 /* wired-flat-755-invoice-receipt-validating-ticket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-755-invoice-receipt-validating-ticket.json"; sourceTree = "<group>"; };
-		533917AE2BBDDE0200A3CBB5 /* wired-flat-771-artist-painting-color-palette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-771-artist-painting-color-palette.json"; sourceTree = "<group>"; };
-		533917AF2BBDDE0200A3CBB5 /* wired-flat-1399-bring-forward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1399-bring-forward.json"; sourceTree = "<group>"; };
-		533917B02BBDDE0200A3CBB5 /* wired-flat-575-hotdog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-575-hotdog.json"; sourceTree = "<group>"; };
-		533917B12BBDDE0200A3CBB5 /* wired-flat-874-car-fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-874-car-fire.json"; sourceTree = "<group>"; };
-		533917B22BBDDE0200A3CBB5 /* wired-flat-36-bulb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-36-bulb.json"; sourceTree = "<group>"; };
-		533917B32BBDDE0200A3CBB5 /* wired-flat-1973-origami.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1973-origami.json"; sourceTree = "<group>"; };
-		533917B42BBDDE0200A3CBB5 /* wired-flat-1170-cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1170-cat.json"; sourceTree = "<group>"; };
-		533917B52BBDDE0200A3CBB5 /* wired-flat-187-suitcase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-187-suitcase.json"; sourceTree = "<group>"; };
-		533917B62BBDDE0200A3CBB5 /* wired-flat-517-chocolate-bar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-517-chocolate-bar.json"; sourceTree = "<group>"; };
-		533917B72BBDDE0200A3CBB5 /* wired-flat-1022-podium-conference.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1022-podium-conference.json"; sourceTree = "<group>"; };
-		533917B82BBDDE0200A3CBB5 /* wired-flat-2613-calendar-subscription.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2613-calendar-subscription.json"; sourceTree = "<group>"; };
-		533917B92BBDDE0200A3CBB5 /* wired-flat-797-counter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-797-counter.json"; sourceTree = "<group>"; };
-		533917BA2BBDDE0200A3CBB5 /* wired-flat-683-female-customer-service.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-683-female-customer-service.json"; sourceTree = "<group>"; };
-		533917BB2BBDDE0200A3CBB5 /* wired-flat-1834-field.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1834-field.json"; sourceTree = "<group>"; };
-		533917BC2BBDDE0300A3CBB5 /* wired-flat-447-water-drop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-447-water-drop.json"; sourceTree = "<group>"; };
-		533917BD2BBDDE0300A3CBB5 /* wired-flat-268-avatar-man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-268-avatar-man.json"; sourceTree = "<group>"; };
-		533917BE2BBDDE0300A3CBB5 /* stack_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_lottie.json; sourceTree = "<group>"; };
-		533917BF2BBDDE0300A3CBB5 /* wired-flat-54-photo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-54-photo.json"; sourceTree = "<group>"; };
-		533917C02BBDDE0300A3CBB5 /* wired-flat-424-question-bubble.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-424-question-bubble.json"; sourceTree = "<group>"; };
-		533917C12BBDDE0300A3CBB5 /* wired-flat-1421-rectangle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1421-rectangle.json"; sourceTree = "<group>"; };
-		533917C22BBDDE0300A3CBB5 /* wired-flat-199-download-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-199-download-2.json"; sourceTree = "<group>"; };
-		533917C32BBDDE0300A3CBB5 /* wired-flat-469-flag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-469-flag.json"; sourceTree = "<group>"; };
-		533917C42BBDDE0300A3CBB5 /* wired-flat-1524-bricks-toy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1524-bricks-toy.json"; sourceTree = "<group>"; };
-		533917C52BBDDE0300A3CBB5 /* wired-flat-2525-finish-line.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2525-finish-line.json"; sourceTree = "<group>"; };
-		533917C62BBDDE0300A3CBB5 /* wired-flat-604-plate-warm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-604-plate-warm.json"; sourceTree = "<group>"; };
-		533917C72BBDDE0300A3CBB5 /* wired-flat-269-avatar-female.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-269-avatar-female.json"; sourceTree = "<group>"; };
-		533917C82BBDDE0300A3CBB5 /* wired-flat-426-brain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-426-brain.json"; sourceTree = "<group>"; };
-		533917C92BBDDE0300A3CBB5 /* wired-flat-1821-night-sky-moon-stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1821-night-sky-moon-stars.json"; sourceTree = "<group>"; };
-		533917CA2BBDDE0300A3CBB5 /* wired-flat-402-legal-balance-legal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-402-legal-balance-legal.json"; sourceTree = "<group>"; };
-		533917CB2BBDDE0300A3CBB5 /* wired-flat-804-sun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-804-sun.json"; sourceTree = "<group>"; };
-		533917CC2BBDDE0300A3CBB5 /* wired-flat-1779-treadmill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1779-treadmill.json"; sourceTree = "<group>"; };
-		533917CE2BBDDE0300A3CBB5 /* wired-flat-671-male-doctor-care.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-671-male-doctor-care.json"; sourceTree = "<group>"; };
-		533917CF2BBDDE0300A3CBB5 /* wired-flat-43-music-note.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-43-music-note.json"; sourceTree = "<group>"; };
-		533917D02BBDDE0300A3CBB5 /* wired-flat-2527-rised-hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2527-rised-hand.json"; sourceTree = "<group>"; };
-		533917D12BBDDE0300A3CBB5 /* wired-flat-63-home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-63-home.json"; sourceTree = "<group>"; };
-		533917D22BBDDE0300A3CBB5 /* wired-flat-2060-flight-seat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2060-flight-seat.json"; sourceTree = "<group>"; };
-		533917D32BBDDE0300A3CBB5 /* wired-flat-650-ballet-dancer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-650-ballet-dancer.json"; sourceTree = "<group>"; };
-		533917D42BBDDE0300A3CBB5 /* wired-flat-1925-bridge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1925-bridge.json"; sourceTree = "<group>"; };
-		533917D52BBDDE0300A3CBB5 /* wired-flat-2142-history-book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2142-history-book.json"; sourceTree = "<group>"; };
-		533917D62BBDDE0300A3CBB5 /* wired-flat-1463-footman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1463-footman.json"; sourceTree = "<group>"; };
-		533917D72BBDDE0300A3CBB5 /* wired-flat-472-hourglass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-472-hourglass.json"; sourceTree = "<group>"; };
-		533917D82BBDDE0300A3CBB5 /* wired-flat-1976-ruins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1976-ruins.json"; sourceTree = "<group>"; };
-		533917D92BBDDE0300A3CBB5 /* stack_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_animation.json; sourceTree = "<group>"; };
-		533917DA2BBDDE0300A3CBB5 /* wired-flat-2053-stockholm-city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2053-stockholm-city.json"; sourceTree = "<group>"; };
-		533917DB2BBDDE0300A3CBB5 /* wired-flat-2341-religion-in-general.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2341-religion-in-general.json"; sourceTree = "<group>"; };
-		533917DC2BBDDE0300A3CBB5 /* wired-flat-846-car-site-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-846-car-site-3.json"; sourceTree = "<group>"; };
-		533917DD2BBDDE0300A3CBB5 /* wired-flat-423-key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-423-key.json"; sourceTree = "<group>"; };
-		533917DE2BBDDE0300A3CBB5 /* wired-flat-106-map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-106-map.json"; sourceTree = "<group>"; };
-		533917DF2BBDDE0300A3CBB5 /* wired-flat-701-mustache-beard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-701-mustache-beard.json"; sourceTree = "<group>"; };
-		533917E02BBDDE0300A3CBB5 /* wired-flat-1774-strenght.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1774-strenght.json"; sourceTree = "<group>"; };
-		533917E12BBDDE0300A3CBB5 /* wired-flat-298-coins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-298-coins.json"; sourceTree = "<group>"; };
-		533917E22BBDDE0300A3CBB5 /* wired-flat-486-school.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-486-school.json"; sourceTree = "<group>"; };
-		533917E32BBDDE0300A3CBB5 /* wired-flat-1510-reading-babies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1510-reading-babies.json"; sourceTree = "<group>"; };
-		533917E42BBDDE0300A3CBB5 /* wired-flat-1376-face-id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1376-face-id.json"; sourceTree = "<group>"; };
-		533917E52BBDDE0300A3CBB5 /* wired-flat-1508-breastfeeding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1508-breastfeeding.json"; sourceTree = "<group>"; };
-		533917E62BBDDE0300A3CBB5 /* wired-flat-630-couple-man-woman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-630-couple-man-woman.json"; sourceTree = "<group>"; };
-		533917E72BBDDE0300A3CBB5 /* wired-flat-1529-parenting-parents-family.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1529-parenting-parents-family.json"; sourceTree = "<group>"; };
-		533917E82BBDDE0300A3CBB5 /* wired-flat-1971-da-vinci.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1971-da-vinci.json"; sourceTree = "<group>"; };
-		533917E92BBDDE0300A3CBB5 /* wired-flat-2139-dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2139-dictionary.json"; sourceTree = "<group>"; };
-		533917EA2BBDDE0300A3CBB5 /* wired-flat-239-coffee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-239-coffee.json"; sourceTree = "<group>"; };
-		533917EB2BBDDE0300A3CBB5 /* wired-flat-411-news-newspaper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-411-news-newspaper.json"; sourceTree = "<group>"; };
-		533917EC2BBDDE0300A3CBB5 /* wired-flat-101-price-tag-dollar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-101-price-tag-dollar.json"; sourceTree = "<group>"; };
-		533917ED2BBDDE0300A3CBB5 /* wired-flat-1758-meter-measure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1758-meter-measure.json"; sourceTree = "<group>"; };
-		533917EE2BBDDE0300A3CBB5 /* wired-flat-1478-chess-clock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1478-chess-clock.json"; sourceTree = "<group>"; };
-		533917EF2BBDDE0300A3CBB5 /* wired-flat-652-old-person-walking-walker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-652-old-person-walking-walker.json"; sourceTree = "<group>"; };
 		5339183D2BBEF3E500A3CBB5 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		534CEDD52BAA00AE009907FC /* FlashCarta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCarta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534CEDDA2BAA00AE009907FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -231,13 +149,89 @@
 		534CEE0E2BAB0D34009907FC /* SoundUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundUtility.swift; sourceTree = "<group>"; };
 		534CEE102BAB5882009907FC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		534CEE122BAC7718009907FC /* stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stack.png; sourceTree = "<group>"; };
-		534CEE172BAC7BC0009907FC /* stack_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_lottie.json; sourceTree = "<group>"; };
 		534CEE192BAC7BDB009907FC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		534CEE1B2BAC7FA1009907FC /* stack_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_animation.json; sourceTree = "<group>"; };
 		534CEE1D2BAC84C5009907FC /* StartIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartIcon.swift; sourceTree = "<group>"; };
 		534CEE1F2BAC86D7009907FC /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		534CEE212BAC8D90009907FC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		53D78C122BB329BE005B80A6 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7E28EFD32BE446E300F2A244 /* stack_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_animation.json; sourceTree = "<group>"; };
+		7E28EFD42BE446E300F2A244 /* stack_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_lottie.json; sourceTree = "<group>"; };
+		7E28EFD52BE446E300F2A244 /* wired-flat-36-bulb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-36-bulb.json"; sourceTree = "<group>"; };
+		7E28EFD62BE446E300F2A244 /* wired-flat-43-music-note.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-43-music-note.json"; sourceTree = "<group>"; };
+		7E28EFD72BE446E300F2A244 /* wired-flat-52-location-pin-on-square-map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-52-location-pin-on-square-map.json"; sourceTree = "<group>"; };
+		7E28EFD82BE446E300F2A244 /* wired-flat-54-photo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-54-photo.json"; sourceTree = "<group>"; };
+		7E28EFD92BE446E300F2A244 /* wired-flat-63-home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-63-home.json"; sourceTree = "<group>"; };
+		7E28EFDA2BE446E300F2A244 /* wired-flat-101-price-tag-dollar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-101-price-tag-dollar.json"; sourceTree = "<group>"; };
+		7E28EFDB2BE446E300F2A244 /* wired-flat-106-map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-106-map.json"; sourceTree = "<group>"; };
+		7E28EFDC2BE446E300F2A244 /* wired-flat-187-suitcase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-187-suitcase.json"; sourceTree = "<group>"; };
+		7E28EFDD2BE446E300F2A244 /* wired-flat-199-download-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-199-download-2.json"; sourceTree = "<group>"; };
+		7E28EFDE2BE446E300F2A244 /* wired-flat-239-coffee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-239-coffee.json"; sourceTree = "<group>"; };
+		7E28EFDF2BE446E300F2A244 /* wired-flat-268-avatar-man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-268-avatar-man.json"; sourceTree = "<group>"; };
+		7E28EFE02BE446E300F2A244 /* wired-flat-269-avatar-female.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-269-avatar-female.json"; sourceTree = "<group>"; };
+		7E28EFE12BE446E300F2A244 /* wired-flat-274-male-and-two-female.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-274-male-and-two-female.json"; sourceTree = "<group>"; };
+		7E28EFE22BE446E300F2A244 /* wired-flat-298-coins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-298-coins.json"; sourceTree = "<group>"; };
+		7E28EFE32BE446E300F2A244 /* wired-flat-402-legal-balance-legal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-402-legal-balance-legal.json"; sourceTree = "<group>"; };
+		7E28EFE42BE446E300F2A244 /* wired-flat-411-news-newspaper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-411-news-newspaper.json"; sourceTree = "<group>"; };
+		7E28EFE52BE446E300F2A244 /* wired-flat-423-key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-423-key.json"; sourceTree = "<group>"; };
+		7E28EFE62BE446E300F2A244 /* wired-flat-424-question-bubble.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-424-question-bubble.json"; sourceTree = "<group>"; };
+		7E28EFE72BE446E300F2A244 /* wired-flat-426-brain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-426-brain.json"; sourceTree = "<group>"; };
+		7E28EFE82BE446E300F2A244 /* wired-flat-447-water-drop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-447-water-drop.json"; sourceTree = "<group>"; };
+		7E28EFE92BE446E300F2A244 /* wired-flat-469-flag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-469-flag.json"; sourceTree = "<group>"; };
+		7E28EFEA2BE446E300F2A244 /* wired-flat-472-hourglass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-472-hourglass.json"; sourceTree = "<group>"; };
+		7E28EFEB2BE446E300F2A244 /* wired-flat-486-school.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-486-school.json"; sourceTree = "<group>"; };
+		7E28EFEC2BE446E300F2A244 /* wired-flat-517-chocolate-bar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-517-chocolate-bar.json"; sourceTree = "<group>"; };
+		7E28EFED2BE446E300F2A244 /* wired-flat-527-boy-young-men.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-527-boy-young-men.json"; sourceTree = "<group>"; };
+		7E28EFEE2BE446E300F2A244 /* wired-flat-549-ice-cream-scoops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-549-ice-cream-scoops.json"; sourceTree = "<group>"; };
+		7E28EFEF2BE446E300F2A244 /* wired-flat-575-hotdog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-575-hotdog.json"; sourceTree = "<group>"; };
+		7E28EFF02BE446E300F2A244 /* wired-flat-604-plate-warm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-604-plate-warm.json"; sourceTree = "<group>"; };
+		7E28EFF12BE446E300F2A244 /* wired-flat-630-couple-man-woman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-630-couple-man-woman.json"; sourceTree = "<group>"; };
+		7E28EFF22BE446E300F2A244 /* wired-flat-650-ballet-dancer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-650-ballet-dancer.json"; sourceTree = "<group>"; };
+		7E28EFF32BE446E300F2A244 /* wired-flat-652-old-person-walking-walker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-652-old-person-walking-walker.json"; sourceTree = "<group>"; };
+		7E28EFF42BE446E300F2A244 /* wired-flat-671-male-doctor-care.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-671-male-doctor-care.json"; sourceTree = "<group>"; };
+		7E28EFF52BE446E300F2A244 /* wired-flat-683-female-customer-service.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-683-female-customer-service.json"; sourceTree = "<group>"; };
+		7E28EFF62BE446E300F2A244 /* wired-flat-693-singer-vocalist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-693-singer-vocalist.json"; sourceTree = "<group>"; };
+		7E28EFF72BE446E300F2A244 /* wired-flat-701-mustache-beard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-701-mustache-beard.json"; sourceTree = "<group>"; };
+		7E28EFF82BE446E300F2A244 /* wired-flat-705-man-style-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-705-man-style-3.json"; sourceTree = "<group>"; };
+		7E28EFF92BE446E300F2A244 /* wired-flat-735-world-globe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-735-world-globe.json"; sourceTree = "<group>"; };
+		7E28EFFA2BE446E300F2A244 /* wired-flat-755-invoice-receipt-validating-ticket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-755-invoice-receipt-validating-ticket.json"; sourceTree = "<group>"; };
+		7E28EFFB2BE446E300F2A244 /* wired-flat-771-artist-painting-color-palette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-771-artist-painting-color-palette.json"; sourceTree = "<group>"; };
+		7E28EFFC2BE446E300F2A244 /* wired-flat-797-counter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-797-counter.json"; sourceTree = "<group>"; };
+		7E28EFFD2BE446E300F2A244 /* wired-flat-804-sun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-804-sun.json"; sourceTree = "<group>"; };
+		7E28EFFE2BE446E300F2A244 /* wired-flat-846-car-site-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-846-car-site-3.json"; sourceTree = "<group>"; };
+		7E28EFFF2BE446E300F2A244 /* wired-flat-874-car-fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-874-car-fire.json"; sourceTree = "<group>"; };
+		7E28F0002BE446E300F2A244 /* wired-flat-1022-podium-conference.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1022-podium-conference.json"; sourceTree = "<group>"; };
+		7E28F0012BE446E300F2A244 /* wired-flat-1164-dog-walking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1164-dog-walking.json"; sourceTree = "<group>"; };
+		7E28F0022BE446E300F2A244 /* wired-flat-1170-cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1170-cat.json"; sourceTree = "<group>"; };
+		7E28F0032BE446E300F2A244 /* wired-flat-1376-face-id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1376-face-id.json"; sourceTree = "<group>"; };
+		7E28F0042BE446E300F2A244 /* wired-flat-1399-bring-forward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1399-bring-forward.json"; sourceTree = "<group>"; };
+		7E28F0052BE446E300F2A244 /* wired-flat-1421-rectangle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1421-rectangle.json"; sourceTree = "<group>"; };
+		7E28F0062BE446E300F2A244 /* wired-flat-1463-footman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1463-footman.json"; sourceTree = "<group>"; };
+		7E28F0072BE446E300F2A244 /* wired-flat-1478-chess-clock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1478-chess-clock.json"; sourceTree = "<group>"; };
+		7E28F0082BE446E300F2A244 /* wired-flat-1508-breastfeeding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1508-breastfeeding.json"; sourceTree = "<group>"; };
+		7E28F0092BE446E300F2A244 /* wired-flat-1510-reading-babies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1510-reading-babies.json"; sourceTree = "<group>"; };
+		7E28F00A2BE446E300F2A244 /* wired-flat-1524-bricks-toy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1524-bricks-toy.json"; sourceTree = "<group>"; };
+		7E28F00B2BE446E300F2A244 /* wired-flat-1529-parenting-parents-family.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1529-parenting-parents-family.json"; sourceTree = "<group>"; };
+		7E28F00C2BE446E300F2A244 /* wired-flat-1589-makeup-mirror.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1589-makeup-mirror.json"; sourceTree = "<group>"; };
+		7E28F00D2BE446E300F2A244 /* wired-flat-1609-bungalow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1609-bungalow.json"; sourceTree = "<group>"; };
+		7E28F00E2BE446E300F2A244 /* wired-flat-1758-meter-measure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1758-meter-measure.json"; sourceTree = "<group>"; };
+		7E28F00F2BE446E300F2A244 /* wired-flat-1774-strenght.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1774-strenght.json"; sourceTree = "<group>"; };
+		7E28F0102BE446E300F2A244 /* wired-flat-1779-treadmill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1779-treadmill.json"; sourceTree = "<group>"; };
+		7E28F0112BE446E300F2A244 /* wired-flat-1821-night-sky-moon-stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1821-night-sky-moon-stars.json"; sourceTree = "<group>"; };
+		7E28F0122BE446E300F2A244 /* wired-flat-1834-field.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1834-field.json"; sourceTree = "<group>"; };
+		7E28F0132BE446E300F2A244 /* wired-flat-1921-parliament.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1921-parliament.json"; sourceTree = "<group>"; };
+		7E28F0142BE446E300F2A244 /* wired-flat-1925-bridge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1925-bridge.json"; sourceTree = "<group>"; };
+		7E28F0152BE446E300F2A244 /* wired-flat-1971-da-vinci.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1971-da-vinci.json"; sourceTree = "<group>"; };
+		7E28F0162BE446E300F2A244 /* wired-flat-1973-origami.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1973-origami.json"; sourceTree = "<group>"; };
+		7E28F0172BE446E300F2A244 /* wired-flat-1976-ruins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-1976-ruins.json"; sourceTree = "<group>"; };
+		7E28F0182BE446E300F2A244 /* wired-flat-2053-stockholm-city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2053-stockholm-city.json"; sourceTree = "<group>"; };
+		7E28F0192BE446E300F2A244 /* wired-flat-2060-flight-seat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2060-flight-seat.json"; sourceTree = "<group>"; };
+		7E28F01A2BE446E300F2A244 /* wired-flat-2139-dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2139-dictionary.json"; sourceTree = "<group>"; };
+		7E28F01B2BE446E300F2A244 /* wired-flat-2142-history-book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2142-history-book.json"; sourceTree = "<group>"; };
+		7E28F01C2BE446E300F2A244 /* wired-flat-2336-fossil-old-rock-geology.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2336-fossil-old-rock-geology.json"; sourceTree = "<group>"; };
+		7E28F01D2BE446E300F2A244 /* wired-flat-2341-religion-in-general.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2341-religion-in-general.json"; sourceTree = "<group>"; };
+		7E28F01E2BE446E300F2A244 /* wired-flat-2525-finish-line.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2525-finish-line.json"; sourceTree = "<group>"; };
+		7E28F01F2BE446E300F2A244 /* wired-flat-2527-rised-hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2527-rised-hand.json"; sourceTree = "<group>"; };
+		7E28F0202BE446E300F2A244 /* wired-flat-2613-calendar-subscription.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2613-calendar-subscription.json"; sourceTree = "<group>"; };
 		7EA97B9E2BE4330100ED5529 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,93 +277,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		533916FE2BBC4ED100A3CBB5 /* lottie */ = {
-			isa = PBXGroup;
-			children = (
-				3CBAC30B2BCC7E48003BD9A0 /* wired-flat-112-book.json */,
-				533917D92BBDDE0300A3CBB5 /* stack_animation.json */,
-				533917BE2BBDDE0300A3CBB5 /* stack_lottie.json */,
-				533917B22BBDDE0200A3CBB5 /* wired-flat-36-bulb.json */,
-				533917CF2BBDDE0300A3CBB5 /* wired-flat-43-music-note.json */,
-				533917AA2BBDDE0200A3CBB5 /* wired-flat-52-location-pin-on-square-map.json */,
-				533917BF2BBDDE0300A3CBB5 /* wired-flat-54-photo.json */,
-				533917D12BBDDE0300A3CBB5 /* wired-flat-63-home.json */,
-				533917EC2BBDDE0300A3CBB5 /* wired-flat-101-price-tag-dollar.json */,
-				533917DE2BBDDE0300A3CBB5 /* wired-flat-106-map.json */,
-				533917B52BBDDE0200A3CBB5 /* wired-flat-187-suitcase.json */,
-				533917C22BBDDE0300A3CBB5 /* wired-flat-199-download-2.json */,
-				533917EA2BBDDE0300A3CBB5 /* wired-flat-239-coffee.json */,
-				533917BD2BBDDE0300A3CBB5 /* wired-flat-268-avatar-man.json */,
-				533917C72BBDDE0300A3CBB5 /* wired-flat-269-avatar-female.json */,
-				533917A52BBDDE0200A3CBB5 /* wired-flat-274-male-and-two-female.json */,
-				533917E12BBDDE0300A3CBB5 /* wired-flat-298-coins.json */,
-				533917CA2BBDDE0300A3CBB5 /* wired-flat-402-legal-balance-legal.json */,
-				533917EB2BBDDE0300A3CBB5 /* wired-flat-411-news-newspaper.json */,
-				3CBAC3092BCC759C003BD9A0 /* wired-flat-693-singer-vocalist.json */,
-				533917DD2BBDDE0300A3CBB5 /* wired-flat-423-key.json */,
-				533917C02BBDDE0300A3CBB5 /* wired-flat-424-question-bubble.json */,
-				533917C82BBDDE0300A3CBB5 /* wired-flat-426-brain.json */,
-				533917BC2BBDDE0300A3CBB5 /* wired-flat-447-water-drop.json */,
-				533917C32BBDDE0300A3CBB5 /* wired-flat-469-flag.json */,
-				533917D72BBDDE0300A3CBB5 /* wired-flat-472-hourglass.json */,
-				533917E22BBDDE0300A3CBB5 /* wired-flat-486-school.json */,
-				533917B62BBDDE0200A3CBB5 /* wired-flat-517-chocolate-bar.json */,
-				533917AB2BBDDE0200A3CBB5 /* wired-flat-527-boy-young-men.json */,
-				533917AC2BBDDE0200A3CBB5 /* wired-flat-549-ice-cream-scoops.json */,
-				533917B02BBDDE0200A3CBB5 /* wired-flat-575-hotdog.json */,
-				533917C62BBDDE0300A3CBB5 /* wired-flat-604-plate-warm.json */,
-				533917E62BBDDE0300A3CBB5 /* wired-flat-630-couple-man-woman.json */,
-				533917D32BBDDE0300A3CBB5 /* wired-flat-650-ballet-dancer.json */,
-				533917EF2BBDDE0300A3CBB5 /* wired-flat-652-old-person-walking-walker.json */,
-				533917CE2BBDDE0300A3CBB5 /* wired-flat-671-male-doctor-care.json */,
-				533917BA2BBDDE0200A3CBB5 /* wired-flat-683-female-customer-service.json */,
-				533917DF2BBDDE0300A3CBB5 /* wired-flat-701-mustache-beard.json */,
-				533917A42BBDDE0200A3CBB5 /* wired-flat-705-man-style-3.json */,
-				533917A62BBDDE0200A3CBB5 /* wired-flat-735-world-globe.json */,
-				533917AD2BBDDE0200A3CBB5 /* wired-flat-755-invoice-receipt-validating-ticket.json */,
-				533917AE2BBDDE0200A3CBB5 /* wired-flat-771-artist-painting-color-palette.json */,
-				533917B92BBDDE0200A3CBB5 /* wired-flat-797-counter.json */,
-				533917CB2BBDDE0300A3CBB5 /* wired-flat-804-sun.json */,
-				533917DC2BBDDE0300A3CBB5 /* wired-flat-846-car-site-3.json */,
-				533917B12BBDDE0200A3CBB5 /* wired-flat-874-car-fire.json */,
-				533917B72BBDDE0200A3CBB5 /* wired-flat-1022-podium-conference.json */,
-				533917A72BBDDE0200A3CBB5 /* wired-flat-1164-dog-walking.json */,
-				533917B42BBDDE0200A3CBB5 /* wired-flat-1170-cat.json */,
-				533917E42BBDDE0300A3CBB5 /* wired-flat-1376-face-id.json */,
-				533917AF2BBDDE0200A3CBB5 /* wired-flat-1399-bring-forward.json */,
-				533917C12BBDDE0300A3CBB5 /* wired-flat-1421-rectangle.json */,
-				533917D62BBDDE0300A3CBB5 /* wired-flat-1463-footman.json */,
-				533917EE2BBDDE0300A3CBB5 /* wired-flat-1478-chess-clock.json */,
-				533917E52BBDDE0300A3CBB5 /* wired-flat-1508-breastfeeding.json */,
-				533917E32BBDDE0300A3CBB5 /* wired-flat-1510-reading-babies.json */,
-				533917C42BBDDE0300A3CBB5 /* wired-flat-1524-bricks-toy.json */,
-				533917E72BBDDE0300A3CBB5 /* wired-flat-1529-parenting-parents-family.json */,
-				533917A32BBDDE0200A3CBB5 /* wired-flat-1589-makeup-mirror.json */,
-				533917ED2BBDDE0300A3CBB5 /* wired-flat-1758-meter-measure.json */,
-				533917E02BBDDE0300A3CBB5 /* wired-flat-1774-strenght.json */,
-				533917CC2BBDDE0300A3CBB5 /* wired-flat-1779-treadmill.json */,
-				533917C92BBDDE0300A3CBB5 /* wired-flat-1821-night-sky-moon-stars.json */,
-				533917BB2BBDDE0200A3CBB5 /* wired-flat-1834-field.json */,
-				533917A82BBDDE0200A3CBB5 /* wired-flat-1921-parliament.json */,
-				533917D42BBDDE0300A3CBB5 /* wired-flat-1925-bridge.json */,
-				533917E82BBDDE0300A3CBB5 /* wired-flat-1971-da-vinci.json */,
-				533917B32BBDDE0200A3CBB5 /* wired-flat-1973-origami.json */,
-				533917D82BBDDE0300A3CBB5 /* wired-flat-1976-ruins.json */,
-				533917DA2BBDDE0300A3CBB5 /* wired-flat-2053-stockholm-city.json */,
-				533917D22BBDDE0300A3CBB5 /* wired-flat-2060-flight-seat.json */,
-				533917E92BBDDE0300A3CBB5 /* wired-flat-2139-dictionary.json */,
-				533917D52BBDDE0300A3CBB5 /* wired-flat-2142-history-book.json */,
-				533917A92BBDDE0200A3CBB5 /* wired-flat-2336-fossil-old-rock-geology.json */,
-				533917DB2BBDDE0300A3CBB5 /* wired-flat-2341-religion-in-general.json */,
-				533917C52BBDDE0300A3CBB5 /* wired-flat-2525-finish-line.json */,
-				533917D02BBDDE0300A3CBB5 /* wired-flat-2527-rised-hand.json */,
-				533917B82BBDDE0200A3CBB5 /* wired-flat-2613-calendar-subscription.json */,
-				534CEE1B2BAC7FA1009907FC /* stack_animation.json */,
-				534CEE172BAC7BC0009907FC /* stack_lottie.json */,
-			);
-			path = lottie;
-			sourceTree = "<group>";
-		};
 		534CEDCC2BAA00AE009907FC = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +300,7 @@
 		534CEDD72BAA00AE009907FC /* FlashCarta */ = {
 			isa = PBXGroup;
 			children = (
+				7E28F0212BE446E300F2A244 /* lottie */,
 				3CD5027F2BCB657A00AC2EB1 /* Views */,
 				3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */,
 				534CEDF12BAA00CF009907FC /* DataController.swift */,
@@ -404,11 +312,9 @@
 				3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */,
 				533917052BBDB32C00A3CBB5 /* word_list.csv */,
 				7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */,
-				533916FE2BBC4ED100A3CBB5 /* lottie */,
 				534CEDF02BAA00CF009907FC /* book_blue.png */,
 				534CEE122BAC7718009907FC /* stack.png */,
 				534CEDDC2BAA00B0009907FC /* Assets.xcassets */,
-				3CBAC3102BCC802E003BD9A0 /* green-book.png */,
 				534CEDDE2BAA00B0009907FC /* Preview Content */,
 				3C3FB1FF2BD16FCB006ADDDB /* Store.swift */,
 			);
@@ -421,6 +327,91 @@
 				534CEDDF2BAA00B0009907FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E28F0212BE446E300F2A244 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				7E28EFD32BE446E300F2A244 /* stack_animation.json */,
+				7E28EFD42BE446E300F2A244 /* stack_lottie.json */,
+				7E28EFD52BE446E300F2A244 /* wired-flat-36-bulb.json */,
+				7E28EFD62BE446E300F2A244 /* wired-flat-43-music-note.json */,
+				7E28EFD72BE446E300F2A244 /* wired-flat-52-location-pin-on-square-map.json */,
+				7E28EFD82BE446E300F2A244 /* wired-flat-54-photo.json */,
+				7E28EFD92BE446E300F2A244 /* wired-flat-63-home.json */,
+				7E28EFDA2BE446E300F2A244 /* wired-flat-101-price-tag-dollar.json */,
+				7E28EFDB2BE446E300F2A244 /* wired-flat-106-map.json */,
+				7E28EFDC2BE446E300F2A244 /* wired-flat-187-suitcase.json */,
+				7E28EFDD2BE446E300F2A244 /* wired-flat-199-download-2.json */,
+				7E28EFDE2BE446E300F2A244 /* wired-flat-239-coffee.json */,
+				7E28EFDF2BE446E300F2A244 /* wired-flat-268-avatar-man.json */,
+				7E28EFE02BE446E300F2A244 /* wired-flat-269-avatar-female.json */,
+				7E28EFE12BE446E300F2A244 /* wired-flat-274-male-and-two-female.json */,
+				7E28EFE22BE446E300F2A244 /* wired-flat-298-coins.json */,
+				7E28EFE32BE446E300F2A244 /* wired-flat-402-legal-balance-legal.json */,
+				7E28EFE42BE446E300F2A244 /* wired-flat-411-news-newspaper.json */,
+				7E28EFE52BE446E300F2A244 /* wired-flat-423-key.json */,
+				7E28EFE62BE446E300F2A244 /* wired-flat-424-question-bubble.json */,
+				7E28EFE72BE446E300F2A244 /* wired-flat-426-brain.json */,
+				7E28EFE82BE446E300F2A244 /* wired-flat-447-water-drop.json */,
+				7E28EFE92BE446E300F2A244 /* wired-flat-469-flag.json */,
+				7E28EFEA2BE446E300F2A244 /* wired-flat-472-hourglass.json */,
+				7E28EFEB2BE446E300F2A244 /* wired-flat-486-school.json */,
+				7E28EFEC2BE446E300F2A244 /* wired-flat-517-chocolate-bar.json */,
+				7E28EFED2BE446E300F2A244 /* wired-flat-527-boy-young-men.json */,
+				7E28EFEE2BE446E300F2A244 /* wired-flat-549-ice-cream-scoops.json */,
+				7E28EFEF2BE446E300F2A244 /* wired-flat-575-hotdog.json */,
+				7E28EFF02BE446E300F2A244 /* wired-flat-604-plate-warm.json */,
+				7E28EFF12BE446E300F2A244 /* wired-flat-630-couple-man-woman.json */,
+				7E28EFF22BE446E300F2A244 /* wired-flat-650-ballet-dancer.json */,
+				7E28EFF32BE446E300F2A244 /* wired-flat-652-old-person-walking-walker.json */,
+				7E28EFF42BE446E300F2A244 /* wired-flat-671-male-doctor-care.json */,
+				7E28EFF52BE446E300F2A244 /* wired-flat-683-female-customer-service.json */,
+				7E28EFF62BE446E300F2A244 /* wired-flat-693-singer-vocalist.json */,
+				7E28EFF72BE446E300F2A244 /* wired-flat-701-mustache-beard.json */,
+				7E28EFF82BE446E300F2A244 /* wired-flat-705-man-style-3.json */,
+				7E28EFF92BE446E300F2A244 /* wired-flat-735-world-globe.json */,
+				7E28EFFA2BE446E300F2A244 /* wired-flat-755-invoice-receipt-validating-ticket.json */,
+				7E28EFFB2BE446E300F2A244 /* wired-flat-771-artist-painting-color-palette.json */,
+				7E28EFFC2BE446E300F2A244 /* wired-flat-797-counter.json */,
+				7E28EFFD2BE446E300F2A244 /* wired-flat-804-sun.json */,
+				7E28EFFE2BE446E300F2A244 /* wired-flat-846-car-site-3.json */,
+				7E28EFFF2BE446E300F2A244 /* wired-flat-874-car-fire.json */,
+				7E28F0002BE446E300F2A244 /* wired-flat-1022-podium-conference.json */,
+				7E28F0012BE446E300F2A244 /* wired-flat-1164-dog-walking.json */,
+				7E28F0022BE446E300F2A244 /* wired-flat-1170-cat.json */,
+				7E28F0032BE446E300F2A244 /* wired-flat-1376-face-id.json */,
+				7E28F0042BE446E300F2A244 /* wired-flat-1399-bring-forward.json */,
+				7E28F0052BE446E300F2A244 /* wired-flat-1421-rectangle.json */,
+				7E28F0062BE446E300F2A244 /* wired-flat-1463-footman.json */,
+				7E28F0072BE446E300F2A244 /* wired-flat-1478-chess-clock.json */,
+				7E28F0082BE446E300F2A244 /* wired-flat-1508-breastfeeding.json */,
+				7E28F0092BE446E300F2A244 /* wired-flat-1510-reading-babies.json */,
+				7E28F00A2BE446E300F2A244 /* wired-flat-1524-bricks-toy.json */,
+				7E28F00B2BE446E300F2A244 /* wired-flat-1529-parenting-parents-family.json */,
+				7E28F00C2BE446E300F2A244 /* wired-flat-1589-makeup-mirror.json */,
+				7E28F00D2BE446E300F2A244 /* wired-flat-1609-bungalow.json */,
+				7E28F00E2BE446E300F2A244 /* wired-flat-1758-meter-measure.json */,
+				7E28F00F2BE446E300F2A244 /* wired-flat-1774-strenght.json */,
+				7E28F0102BE446E300F2A244 /* wired-flat-1779-treadmill.json */,
+				7E28F0112BE446E300F2A244 /* wired-flat-1821-night-sky-moon-stars.json */,
+				7E28F0122BE446E300F2A244 /* wired-flat-1834-field.json */,
+				7E28F0132BE446E300F2A244 /* wired-flat-1921-parliament.json */,
+				7E28F0142BE446E300F2A244 /* wired-flat-1925-bridge.json */,
+				7E28F0152BE446E300F2A244 /* wired-flat-1971-da-vinci.json */,
+				7E28F0162BE446E300F2A244 /* wired-flat-1973-origami.json */,
+				7E28F0172BE446E300F2A244 /* wired-flat-1976-ruins.json */,
+				7E28F0182BE446E300F2A244 /* wired-flat-2053-stockholm-city.json */,
+				7E28F0192BE446E300F2A244 /* wired-flat-2060-flight-seat.json */,
+				7E28F01A2BE446E300F2A244 /* wired-flat-2139-dictionary.json */,
+				7E28F01B2BE446E300F2A244 /* wired-flat-2142-history-book.json */,
+				7E28F01C2BE446E300F2A244 /* wired-flat-2336-fossil-old-rock-geology.json */,
+				7E28F01D2BE446E300F2A244 /* wired-flat-2341-religion-in-general.json */,
+				7E28F01E2BE446E300F2A244 /* wired-flat-2525-finish-line.json */,
+				7E28F01F2BE446E300F2A244 /* wired-flat-2527-rised-hand.json */,
+				7E28F0202BE446E300F2A244 /* wired-flat-2613-calendar-subscription.json */,
+			);
+			path = lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,92 +478,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				534CEE182BAC7BC0009907FC /* stack_lottie.json in Resources */,
-				533917F62BBDDE0300A3CBB5 /* wired-flat-2336-fossil-old-rock-geology.json in Resources */,
-				5339181C2BBDDE0300A3CBB5 /* wired-flat-43-music-note.json in Resources */,
-				5339182E2BBDDE0300A3CBB5 /* wired-flat-298-coins.json in Resources */,
-				5339183A2BBDDE0300A3CBB5 /* wired-flat-1758-meter-measure.json in Resources */,
-				533918342BBDDE0300A3CBB5 /* wired-flat-1529-parenting-parents-family.json in Resources */,
-				533918152BBDDE0300A3CBB5 /* wired-flat-426-brain.json in Resources */,
-				5339180A2BBDDE0300A3CBB5 /* wired-flat-268-avatar-man.json in Resources */,
-				534CEE1C2BAC7FA1009907FC /* stack_animation.json in Resources */,
-				533917F52BBDDE0300A3CBB5 /* wired-flat-1921-parliament.json in Resources */,
-				3CBAC30C2BCC7E48003BD9A0 /* wired-flat-112-book.json in Resources */,
-				5339183C2BBDDE0300A3CBB5 /* wired-flat-652-old-person-walking-walker.json in Resources */,
-				5339180D2BBDDE0300A3CBB5 /* wired-flat-424-question-bubble.json in Resources */,
-				5339182A2BBDDE0300A3CBB5 /* wired-flat-423-key.json in Resources */,
-				533918072BBDDE0300A3CBB5 /* wired-flat-683-female-customer-service.json in Resources */,
-				533918252BBDDE0300A3CBB5 /* wired-flat-1976-ruins.json in Resources */,
-				533918012BBDDE0300A3CBB5 /* wired-flat-1170-cat.json in Resources */,
-				533918302BBDDE0300A3CBB5 /* wired-flat-1510-reading-babies.json in Resources */,
-				533918202BBDDE0300A3CBB5 /* wired-flat-650-ballet-dancer.json in Resources */,
-				533918082BBDDE0300A3CBB5 /* wired-flat-1834-field.json in Resources */,
-				533918042BBDDE0300A3CBB5 /* wired-flat-1022-podium-conference.json in Resources */,
-				533918002BBDDE0300A3CBB5 /* wired-flat-1973-origami.json in Resources */,
-				533918192BBDDE0300A3CBB5 /* wired-flat-1779-treadmill.json in Resources */,
-				5339181E2BBDDE0300A3CBB5 /* wired-flat-63-home.json in Resources */,
-				5339181B2BBDDE0300A3CBB5 /* wired-flat-671-male-doctor-care.json in Resources */,
-				533917F72BBDDE0300A3CBB5 /* wired-flat-52-location-pin-on-square-map.json in Resources */,
-				533918052BBDDE0300A3CBB5 /* wired-flat-2613-calendar-subscription.json in Resources */,
-				533917F22BBDDE0300A3CBB5 /* wired-flat-274-male-and-two-female.json in Resources */,
-				533917F92BBDDE0300A3CBB5 /* wired-flat-549-ice-cream-scoops.json in Resources */,
-				533918212BBDDE0300A3CBB5 /* wired-flat-1925-bridge.json in Resources */,
-				533918272BBDDE0300A3CBB5 /* wired-flat-2053-stockholm-city.json in Resources */,
-				533917FC2BBDDE0300A3CBB5 /* wired-flat-1399-bring-forward.json in Resources */,
-				533917F82BBDDE0300A3CBB5 /* wired-flat-527-boy-young-men.json in Resources */,
-				533918382BBDDE0300A3CBB5 /* wired-flat-411-news-newspaper.json in Resources */,
-				533918332BBDDE0300A3CBB5 /* wired-flat-630-couple-man-woman.json in Resources */,
+				7E28F0322BE446E300F2A244 /* wired-flat-402-legal-balance-legal.json in Resources */,
+				7E28F0432BE446E300F2A244 /* wired-flat-671-male-doctor-care.json in Resources */,
+				7E28F0292BE446E300F2A244 /* wired-flat-101-price-tag-dollar.json in Resources */,
+				7E28F0272BE446E300F2A244 /* wired-flat-54-photo.json in Resources */,
+				7E28F0542BE446E300F2A244 /* wired-flat-1421-rectangle.json in Resources */,
+				7E28F0442BE446E300F2A244 /* wired-flat-683-female-customer-service.json in Resources */,
+				7E28F04E2BE446E300F2A244 /* wired-flat-874-car-fire.json in Resources */,
+				7E28F0232BE446E300F2A244 /* stack_lottie.json in Resources */,
+				7E28F0582BE446E300F2A244 /* wired-flat-1510-reading-babies.json in Resources */,
+				7E28F02E2BE446E300F2A244 /* wired-flat-268-avatar-man.json in Resources */,
+				7E28F02A2BE446E300F2A244 /* wired-flat-106-map.json in Resources */,
+				7E28F06C2BE446E300F2A244 /* wired-flat-2341-religion-in-general.json in Resources */,
+				7E28F0382BE446E300F2A244 /* wired-flat-469-flag.json in Resources */,
 				534CEDE02BAA00B0009907FC /* Preview Assets.xcassets in Resources */,
-				533918132BBDDE0300A3CBB5 /* wired-flat-604-plate-warm.json in Resources */,
-				5339183B2BBDDE0300A3CBB5 /* wired-flat-1478-chess-clock.json in Resources */,
-				533918142BBDDE0300A3CBB5 /* wired-flat-269-avatar-female.json in Resources */,
-				533918322BBDDE0300A3CBB5 /* wired-flat-1508-breastfeeding.json in Resources */,
-				5339182C2BBDDE0300A3CBB5 /* wired-flat-701-mustache-beard.json in Resources */,
-				5339181F2BBDDE0300A3CBB5 /* wired-flat-2060-flight-seat.json in Resources */,
-				533917F32BBDDE0300A3CBB5 /* wired-flat-735-world-globe.json in Resources */,
-				533918122BBDDE0300A3CBB5 /* wired-flat-2525-finish-line.json in Resources */,
-				3CBAC30A2BCC759C003BD9A0 /* wired-flat-693-singer-vocalist.json in Resources */,
-				533918172BBDDE0300A3CBB5 /* wired-flat-402-legal-balance-legal.json in Resources */,
-				533918062BBDDE0300A3CBB5 /* wired-flat-797-counter.json in Resources */,
-				533918292BBDDE0300A3CBB5 /* wired-flat-846-car-site-3.json in Resources */,
-				533918262BBDDE0300A3CBB5 /* stack_animation.json in Resources */,
-				533917FB2BBDDE0300A3CBB5 /* wired-flat-771-artist-painting-color-palette.json in Resources */,
-				533917F02BBDDE0300A3CBB5 /* wired-flat-1589-makeup-mirror.json in Resources */,
-				533918242BBDDE0300A3CBB5 /* wired-flat-472-hourglass.json in Resources */,
-				5339182D2BBDDE0300A3CBB5 /* wired-flat-1774-strenght.json in Resources */,
+				7E28F0392BE446E300F2A244 /* wired-flat-472-hourglass.json in Resources */,
+				7E28F0682BE446E300F2A244 /* wired-flat-2060-flight-seat.json in Resources */,
+				7E28F0222BE446E300F2A244 /* stack_animation.json in Resources */,
+				7E28F03B2BE446E300F2A244 /* wired-flat-517-chocolate-bar.json in Resources */,
+				7E28F06F2BE446E300F2A244 /* wired-flat-2613-calendar-subscription.json in Resources */,
+				7E28F0652BE446E300F2A244 /* wired-flat-1973-origami.json in Resources */,
 				534CEDFD2BAA00CF009907FC /* book_blue.png in Resources */,
-				533917FA2BBDDE0300A3CBB5 /* wired-flat-755-invoice-receipt-validating-ticket.json in Resources */,
-				533918312BBDDE0300A3CBB5 /* wired-flat-1376-face-id.json in Resources */,
-				5339180F2BBDDE0300A3CBB5 /* wired-flat-199-download-2.json in Resources */,
-				533918162BBDDE0300A3CBB5 /* wired-flat-1821-night-sky-moon-stars.json in Resources */,
-				533918352BBDDE0300A3CBB5 /* wired-flat-1971-da-vinci.json in Resources */,
-				5339181D2BBDDE0300A3CBB5 /* wired-flat-2527-rised-hand.json in Resources */,
-				533918092BBDDE0300A3CBB5 /* wired-flat-447-water-drop.json in Resources */,
+				7E28F0592BE446E300F2A244 /* wired-flat-1524-bricks-toy.json in Resources */,
+				7E28F0632BE446E300F2A244 /* wired-flat-1925-bridge.json in Resources */,
+				7E28F0372BE446E300F2A244 /* wired-flat-447-water-drop.json in Resources */,
+				7E28F02F2BE446E300F2A244 /* wired-flat-269-avatar-female.json in Resources */,
+				7E28F0342BE446E300F2A244 /* wired-flat-423-key.json in Resources */,
+				7E28F0672BE446E300F2A244 /* wired-flat-2053-stockholm-city.json in Resources */,
+				7E28F0612BE446E300F2A244 /* wired-flat-1834-field.json in Resources */,
+				7E28F0482BE446E300F2A244 /* wired-flat-735-world-globe.json in Resources */,
+				7E28F05B2BE446E300F2A244 /* wired-flat-1589-makeup-mirror.json in Resources */,
 				534CEE132BAC7718009907FC /* stack.png in Resources */,
-				533917FD2BBDDE0300A3CBB5 /* wired-flat-575-hotdog.json in Resources */,
-				533918232BBDDE0300A3CBB5 /* wired-flat-1463-footman.json in Resources */,
+				7E28F0602BE446E300F2A244 /* wired-flat-1821-night-sky-moon-stars.json in Resources */,
+				7E28F03D2BE446E300F2A244 /* wired-flat-549-ice-cream-scoops.json in Resources */,
+				7E28F05A2BE446E300F2A244 /* wired-flat-1529-parenting-parents-family.json in Resources */,
+				7E28F0302BE446E300F2A244 /* wired-flat-274-male-and-two-female.json in Resources */,
+				7E28F0492BE446E300F2A244 /* wired-flat-755-invoice-receipt-validating-ticket.json in Resources */,
+				7E28F0622BE446E300F2A244 /* wired-flat-1921-parliament.json in Resources */,
 				533917062BBDB32C00A3CBB5 /* word_list.csv in Resources */,
-				533917F12BBDDE0300A3CBB5 /* wired-flat-705-man-style-3.json in Resources */,
-				5339180E2BBDDE0300A3CBB5 /* wired-flat-1421-rectangle.json in Resources */,
-				533918182BBDDE0300A3CBB5 /* wired-flat-804-sun.json in Resources */,
-				533918022BBDDE0300A3CBB5 /* wired-flat-187-suitcase.json in Resources */,
-				533918102BBDDE0300A3CBB5 /* wired-flat-469-flag.json in Resources */,
-				533918372BBDDE0300A3CBB5 /* wired-flat-239-coffee.json in Resources */,
-				533917F42BBDDE0300A3CBB5 /* wired-flat-1164-dog-walking.json in Resources */,
-				5339182B2BBDDE0300A3CBB5 /* wired-flat-106-map.json in Resources */,
-				5339182F2BBDDE0300A3CBB5 /* wired-flat-486-school.json in Resources */,
-				533918362BBDDE0300A3CBB5 /* wired-flat-2139-dictionary.json in Resources */,
-				533917FE2BBDDE0300A3CBB5 /* wired-flat-874-car-fire.json in Resources */,
-				3CBAC3112BCC802E003BD9A0 /* green-book.png in Resources */,
-				533918392BBDDE0300A3CBB5 /* wired-flat-101-price-tag-dollar.json in Resources */,
-				533918282BBDDE0300A3CBB5 /* wired-flat-2341-religion-in-general.json in Resources */,
-				533918032BBDDE0300A3CBB5 /* wired-flat-517-chocolate-bar.json in Resources */,
-				533918222BBDDE0300A3CBB5 /* wired-flat-2142-history-book.json in Resources */,
-				533917FF2BBDDE0300A3CBB5 /* wired-flat-36-bulb.json in Resources */,
+				7E28F03C2BE446E300F2A244 /* wired-flat-527-boy-young-men.json in Resources */,
+				7E28F0562BE446E300F2A244 /* wired-flat-1478-chess-clock.json in Resources */,
+				7E28F0642BE446E300F2A244 /* wired-flat-1971-da-vinci.json in Resources */,
+				7E28F0462BE446E300F2A244 /* wired-flat-701-mustache-beard.json in Resources */,
+				7E28F0362BE446E300F2A244 /* wired-flat-426-brain.json in Resources */,
+				7E28F0532BE446E300F2A244 /* wired-flat-1399-bring-forward.json in Resources */,
+				7E28F04C2BE446E300F2A244 /* wired-flat-804-sun.json in Resources */,
+				7E28F05D2BE446E300F2A244 /* wired-flat-1758-meter-measure.json in Resources */,
+				7E28F06D2BE446E300F2A244 /* wired-flat-2525-finish-line.json in Resources */,
+				7E28F02C2BE446E300F2A244 /* wired-flat-199-download-2.json in Resources */,
+				7E28F03A2BE446E300F2A244 /* wired-flat-486-school.json in Resources */,
+				7E28F05F2BE446E300F2A244 /* wired-flat-1779-treadmill.json in Resources */,
+				7E28F06A2BE446E300F2A244 /* wired-flat-2142-history-book.json in Resources */,
+				7E28F03F2BE446E300F2A244 /* wired-flat-604-plate-warm.json in Resources */,
+				7E28F0332BE446E300F2A244 /* wired-flat-411-news-newspaper.json in Resources */,
+				7E28F0552BE446E300F2A244 /* wired-flat-1463-footman.json in Resources */,
+				7E28F0452BE446E300F2A244 /* wired-flat-693-singer-vocalist.json in Resources */,
+				7E28F06B2BE446E300F2A244 /* wired-flat-2336-fossil-old-rock-geology.json in Resources */,
+				7E28F0472BE446E300F2A244 /* wired-flat-705-man-style-3.json in Resources */,
+				7E28F04F2BE446E300F2A244 /* wired-flat-1022-podium-conference.json in Resources */,
+				7E28F0422BE446E300F2A244 /* wired-flat-652-old-person-walking-walker.json in Resources */,
+				7E28F02D2BE446E300F2A244 /* wired-flat-239-coffee.json in Resources */,
+				7E28F06E2BE446E300F2A244 /* wired-flat-2527-rised-hand.json in Resources */,
+				7E28F03E2BE446E300F2A244 /* wired-flat-575-hotdog.json in Resources */,
+				7E28F0252BE446E300F2A244 /* wired-flat-43-music-note.json in Resources */,
+				7E28F0262BE446E300F2A244 /* wired-flat-52-location-pin-on-square-map.json in Resources */,
+				7E28F0242BE446E300F2A244 /* wired-flat-36-bulb.json in Resources */,
+				7E28F0282BE446E300F2A244 /* wired-flat-63-home.json in Resources */,
+				7E28F0312BE446E300F2A244 /* wired-flat-298-coins.json in Resources */,
+				7E28F0572BE446E300F2A244 /* wired-flat-1508-breastfeeding.json in Resources */,
+				7E28F02B2BE446E300F2A244 /* wired-flat-187-suitcase.json in Resources */,
+				7E28F04A2BE446E300F2A244 /* wired-flat-771-artist-painting-color-palette.json in Resources */,
+				7E28F04B2BE446E300F2A244 /* wired-flat-797-counter.json in Resources */,
+				7E28F0662BE446E300F2A244 /* wired-flat-1976-ruins.json in Resources */,
+				7E28F05E2BE446E300F2A244 /* wired-flat-1774-strenght.json in Resources */,
+				7E28F0352BE446E300F2A244 /* wired-flat-424-question-bubble.json in Resources */,
+				7E28F0402BE446E300F2A244 /* wired-flat-630-couple-man-woman.json in Resources */,
+				7E28F0412BE446E300F2A244 /* wired-flat-650-ballet-dancer.json in Resources */,
+				7E28F0522BE446E300F2A244 /* wired-flat-1376-face-id.json in Resources */,
 				534CEDDD2BAA00B0009907FC /* Assets.xcassets in Resources */,
-				533918112BBDDE0300A3CBB5 /* wired-flat-1524-bricks-toy.json in Resources */,
-				5339180B2BBDDE0300A3CBB5 /* stack_lottie.json in Resources */,
-				5339180C2BBDDE0300A3CBB5 /* wired-flat-54-photo.json in Resources */,
+				7E28F0512BE446E300F2A244 /* wired-flat-1170-cat.json in Resources */,
+				7E28F0692BE446E300F2A244 /* wired-flat-2139-dictionary.json in Resources */,
+				7E28F05C2BE446E300F2A244 /* wired-flat-1609-bungalow.json in Resources */,
+				7E28F0502BE446E300F2A244 /* wired-flat-1164-dog-walking.json in Resources */,
+				7E28F04D2BE446E300F2A244 /* wired-flat-846-car-site-3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
