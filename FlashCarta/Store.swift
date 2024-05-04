@@ -38,30 +38,16 @@ class DeckStore: ObservableObject {
     @Published private(set) var action: StoreAction?
     
     @Published private(set) var items = [Product]()
-    
+    @Published private(set) var purchasedItems = [Product]()
+
     @Published var hasError = false
-    
-    private var transactionListener: TransactionListener?
-    
-    func configureTransactionListener() -> TransactionListener {
-        Task.detached(priority: .background) { @MainActor [weak self] in
-            do{
-                for await result in Transaction.updates{
-                    let transaction = try self?.checkVerified(result)
-                    
-                    self?.action = .successful
-                    await transaction?.finish()
-                }
-            }catch{
-                self?.action = .failed(.system(error))
-                print(error)
-            }
-        }
-    }
     
     init(){
         Task{ [ weak self] in
+            
             await self?.retrieveProducts()
+        
+            await self?.updateCustomerProductStatus()
         }
     }
     
@@ -95,7 +81,8 @@ private extension DeckStore {
         case .success(let verifcation):
             print("success")
             let transaction = try checkVerified(verifcation)
-            
+            //The transaction is verified. Deliver content to the user.
+            await updateCustomerProductStatus()
             //TODO: Update Ui
             action = .successful
             await transaction.finish()
@@ -121,22 +108,44 @@ private extension DeckStore {
     }
     
     
-    func listenForTransactions() -> Task<Void, Error> {
-        return Task.detached {
-            //Iterate through any transactions that don't come from a direct call to `purchase()`.
-            for await result in Transaction.updates {
-                do {
-                    let transaction = try self.checkVerified(result)
+    @MainActor
+    func updateCustomerProductStatus() async {
+        print("UPDATE STATUS")
 
-                //TODO: Update UI for customer?
+        //Iterate through all of the user's purchased products.
+        for await result in Transaction.currentEntitlements {
+            do {
+                //Check whether the transaction is verified. If it isn’t, catch `failedVerification` error.
+                let transaction = try checkVerified(result)
 
-                    //Always finish a transaction.
-                    await transaction.finish()
-                } catch {
-                    //StoreKit has a transaction that fails verification. Don't deliver content to the user.
-                    print("Transaction failed verification")
+                //Check the `productType` of the transaction and get the corresponding product from the store.
+                switch transaction.productType {
+                case .nonConsumable:
+                    if let item = items.first(where: { $0.id == transaction.productID }) {
+                        purchasedItems.append(item)
+                    }
+                    print(purchasedItems)
+                    
+                default:
+                    break
                 }
+            } catch {
+                print()
             }
         }
+
+        // Update product state
     }
+    
+    func isPurchased(_ productIdentifier: String) async throws -> Bool {
+        guard let result = await Transaction.latest(for: productIdentifier) else{
+            return false
+        }
+        let transaction =  try checkVerified(result)
+        
+        //Check if the user has refunded
+        return transaction.revocationDate == nil
+    }
+    
+    //Transaction listeners dont listen to purchase()
 }

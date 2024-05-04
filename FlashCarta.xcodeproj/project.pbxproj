@@ -310,13 +310,13 @@
 				5339183D2BBEF3E500A3CBB5 /* ShopView.swift */,
 				3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */,
 				3CD502802BCB65CD00AC2EB1 /* StatsViewModel.swift */,
+				3C3FB1FF2BD16FCB006ADDDB /* Store.swift */,
 				533917052BBDB32C00A3CBB5 /* word_list.csv */,
 				7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */,
 				534CEDF02BAA00CF009907FC /* book_blue.png */,
 				534CEE122BAC7718009907FC /* stack.png */,
 				534CEDDC2BAA00B0009907FC /* Assets.xcassets */,
 				534CEDDE2BAA00B0009907FC /* Preview Content */,
-				3C3FB1FF2BD16FCB006ADDDB /* Store.swift */,
 			);
 			path = FlashCarta;
 			sourceTree = "<group>";
