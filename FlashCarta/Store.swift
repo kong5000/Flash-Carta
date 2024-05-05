@@ -70,7 +70,6 @@ private extension DeckStore {
         do {
             let products = try await Product.products(for: [EXTENDED_DECK_1])
             items = products
-            print(items)
         } catch {
             print(error)
         }
@@ -110,7 +109,6 @@ private extension DeckStore {
     
     @MainActor
     func updateCustomerProductStatus() async {
-        print("UPDATE STATUS")
 
         //Iterate through all of the user's purchased products.
         for await result in Transaction.currentEntitlements {
@@ -124,8 +122,7 @@ private extension DeckStore {
                     if let item = items.first(where: { $0.id == transaction.productID }) {
                         purchasedItems.append(item)
                     }
-                    print(purchasedItems)
-                    
+                    UserPurchases.shared.hasPremium = true
                 default:
                     break
                 }

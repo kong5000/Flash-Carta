@@ -29,6 +29,7 @@ class ExerciseViewModel: ObservableObject {
     @Published var level = 1
     @Published var levelProgress = 0.0
     @Published var exerciseComplete = false
+    var availableCards = [Card]()
     
     var goodCount = 0
     var mediumCount = 0
@@ -157,7 +158,8 @@ class ExerciseViewModel: ObservableObject {
     }
     
     func dueCards() -> [Card] {
-        let due = cards.filter{
+        print(availableCards.count)
+        let due = availableCards.filter{
             if let date = $0.nextReview {
                 return date <= Date()
             }
@@ -167,7 +169,7 @@ class ExerciseViewModel: ObservableObject {
     }
     
     func unseenCards() -> [Card]{
-        let unseen = cards.filter{
+        let unseen = availableCards.filter{
             if $0.nextReview == nil {
                 return true
             }
@@ -179,7 +181,7 @@ class ExerciseViewModel: ObservableObject {
     
     
     func nonDueCards() -> [Card]{
-        let nonDue = cards.filter{
+        let nonDue = availableCards.filter{
             if let date = $0.nextReview {
                 return date > Date()
             }
@@ -190,9 +192,21 @@ class ExerciseViewModel: ObservableObject {
     
     
     func getCards(count: Int = CARD_COUNT){
+        
+        self.availableCards = cards.sorted(by: { a, b in
+            a.rank < b.rank
+        })
+        
+        if !UserPurchases.shared.hasPremium {
+            self.availableCards = self.availableCards.filter({ card in
+                card.rank < 600
+            })
+        }
+
         goodCount = 0
         mediumCount = 0
         hardCount = 0
+        
         self.exerciseComplete = false
         self.currentExerciseXP = 0
         self.getTotalExperience()

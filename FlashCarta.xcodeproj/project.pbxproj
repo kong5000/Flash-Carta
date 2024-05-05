@@ -117,6 +117,8 @@
 		7E28F06D2BE446E300F2A244 /* wired-flat-2525-finish-line.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F01E2BE446E300F2A244 /* wired-flat-2525-finish-line.json */; };
 		7E28F06E2BE446E300F2A244 /* wired-flat-2527-rised-hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F01F2BE446E300F2A244 /* wired-flat-2527-rised-hand.json */; };
 		7E28F06F2BE446E300F2A244 /* wired-flat-2613-calendar-subscription.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0202BE446E300F2A244 /* wired-flat-2613-calendar-subscription.json */; };
+		7E28F0712BE699BC00F2A244 /* wired-flat-94-lock-unlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28F0702BE699BC00F2A244 /* wired-flat-94-lock-unlock.json */; };
+		7E8AF3D22BE81A000033A6A6 /* UserPurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8AF3D12BE81A000033A6A6 /* UserPurchases.swift */; };
 		7EA97B9F2BE4330100ED5529 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -232,6 +234,8 @@
 		7E28F01E2BE446E300F2A244 /* wired-flat-2525-finish-line.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2525-finish-line.json"; sourceTree = "<group>"; };
 		7E28F01F2BE446E300F2A244 /* wired-flat-2527-rised-hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2527-rised-hand.json"; sourceTree = "<group>"; };
 		7E28F0202BE446E300F2A244 /* wired-flat-2613-calendar-subscription.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-2613-calendar-subscription.json"; sourceTree = "<group>"; };
+		7E28F0702BE699BC00F2A244 /* wired-flat-94-lock-unlock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-94-lock-unlock.json"; sourceTree = "<group>"; };
+		7E8AF3D12BE81A000033A6A6 /* UserPurchases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPurchases.swift; sourceTree = "<group>"; };
 		7EA97B9E2BE4330100ED5529 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -303,6 +307,7 @@
 				7E28F0212BE446E300F2A244 /* lottie */,
 				3CD5027F2BCB657A00AC2EB1 /* Views */,
 				3CD5026D2BCAF5D300AC2EB1 /* FlashCartaApp.swift */,
+				7E8AF3D12BE81A000033A6A6 /* UserPurchases.swift */,
 				534CEDF12BAA00CF009907FC /* DataController.swift */,
 				534CEE102BAB5882009907FC /* Theme.swift */,
 				534CEE0E2BAB0D34009907FC /* SoundUtility.swift */,
@@ -336,6 +341,7 @@
 				7E28EFD42BE446E300F2A244 /* stack_lottie.json */,
 				7E28EFD52BE446E300F2A244 /* wired-flat-36-bulb.json */,
 				7E28EFD62BE446E300F2A244 /* wired-flat-43-music-note.json */,
+				7E28F0702BE699BC00F2A244 /* wired-flat-94-lock-unlock.json */,
 				7E28EFD72BE446E300F2A244 /* wired-flat-52-location-pin-on-square-map.json */,
 				7E28EFD82BE446E300F2A244 /* wired-flat-54-photo.json */,
 				7E28EFD92BE446E300F2A244 /* wired-flat-63-home.json */,
@@ -516,6 +522,7 @@
 				7E28F0492BE446E300F2A244 /* wired-flat-755-invoice-receipt-validating-ticket.json in Resources */,
 				7E28F0622BE446E300F2A244 /* wired-flat-1921-parliament.json in Resources */,
 				533917062BBDB32C00A3CBB5 /* word_list.csv in Resources */,
+				7E28F0712BE699BC00F2A244 /* wired-flat-94-lock-unlock.json in Resources */,
 				7E28F03C2BE446E300F2A244 /* wired-flat-527-boy-young-men.json in Resources */,
 				7E28F0562BE446E300F2A244 /* wired-flat-1478-chess-clock.json in Resources */,
 				7E28F0642BE446E300F2A244 /* wired-flat-1971-da-vinci.json in Resources */,
@@ -573,6 +580,7 @@
 			files = (
 				534CEDDB2BAA00AE009907FC /* ContentView.swift in Sources */,
 				3C3FB2022BD17C49006ADDDB /* PurchaseSuccessView.swift in Sources */,
+				7E8AF3D22BE81A000033A6A6 /* UserPurchases.swift in Sources */,
 				3CD5026E2BCAF5D300AC2EB1 /* FlashCartaApp.swift in Sources */,
 				534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */,
 				533917082BBDD8B500A3CBB5 /* AnimatedAnswer.swift in Sources */,
