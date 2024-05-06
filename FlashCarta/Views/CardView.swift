@@ -51,10 +51,10 @@ struct CardView: View {
             
             VStack{
                 HStack{
-                    Text("Rank \(card.rank)")
+                    Text("\(card.rank)")
+                        .font(.title)
                         .bold()
-                    Spacer()
-                    Text("Noun")
+                        .padding(.horizontal, 30)
                     Spacer()
                     Button {
                         SoundUtility.speak(text: card.word)
