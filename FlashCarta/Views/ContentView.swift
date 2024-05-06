@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("firstTimeUser") private var firstTimeUser = true
+
     var body: some View {
             TabView{
                 Group{
-                    ExerciseView()
-                        .background(Theme.primary.opacity(0.85).ignoresSafeArea())
-                        .tabItem {
-                            Label("", systemImage: "square.stack.fill")
-                        }
+                    if(firstTimeUser){
+                        TutorialView()
+                            .background(Theme.primary.opacity(0.85).ignoresSafeArea())
+                            .tabItem {
+                                Label("", systemImage: "square.stack.fill")
+                            }
+                    }else{
+                        ExerciseView()
+                            .background(Theme.primary.opacity(0.85).ignoresSafeArea())
+                            .tabItem {
+                                Label("", systemImage: "square.stack.fill")
+                            }
+                    }
+     
                     StatsView()
                         .background(Theme.primary.opacity(0.85).ignoresSafeArea())
                         .tabItem {

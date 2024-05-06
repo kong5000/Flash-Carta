@@ -17,13 +17,11 @@ extension View {
 }
 
 struct ExerciseView: View {
+    
     @StateObject private var viewModel = ExerciseViewModel()
     
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
-    @State private var animateBackground = true
-    @State private var started = false
-    @State private var showResults = false
     
     var body: some View {
         ZStack{
