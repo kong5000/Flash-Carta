@@ -50,7 +50,7 @@ struct TutorialCardView: View {
                         .padding(.horizontal, 30)
                     Spacer()
                     Button {
-                        SoundUtility.speak(text: card.word)
+//                        SoundUtility.speak(text: card.word)
                         
                     } label: {
                         Image(systemName: "speaker.wave.2.circle")
@@ -73,30 +73,12 @@ struct TutorialCardView: View {
                             .fill(Theme.secondary)
                                .frame(height: 2)
                         Spacer()
-
-                        HStack{
-                            LottieButton(isPlaying: $playAnimation, animationFileName: "wired-flat-693-singer-vocalist")
-                                .frame(width: 120, height:120)
-                      
-                            VStack(alignment: .leading){
-                                Text(.init(card.example))
-                                    .font(.subheadline)
-                                    .padding(12)
-                                    .background(Theme.secondary)
-                                    .foregroundStyle(Theme.dark)
-                                    .clipShape(ChatBubble(top: true))
-                                Text(.init(card.exampleTranslation))
-                                    .font(.subheadline)
-                                    .padding(12)
-                                    .background(Theme.dark)
-                                    .foregroundStyle(Theme.secondary)
-                                    .clipShape(ChatBubble(top: false))
-                            }
-                            .padding()
-                        }
-                        .onTapGesture {
-                            playAnimationForTwoSeconds()
-                        }
+                    if let systemImage = card.systemImage {
+                        Image(systemName: systemImage)
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                    }
+    
                     }
                 Spacer()
                 
