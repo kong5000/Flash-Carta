@@ -23,31 +23,30 @@ struct TutorialView: View {
                         if viewModel.exerciseCards.isEmpty {
                             Button {
                                 viewModel.loadCards()
-                                
                             } label: {
                                 VStack{
+                                    Spacer()
                                     StartIcon(progress: viewModel.levelProgress)
-                                    Text("Start")
+                                    Text("Tutorial")
                                         .font(.title2)
                                         .foregroundStyle(Theme.secondary)
+                                    Spacer()
                                 }
                             }
                         }
-                        Text("Test")
                         ForEach(0..<viewModel.exerciseCards.count, id: \.self){ index in
                             TutorialCardView(card: viewModel.exerciseCards[index]){ difficulty in
                                 viewModel.handleCard(difficulty: difficulty, card: viewModel.exerciseCards[index], index: index)
-                                
                             }
                             .stacked(at: index, in: viewModel.exerciseCards.count)
                             .allowsHitTesting(index == viewModel.exerciseCards.count - 1)
                             .accessibilityHidden(index < viewModel.exerciseCards.count - 1)
                         }
+                        .padding(.bottom, 50)
                     }
-                    Spacer()
                 }
             }
         }
     }
-    }
-    
+}
+

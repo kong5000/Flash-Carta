@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct TutorialCard {
     var exampleTranslation: String
@@ -21,7 +22,8 @@ struct TutorialCard {
 
 
 class TutorialViewModel: ObservableObject {
-    
+    @AppStorage("firstTimeUser") private var firstTimeUser = true
+
     @Published var exerciseCards = [TutorialCard]()
     @Published var exerciseComplete = false
     @Published var levelProgress = 1.0
@@ -42,12 +44,11 @@ class TutorialViewModel: ObservableObject {
     
     @MainActor
     func handleCard(difficulty: Difficulty, card: TutorialCard, index: Int){
-
-        let today = Date()
         exerciseCards.remove(at: index)
         
         if exerciseCards.count < 1 {
             exerciseComplete = true
+            firstTimeUser = false
         }
     }
 }

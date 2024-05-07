@@ -16,6 +16,7 @@ struct StatsView: View {
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
+        //TODO: Fix bug when looking at stats screen before completing tutorial
         ZStack{
             ScrollView{
                 Text("DECK PROGRESS")

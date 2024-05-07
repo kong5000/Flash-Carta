@@ -170,7 +170,7 @@ class ExerciseViewModel: ObservableObject {
     
     func unseenCards() -> [Card]{
         let unseen = availableCards.filter{
-            if $0.nextReview == nil {
+            if $0.nextReview == nil && $0.rank != 0 {
                 return true
             }
             return false
@@ -213,6 +213,7 @@ class ExerciseViewModel: ObservableObject {
 
         let dueCards = dueCards()
         let nonDueCards = nonDueCards()
+
         let unseenCards = unseenCards()
 
         //If there are enough due cards, return them
@@ -226,11 +227,15 @@ class ExerciseViewModel: ObservableObject {
             }else{
                 //Not enough unseen cards left, draw from the non due cards
                 cardsToDraw = CARD_COUNT - unseenCards.count - dueCards.count
-                self.exerciseCards = (Array(nonDueCards[0..<cardsToDraw]) + unseenCards + dueCards).sorted(by: { card1, card2 in
-                    return card1.rank > card2.rank
-                })
+                self.exerciseCards = (Array(nonDueCards[0..<cardsToDraw]) + unseenCards + dueCards)
+//                    .sorted(by: { card1, card2 in
+//                    return card1.rank > card2.rank
+//                })
             }
         }
+//        self.exerciseCards = self.exerciseCards.filter({ card in
+//            card.rank > 0
+//        })
     }
     
     @MainActor
