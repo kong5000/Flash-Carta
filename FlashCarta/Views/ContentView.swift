@@ -9,9 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("firstTimeUser") private var firstTimeUser = true
-
+    @State private var tabSelection = 1
+    
     var body: some View {
-            TabView{
+        
+        TabView(selection: $tabSelection) {
+            Group{
                 Group{
                     if(firstTimeUser){
                         TutorialView()
@@ -26,23 +29,25 @@ struct ContentView: View {
                                 Label("", systemImage: "square.stack.fill")
                             }
                     }
-     
-                    StatsView()
-                        .background(Theme.primary.opacity(0.85).ignoresSafeArea())
-                        .tabItem {
-                            Label("", systemImage: "chart.pie.fill")
-                        }
-                    SettingsView()
-                        .background(Theme.primary.opacity(0.85).ignoresSafeArea())
-                        .tabItem {
-                            Label("", systemImage: "gearshape")
-                                .frame(width: 202, height: 202)
-                        }
-                }
-                .toolbarBackground(Theme.dark.opacity(0.80), for: .tabBar)
-                .toolbarBackground(.visible, for: .tabBar)
-
-            }.accentColor(Theme.secondary)
+                }.tag(0)
+                
+                StatsView()
+                    .background(Theme.primary.opacity(0.85).ignoresSafeArea())
+                    .tabItem {
+                        Label("", systemImage: "chart.pie.fill")
+                    }
+                    .tag(1)
+                SettingsView(tabSelection: $tabSelection)
+                    .background(Theme.primary.opacity(0.85).ignoresSafeArea())
+                    .tabItem {
+                        Label("", systemImage: "gearshape")
+                            .frame(width: 202, height: 202)
+                    }
+                    .tag(2)
+            }
+            .toolbarBackground(Theme.dark.opacity(0.80), for: .tabBar)
+            .toolbarBackground(.visible, for: .tabBar)
+        }.accentColor(Theme.secondary)
     }
 }
 
