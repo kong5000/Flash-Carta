@@ -16,6 +16,7 @@ struct TutorialView: View {
     
     var body: some View {
         ZStack{
+//            Color(Theme.primary.opacity(0.185))
             VStack{
                 Spacer()
                 ZStack{
@@ -42,10 +43,11 @@ struct TutorialView: View {
                             .allowsHitTesting(index == viewModel.exerciseCards.count - 1)
                             .accessibilityHidden(index < viewModel.exerciseCards.count - 1)
                         }
-                        .padding(.bottom, 50)
+                        .padding(.bottom, 70)
                     }
                 }
             }
+            .frame(maxWidth: .infinity)
         }
     }
 }

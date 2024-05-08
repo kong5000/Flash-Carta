@@ -17,9 +17,8 @@ extension View {
 }
 
 struct ExerciseView: View {
-    
-    @StateObject private var viewModel = ExerciseViewModel()
-    
+    @EnvironmentObject private var viewModel: ExerciseViewModel
+
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
     
