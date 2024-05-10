@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     @AppStorage("repetitionFactor") private var selectedRepetitionFactor = 3
     @AppStorage("cardsPerExercise") private var cardsPerExercise = 5
+    @AppStorage("firstTimeUser") private var firstTimeUser = true
 
     @Binding var tabSelection: Int
     
@@ -39,7 +40,6 @@ struct SettingsView: View {
             }
             Section{
                 Button(action: {
-                    print("reset progress")
                     showConfirmation = true
                 }, label: {
                     Text("Reset your progress")
@@ -54,7 +54,7 @@ struct SettingsView: View {
             }
             Section{
                 Button(action: {
-                    print("ACTION")
+                    firstTimeUser = true
                     tabSelection = 0
                 }, label: {
                     Text("View Tutorial")

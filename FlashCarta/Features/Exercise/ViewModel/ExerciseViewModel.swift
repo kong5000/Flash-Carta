@@ -15,12 +15,6 @@ enum Difficulty {
 }
 
 class ExerciseViewModel: ObservableObject {
-
-//  Check if any cards are due today
-    // Sort by date, get 20
-        // if Less than 20 grab more by rank
-    // Grab by rank to get 20
-    
     
     var cards = [Card]()
     @Published var exerciseCards = [Card]()
@@ -57,13 +51,7 @@ class ExerciseViewModel: ObservableObject {
                 self.preloadData()
                 result = try self.container.viewContext.fetch(fetchRequest)
             }
-            //TODO: Filter out cards based on premium membership
-//            result = result.filter { card in
-//                if card.animation != nil{
-//                    return true
-//                }
-//                return false
-//            }
+
             self.cards = result
         }catch{
             print("Error fetching data: \(error)")
@@ -102,7 +90,6 @@ class ExerciseViewModel: ObservableObject {
             try context.save()
         }catch{
             print(error)
-            print("Error saving data")
         }
     }
     
@@ -228,14 +215,8 @@ class ExerciseViewModel: ObservableObject {
                 //Not enough unseen cards left, draw from the non due cards
                 cardsToDraw = CARD_COUNT - unseenCards.count - dueCards.count
                 self.exerciseCards = (Array(nonDueCards[0..<cardsToDraw]) + unseenCards + dueCards)
-//                    .sorted(by: { card1, card2 in
-//                    return card1.rank > card2.rank
-//                })
             }
         }
-//        self.exerciseCards = self.exerciseCards.filter({ card in
-//            card.rank > 0
-//        })
     }
     
     @MainActor
