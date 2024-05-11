@@ -25,7 +25,6 @@
 		534CEDE02BAA00B0009907FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534CEDDF2BAA00B0009907FC /* Preview Assets.xcassets */; };
 		534CEDF52BAA00CF009907FC /* DeckIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDE62BAA00CE009907FC /* DeckIconView.swift */; };
 		534CEDFD2BAA00CF009907FC /* book_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 534CEDF02BAA00CF009907FC /* book_blue.png */; };
-		534CEDFE2BAA00CF009907FC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDF12BAA00CF009907FC /* DataController.swift */; };
 		534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDF22BAA00CF009907FC /* ExerciseView.swift */; };
 		534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDF32BAA00CF009907FC /* ExerciseViewModel.swift */; };
 		534CEE012BAA00CF009907FC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEDF42BAA00CF009907FC /* CardView.swift */; };
@@ -121,6 +120,7 @@
 		7E8AF3D62BE860700033A6A6 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8AF3D52BE860700033A6A6 /* TutorialView.swift */; };
 		7E8AF3D82BE8638E0033A6A6 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8AF3D72BE8638E0033A6A6 /* TutorialViewModel.swift */; };
 		7E8AF3DA2BE98BBD0033A6A6 /* TutorialCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8AF3D92BE98BBD0033A6A6 /* TutorialCardView.swift */; };
+		7EA656162BEFBD16006C6B0E /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA656152BEFBD16006C6B0E /* PersistanceController.swift */; };
 		7EA97B9F2BE4330100ED5529 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -145,7 +145,6 @@
 		534CEDDF2BAA00B0009907FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		534CEDE62BAA00CE009907FC /* DeckIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckIconView.swift; sourceTree = "<group>"; };
 		534CEDF02BAA00CF009907FC /* book_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_blue.png; sourceTree = "<group>"; };
-		534CEDF12BAA00CF009907FC /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		534CEDF22BAA00CF009907FC /* ExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		534CEDF32BAA00CF009907FC /* ExerciseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		534CEDF42BAA00CF009907FC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -240,6 +239,7 @@
 		7E8AF3D52BE860700033A6A6 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		7E8AF3D72BE8638E0033A6A6 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		7E8AF3D92BE98BBD0033A6A6 /* TutorialCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCardView.swift; sourceTree = "<group>"; };
+		7EA656152BEFBD16006C6B0E /* PersistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceController.swift; sourceTree = "<group>"; };
 		7EA97B9E2BE4330100ED5529 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -514,8 +514,8 @@
 			isa = PBXGroup;
 			children = (
 				3C3FB1FF2BD16FCB006ADDDB /* Store.swift */,
-				534CEDF12BAA00CF009907FC /* DataController.swift */,
 				3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */,
+				7EA656152BEFBD16006C6B0E /* PersistanceController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -701,6 +701,7 @@
 				7E8AF3DA2BE98BBD0033A6A6 /* TutorialCardView.swift in Sources */,
 				7E8AF3D22BE81A000033A6A6 /* UserPurchases.swift in Sources */,
 				3CD5026E2BCAF5D300AC2EB1 /* FlashCartaApp.swift in Sources */,
+				7EA656162BEFBD16006C6B0E /* PersistanceController.swift in Sources */,
 				7E8AF3D62BE860700033A6A6 /* TutorialView.swift in Sources */,
 				534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */,
 				533917082BBDD8B500A3CBB5 /* AnimatedAnswer.swift in Sources */,
@@ -712,7 +713,6 @@
 				534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */,
 				534CEE002BAA00CF009907FC /* ExerciseViewModel.swift in Sources */,
 				533917022BBC6D8700A3CBB5 /* ChatBubble.swift in Sources */,
-				534CEDFE2BAA00CF009907FC /* DataController.swift in Sources */,
 				7E8AF3D82BE8638E0033A6A6 /* TutorialViewModel.swift in Sources */,
 				534CEDF52BAA00CF009907FC /* DeckIconView.swift in Sources */,
 				3CD5027B2BCAF8A600AC2EB1 /* Card+CoreDataClass.swift in Sources */,

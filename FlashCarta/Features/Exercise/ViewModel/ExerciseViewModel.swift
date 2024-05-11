@@ -7,6 +7,8 @@
 
 import Foundation
 import CoreData
+import SwiftUI
+
 let LEVEL_DIVIDER = 50
 let CARD_COUNT = 5
 
@@ -15,7 +17,8 @@ enum Difficulty {
 }
 
 class ExerciseViewModel: ObservableObject {
-    
+    @AppStorage("repetitionFactor") private var repetitionFactor = 3
+
     var cards = [Card]()
     @Published var exerciseCards = [Card]()
     @Published var experience = 0
@@ -61,13 +64,13 @@ class ExerciseViewModel: ObservableObject {
     func calculateExperience(card: Card) -> Int{
         if card.difficulty == 1 {
             return 1
-        }else if card.difficulty == 3 {
+        }else if card.difficulty == repetitionFactor {
             return 2
-        }else if card.difficulty == 9 {
+        }else if card.difficulty == Int(pow(Double(repetitionFactor),2)) {
             return 3
-        }else if card.difficulty == 27 {
+        }else if card.difficulty == Int(pow(Double(repetitionFactor),3)) {
             return 4
-        }else if card.difficulty > 27 {
+        }else if card.difficulty > Int(pow(Double(repetitionFactor),2)) {
             return 5
         }
         return 0
@@ -225,9 +228,9 @@ class ExerciseViewModel: ObservableObject {
         switch difficulty {
             case .easy:
                 if card.difficulty == 0 {
-                    card.difficulty = 3
+                    card.difficulty = Int64(repetitionFactor)
                 }else{
-                    card.difficulty = card.difficulty * 3
+                    card.difficulty = card.difficulty * Int64(repetitionFactor)
                 }
                 goodCount += 1
             case.medium:
