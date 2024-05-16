@@ -59,14 +59,6 @@ struct StatsView: View {
 
             }
         }
-//        .onChange(of: store.action){ action in
-//            if action == .successful {
-//                
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
-//                    showPurchaseSucces = true
-//                }
-//            }
-//        }
         .overlay(alignment: .bottom){
             if showPurchaseSucces {
                 PurchaseSuccessView{

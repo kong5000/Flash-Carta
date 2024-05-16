@@ -33,21 +33,18 @@ struct ResultView: View {
                     .foregroundStyle(Theme.secondary)
                     VStack( alignment: .leading,spacing: 20){
                         HStack{
-                            Text("Today")
                             ForEach(0..<hard, id:\.self){_ in
                                 Color(.red)
                                     .frame(width: 15, height:10)
                             }
                         }
                         HStack(){
-                            Text("Tomorrow")
                             ForEach(0..<medium, id:\.self){_ in
                                 Color(.yellow)
                                     .frame(width: 15, height:10)
                             }
                         }
                         HStack{
-                            Text("In 27 Days")
                             ForEach(0..<good, id:\.self){_ in
                                 Color(.green)
                                     .frame(width: 15, height:10)
