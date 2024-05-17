@@ -16,15 +16,13 @@ struct StatsView: View {
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
-        //TODO: Fix bug when looking at stats screen before completing tutorial
         ZStack{
             ScrollView{
-                Text("DECK PROGRESS")
+                Text("Progress")
                     .font(.title)
                     .foregroundStyle(Theme.secondary)
                     .padding()
                 LazyVGrid(columns: columns){
-                    //TODO: UI FOR PREMIUM CARDS
                     ForEach(Array(viewModel.groupProgress.keys.sorted()), id: \.self){ key in
                         DeckIconView(progress: viewModel.groupProgress[key] ?? 0.0, label: key)
                     }
@@ -47,16 +45,11 @@ struct StatsView: View {
                     }
                 }else{
                     LazyVGrid(columns: columns){
-                        //TODO: UI FOR PREMIUM CARDS
                         ForEach(Array(viewModel.premiumProgress.keys.sorted()), id: \.self){ key in
                             DeckIconView(progress: viewModel.premiumProgress[key] ?? 0.0, label: key)
                         }
                     }
                 }
-
-  
-   
-
             }
         }
         .overlay(alignment: .bottom){
@@ -71,7 +64,3 @@ struct StatsView: View {
         }
     }
 }
-
-//#Preview {
-//    StatsView()
-//}

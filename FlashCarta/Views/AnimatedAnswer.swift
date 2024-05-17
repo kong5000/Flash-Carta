@@ -18,8 +18,6 @@ struct AnimatedCard: View {
         playAnimation = true
         SoundUtility.speak(text: card.word)
 
-
-        // Dispatch after 2 seconds
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.playAnimation = false
         }
@@ -36,16 +34,11 @@ struct AnimatedCard: View {
             .frame(height: 2)
         Spacer()
         HStack{
-
             LottieView(animationFileName: card.animation!, loopMode: .loop)
                 .frame(width: 150, height: 150)
-
-          
         }
         .onTapGesture {
             playAnimationForTwoSeconds()
         }
-
     }
-    
 }

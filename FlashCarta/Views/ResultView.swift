@@ -10,12 +10,11 @@ import Charts
 
 struct ResultView: View {
     @Binding var isShowing: Bool
+    @State private var offSet = CGSize.zero
+
     var results: [Result]
     var experiencePoints: Int
-    @State private var offSet = CGSize.zero
-    
-    
-    
+
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 25.0)
@@ -23,7 +22,6 @@ struct ResultView: View {
                     Theme.primary
                 )
                 .shadow(radius: 10)
-            
             VStack {
                 Text(experiencePoints >= 0 ? "+\(experiencePoints) XP" :
                         "-\(abs(experiencePoints)) XP")

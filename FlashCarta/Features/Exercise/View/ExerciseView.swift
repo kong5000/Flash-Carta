@@ -84,7 +84,6 @@ struct ExerciseView: View {
             }
         }
     }
-    
 }
 
 #Preview {

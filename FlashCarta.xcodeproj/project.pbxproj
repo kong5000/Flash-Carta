@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3C3FB1FB2BD16350006ADDDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3FB1FA2BD16350006ADDDB /* StoreKit.framework */; };
-		3C3FB1FE2BD165F7006ADDDB /* TestVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FB1FD2BD165F7006ADDDB /* TestVIew.swift */; };
 		3C3FB2002BD16FCB006ADDDB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FB1FF2BD16FCB006ADDDB /* Store.swift */; };
 		3C3FB2022BD17C49006ADDDB /* PurchaseSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FB2012BD17C49006ADDDB /* PurchaseSuccessView.swift */; };
 		3CBAC3082BCC6D82003BD9A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */; };
@@ -120,14 +119,12 @@
 		7E8AF3D62BE860700033A6A6 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8AF3D52BE860700033A6A6 /* TutorialView.swift */; };
 		7E8AF3D82BE8638E0033A6A6 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8AF3D72BE8638E0033A6A6 /* TutorialViewModel.swift */; };
 		7E8AF3DA2BE98BBD0033A6A6 /* TutorialCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8AF3D92BE98BBD0033A6A6 /* TutorialCardView.swift */; };
-		7EA656162BEFBD16006C6B0E /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA656152BEFBD16006C6B0E /* PersistanceController.swift */; };
 		7EA97B9F2BE4330100ED5529 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EA97B9D2BE4330100ED5529 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C3FB1FA2BD16350006ADDDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3C3FB1FC2BD163E0006ADDDB /* DecksStoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = DecksStoreKitConfiguration.storekit; sourceTree = "<group>"; };
-		3C3FB1FD2BD165F7006ADDDB /* TestVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVIew.swift; sourceTree = "<group>"; };
 		3C3FB1FF2BD16FCB006ADDDB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		3C3FB2012BD17C49006ADDDB /* PurchaseSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSuccessView.swift; sourceTree = "<group>"; };
 		3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -239,7 +236,6 @@
 		7E8AF3D52BE860700033A6A6 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		7E8AF3D72BE8638E0033A6A6 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		7E8AF3D92BE98BBD0033A6A6 /* TutorialCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCardView.swift; sourceTree = "<group>"; };
-		7EA656152BEFBD16006C6B0E /* PersistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceController.swift; sourceTree = "<group>"; };
 		7EA97B9E2BE4330100ED5529 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -272,7 +268,6 @@
 				534CEE192BAC7BDB009907FC /* LottieView.swift */,
 				533917032BBC732900A3CBB5 /* LottieButton.swift */,
 				533917072BBDD8B500A3CBB5 /* AnimatedAnswer.swift */,
-				3C3FB1FD2BD165F7006ADDDB /* TestVIew.swift */,
 				534CEDDA2BAA00AE009907FC /* ContentView.swift */,
 				534CEDE62BAA00CE009907FC /* DeckIconView.swift */,
 				53D78C122BB329BE005B80A6 /* ResultView.swift */,
@@ -515,7 +510,6 @@
 			children = (
 				3C3FB1FF2BD16FCB006ADDDB /* Store.swift */,
 				3CBAC3072BCC6D82003BD9A0 /* DataManager.swift */,
-				7EA656152BEFBD16006C6B0E /* PersistanceController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -701,12 +695,10 @@
 				7E8AF3DA2BE98BBD0033A6A6 /* TutorialCardView.swift in Sources */,
 				7E8AF3D22BE81A000033A6A6 /* UserPurchases.swift in Sources */,
 				3CD5026E2BCAF5D300AC2EB1 /* FlashCartaApp.swift in Sources */,
-				7EA656162BEFBD16006C6B0E /* PersistanceController.swift in Sources */,
 				7E8AF3D62BE860700033A6A6 /* TutorialView.swift in Sources */,
 				534CEDFF2BAA00CF009907FC /* ExerciseView.swift in Sources */,
 				533917082BBDD8B500A3CBB5 /* AnimatedAnswer.swift in Sources */,
 				7EA97B9F2BE4330100ED5529 /* Model.xcdatamodeld in Sources */,
-				3C3FB1FE2BD165F7006ADDDB /* TestVIew.swift in Sources */,
 				3C3FB2002BD16FCB006ADDDB /* Store.swift in Sources */,
 				534CEE112BAB5882009907FC /* Theme.swift in Sources */,
 				3CBAC3082BCC6D82003BD9A0 /* DataManager.swift in Sources */,

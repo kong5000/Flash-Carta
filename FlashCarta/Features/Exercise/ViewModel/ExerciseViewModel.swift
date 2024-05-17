@@ -289,6 +289,5 @@ class ExerciseViewModel: ObservableObject {
         }catch{
             print(error)
         }
-
     }
 }

@@ -31,7 +31,6 @@ struct DeckIconView: View {
                         )
                     )
                     .animation(.easeOut, value: progress)
-        
                 Image("green-book")
                     .resizable()
                     .frame(width: 80, height:80)
@@ -46,7 +45,3 @@ struct DeckIconView: View {
         .padding()
     }
 }
-
-//#Preview {
-//    DeckIconView()
-//}
