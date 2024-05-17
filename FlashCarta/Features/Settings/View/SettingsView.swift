@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @AppStorage("repetitionFactor") private var selectedRepetitionFactor = 3
     @AppStorage("cardsPerExercise") private var cardsPerExercise = 5
     @AppStorage("firstTimeUser") private var firstTimeUser = true
     @EnvironmentObject private var viewModel: ExerciseViewModel
@@ -16,7 +15,6 @@ struct SettingsView: View {
     @Binding var tabSelection: Int
     
     @State private var showConfirmation = false
-    var spaceRepetitionFactor = [2,3,4,5]
     var numberOfCards = Array(5...20)
     
     @State private var selectedFactor = 2
@@ -30,13 +28,6 @@ struct SettingsView: View {
                     }
                 } label: {
                     Text("Cards per exercise")
-                }
-                Picker(selection:  $selectedRepetitionFactor) {
-                    ForEach(spaceRepetitionFactor, id: \.self) {
-                        Text("\($0)")
-                    }
-                } label: {
-                    Text("Repetition Factor")
                 }
             }
             .listRowBackground(Theme.secondary)

@@ -90,6 +90,9 @@ class ExerciseViewModel: ObservableObject {
         for card in self.cards {
             sum += calculateExperience(card: card)
         }
+        print(sum)
+        print()
+    
         self.experience = sum
         
         self.level = self.experience / LEVEL_DIVIDER + 1
@@ -259,6 +262,7 @@ class ExerciseViewModel: ObservableObject {
         let nextReviewDate = Calendar.current.date(byAdding: .day, value: Int(card.difficulty), to: today)
         exerciseCards.remove(at: index)
         updateCard(card: card, nextReview: nextReviewDate!)
+        
         if exerciseCards.count < 1 {
             exerciseComplete = true
             results = [
@@ -270,6 +274,21 @@ class ExerciseViewModel: ObservableObject {
     }
     
     func resetProgress(){
-        
+        let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
+        do{
+            var result = try self.container.viewContext.fetch(fetchRequest)
+            for card in result {
+                card.nextReview = nil
+                card.difficulty = 0
+            }
+            
+            save(context: container.viewContext)
+            self.getTotalExperience()
+            self.exerciseCards = [Card]()
+            
+        }catch{
+            print(error)
+        }
+
     }
 }
