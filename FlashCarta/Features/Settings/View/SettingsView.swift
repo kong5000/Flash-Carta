@@ -39,32 +39,46 @@ struct SettingsView: View {
                     Text("Repetition Factor")
                 }
             }
+            .listRowBackground(Theme.secondary)
             .onChange(of: cardsPerExercise) { viewModel.getCards() }
-            Section{
-                Button(action: {
-                    showConfirmation = true
-                }, label: {
-                    Text("Reset your progress")
-                })
-                .confirmationDialog("Confirm Reset", isPresented: $showConfirmation, actions: {
-                    Button("Confirm") {
-                        print("RESET")
-                    }.background(.red)
-                }, message: {
-                    Text("Your progress will be deleted")
-                })
-            }
             Section{
                 Button(action: {
                     firstTimeUser = true
                     tabSelection = 0
                 }, label: {
-                    Text("View Tutorial")
+                    HStack{
+                        Spacer()
+                        Text("View Tutorial")
+                        Spacer()
+                    }
                 })
             }
+            .listRowBackground(Theme.dark)
+            Section{
+                Button(action: {
+                    showConfirmation = true
+                }, label: {
+                    HStack{
+                        Spacer()
+                        Text("Reset Progress")
+                        Spacer()
+                    }
+                })
+                .confirmationDialog("Confirm Reset", isPresented: $showConfirmation, actions: {
+                    Button("Confirm") {
+                        viewModel.resetProgress()
+                    }.background(.red)
+                }, message: {
+                    Text("Your progress will be deleted")
+                })
+            }
+            .listRowBackground(Color.red)
 
         }
+        .scrollContentBackground(.hidden)
+
     }
+
 }
 //
 //#Preview {

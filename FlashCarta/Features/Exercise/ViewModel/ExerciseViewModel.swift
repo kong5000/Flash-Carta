@@ -59,7 +59,6 @@ class ExerciseViewModel: ObservableObject {
         do{
             let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
             var result = try self.container.viewContext.fetch(fetchRequest)
-            print(result.count)
             if(result.isEmpty){
                 self.preloadData()
                 result = try self.container.viewContext.fetch(fetchRequest)
@@ -268,5 +267,9 @@ class ExerciseViewModel: ObservableObject {
                 .init(title: "Hard", count: hardCount, color: .red)
             ]
         }
+    }
+    
+    func resetProgress(){
+        
     }
 }
