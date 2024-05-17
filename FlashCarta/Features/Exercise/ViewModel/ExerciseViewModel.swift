@@ -16,6 +16,13 @@ enum Difficulty {
     case hard, medium, easy
 }
 
+struct Result: Identifiable {
+    let id = UUID()
+    let title: String
+    let count: Int
+    let color: Color
+}
+
 class ExerciseViewModel: ObservableObject {
     @AppStorage("repetitionFactor") private var repetitionFactor = 3
 
@@ -31,6 +38,9 @@ class ExerciseViewModel: ObservableObject {
     var goodCount = 0
     var mediumCount = 0
     var hardCount = 0
+    
+    @Published var results = [Result]()
+
     
     let container = CoreDataManager.shared.persistentContainer
     
@@ -197,6 +207,8 @@ class ExerciseViewModel: ObservableObject {
         mediumCount = 0
         hardCount = 0
         
+        results = [Result]()
+        
         self.exerciseComplete = false
         self.currentExerciseXP = 0
         self.getTotalExperience()
@@ -250,6 +262,11 @@ class ExerciseViewModel: ObservableObject {
         updateCard(card: card, nextReview: nextReviewDate!)
         if exerciseCards.count < 1 {
             exerciseComplete = true
+            results = [
+                .init(title: "Easy", count: goodCount, color: .green),
+                .init(title: "Moderate", count: mediumCount, color: .yellow),
+                .init(title: "Hard", count: hardCount, color: .red)
+            ]
         }
     }
 }

@@ -10,11 +10,10 @@ import Charts
 
 struct ResultView: View {
     @Binding var isShowing: Bool
-    var good: Int
-    var medium: Int
-    var hard: Int
+    var results: [Result]
     var experiencePoints: Int
     @State private var offSet = CGSize.zero
+    
     
     
     var body: some View {
@@ -25,50 +24,41 @@ struct ResultView: View {
                 )
                 .shadow(radius: 10)
             
-            ZStack {
-                VStack {
-                    Text(experiencePoints >= 0 ? "+\(experiencePoints) XP" :
-                            "-\(abs(experiencePoints)) XP")
-                    .font(.title2)
-                    .foregroundStyle(Theme.secondary)
-                    VStack( alignment: .leading,spacing: 20){
-                        HStack{
-                            ForEach(0..<hard, id:\.self){_ in
-                                Color(.red)
-                                    .frame(width: 15, height:10)
-                            }
+            VStack {
+                Text(experiencePoints >= 0 ? "+\(experiencePoints) XP" :
+                        "-\(abs(experiencePoints)) XP")
+                .font(.title2)
+                .foregroundStyle(Theme.secondary)
+                .padding(.top, 30)
+                Chart(results){ result in
+                    SectorMark(angle: .value(result.title, result.count),
+                               innerRadius: .ratio(0.33),
+                               outerRadius: .inset(20)
+                    )
+                    .foregroundStyle(result.color)
+                    .annotation(position: .overlay){
+                        if result.count > 0 {
+                            Text("\(result.count)")
+                                .font(.caption)
                         }
-                        HStack(){
-                            ForEach(0..<medium, id:\.self){_ in
-                                Color(.yellow)
-                                    .frame(width: 15, height:10)
-                            }
-                        }
-                        HStack{
-                            ForEach(0..<good, id:\.self){_ in
-                                Color(.green)
-                                    .frame(width: 15, height:10)
-                            }
-                        }
-                    }
-                    .frame(width: 150)
-                    .padding()
-                    .background{
-                        RoundedRectangle(cornerRadius: 25.0)
-                            .fill(
-                                Theme.secondary
-                            )
-                        
-                    }
-                    Button {
-                        isShowing = false
-                    } label: {
-                        Text("Close")
-                            .padding()
                     }
                 }
+                .padding()
+                Button {
+                    isShowing = false
+                } label: {
+                    Text("Close")
+                        .foregroundStyle(Theme.secondary)
+                        .font(.title3)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 15)
+                                .stroke(Theme.secondary, lineWidth: 10))
+                }
+                .background(Theme.primary) // If you have this
+                .cornerRadius(15)
+                .padding()
             }
-            .frame(height:40)
         }
         .frame(height:450)
         .overlay(
@@ -99,5 +89,9 @@ struct ResultView: View {
 }
 
 #Preview {
-    ResultView(isShowing: .constant(true), good: 3, medium: 3, hard: 2, experiencePoints: 10)
+    ResultView(isShowing: .constant(true), results: [
+        .init(title: "Easy", count: 10, color: .green),
+        .init(title: "Medium", count: 10, color: .yellow),
+        .init(title: "Hard", count: 10, color: .red)],
+               experiencePoints: 10)
 }

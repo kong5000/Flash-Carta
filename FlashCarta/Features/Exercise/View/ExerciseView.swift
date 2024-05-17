@@ -68,9 +68,7 @@ struct ExerciseView: View {
                         }
                     }else{
                         ResultView(isShowing: $viewModel.exerciseComplete,
-                                   good:viewModel.goodCount,
-                                   medium: viewModel.mediumCount,
-                                   hard: viewModel.hardCount,
+                                   results: viewModel.results,
                                    experiencePoints: viewModel.currentExerciseXP
                         )
                     }
