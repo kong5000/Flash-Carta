@@ -11,12 +11,13 @@ struct SettingsView: View {
     @AppStorage("repetitionFactor") private var selectedRepetitionFactor = 3
     @AppStorage("cardsPerExercise") private var cardsPerExercise = 5
     @AppStorage("firstTimeUser") private var firstTimeUser = true
-
+    @EnvironmentObject private var viewModel: ExerciseViewModel
+    
     @Binding var tabSelection: Int
     
     @State private var showConfirmation = false
     var spaceRepetitionFactor = [2,3,4,5]
-    var numberOfCards = Array(1...20)
+    var numberOfCards = Array(5...20)
     
     @State private var selectedFactor = 2
 
@@ -38,6 +39,7 @@ struct SettingsView: View {
                     Text("Repetition Factor")
                 }
             }
+            .onChange(of: cardsPerExercise) { viewModel.getCards() }
             Section{
                 Button(action: {
                     showConfirmation = true

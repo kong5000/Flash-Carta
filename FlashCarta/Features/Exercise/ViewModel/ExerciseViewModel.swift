@@ -10,7 +10,6 @@ import CoreData
 import SwiftUI
 
 let LEVEL_DIVIDER = 50
-let CARD_COUNT = 5
 
 enum Difficulty {
     case hard, medium, easy
@@ -25,6 +24,7 @@ struct Result: Identifiable {
 
 class ExerciseViewModel: ObservableObject {
     @AppStorage("repetitionFactor") private var repetitionFactor = 3
+    @AppStorage("cardsPerExercise") private var cardsPerExercise = 5
 
     var cards = [Card]()
     @Published var exerciseCards = [Card]()
@@ -191,7 +191,7 @@ class ExerciseViewModel: ObservableObject {
     }
     
     
-    func getCards(count: Int = CARD_COUNT){
+    func getCards(){
         
         self.availableCards = cards.sorted(by: { a, b in
             a.rank < b.rank
@@ -219,16 +219,16 @@ class ExerciseViewModel: ObservableObject {
         let unseenCards = unseenCards()
 
         //If there are enough due cards, return them
-        if dueCards.count >= CARD_COUNT {
-            self.exerciseCards = Array(dueCards[0..<CARD_COUNT])
+        if dueCards.count >= cardsPerExercise {
+            self.exerciseCards = Array(dueCards[0..<cardsPerExercise])
         }else{
-            var cardsToDraw = CARD_COUNT - dueCards.count
+            var cardsToDraw = cardsPerExercise - dueCards.count
             //Not enough cards are due, draw some unseencards
             if unseenCards.count >= cardsToDraw {
                 self.exerciseCards = unseenCards[0..<cardsToDraw] + dueCards
             }else{
                 //Not enough unseen cards left, draw from the non due cards
-                cardsToDraw = CARD_COUNT - unseenCards.count - dueCards.count
+                cardsToDraw = cardsPerExercise - unseenCards.count - dueCards.count
                 self.exerciseCards = (Array(nonDueCards[0..<cardsToDraw]) + unseenCards + dueCards)
             }
         }
