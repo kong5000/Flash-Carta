@@ -15,7 +15,7 @@ struct SettingsView: View {
     @Binding var tabSelection: Int
     
     @State private var showConfirmation = false
-    var numberOfCards = Array(5...20)
+    var numberOfCards = Array(5...15)
     
     @State private var selectedFactor = 2
 
