@@ -35,7 +35,7 @@ struct StatsView: View {
                             }
                         } label: {
                             VStack{
-                                LottieView(animationFileName: "wired-flat-94-lock-unlock", loopMode: .playOnce)
+                                LottieView(animationFileName: "wired-flat-946-equity-security.json", loopMode: .playOnce)
                                     .frame(width: 150, height: 150)
                                 Text("Unlock 600-1000")
                                     .font(.title)

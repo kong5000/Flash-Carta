@@ -34,12 +34,6 @@ struct ResultView: View {
                                outerRadius: .inset(20)
                     )
                     .foregroundStyle(result.color)
-                    .annotation(position: .overlay){
-                        if result.count > 0 {
-                            Text("\(result.count)")
-                                .font(.caption)
-                        }
-                    }
                 }
                 .padding()
                 Button {
