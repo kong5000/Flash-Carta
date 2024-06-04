@@ -36,6 +36,7 @@
 		534CEE202BAC86D7009907FC /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE1F2BAC86D7009907FC /* StatsView.swift */; };
 		534CEE222BAC8D90009907FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534CEE212BAC8D90009907FC /* SettingsView.swift */; };
 		53D78C132BB329BE005B80A6 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D78C122BB329BE005B80A6 /* ResultView.swift */; };
+		7E0ADB4C2C0F6389006F9E36 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ADB4B2C0F6389006F9E36 /* Launch Screen.storyboard */; };
 		7E28F0222BE446E300F2A244 /* stack_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD32BE446E300F2A244 /* stack_animation.json */; };
 		7E28F0232BE446E300F2A244 /* stack_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD42BE446E300F2A244 /* stack_lottie.json */; };
 		7E28F0242BE446E300F2A244 /* wired-flat-36-bulb.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E28EFD52BE446E300F2A244 /* wired-flat-36-bulb.json */; };
@@ -153,6 +154,7 @@
 		534CEE1F2BAC86D7009907FC /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		534CEE212BAC8D90009907FC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		53D78C122BB329BE005B80A6 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7E0ADB4B2C0F6389006F9E36 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7E28EFD32BE446E300F2A244 /* stack_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_animation.json; sourceTree = "<group>"; };
 		7E28EFD42BE446E300F2A244 /* stack_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stack_lottie.json; sourceTree = "<group>"; };
 		7E28EFD52BE446E300F2A244 /* wired-flat-36-bulb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wired-flat-36-bulb.json"; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 		534CEDCC2BAA00AE009907FC = {
 			isa = PBXGroup;
 			children = (
+				7E0ADB4B2C0F6389006F9E36 /* Launch Screen.storyboard */,
 				3C3FB1FC2BD163E0006ADDDB /* DecksStoreKitConfiguration.storekit */,
 				3CD502792BCAF8A600AC2EB1 /* Card+CoreDataClass.swift */,
 				3CD5027A2BCAF8A600AC2EB1 /* Card+CoreDataProperties.swift */,
@@ -649,6 +652,7 @@
 				7E28F05F2BE446E300F2A244 /* wired-flat-1779-treadmill.json in Resources */,
 				7E28F06A2BE446E300F2A244 /* wired-flat-2142-history-book.json in Resources */,
 				7E28F03F2BE446E300F2A244 /* wired-flat-604-plate-warm.json in Resources */,
+				7E0ADB4C2C0F6389006F9E36 /* Launch Screen.storyboard in Resources */,
 				7E28F0332BE446E300F2A244 /* wired-flat-411-news-newspaper.json in Resources */,
 				7E28F0552BE446E300F2A244 /* wired-flat-1463-footman.json in Resources */,
 				7E28F0452BE446E300F2A244 /* wired-flat-693-singer-vocalist.json in Resources */,
@@ -847,17 +851,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FlashCarta/Preview Content\"";
 				DEVELOPMENT_TEAM = 3N8WK6T2HB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -866,9 +873,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = keith.FlashCarta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -877,17 +888,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FlashCarta/Preview Content\"";
 				DEVELOPMENT_TEAM = 3N8WK6T2HB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -896,9 +910,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = keith.FlashCarta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
