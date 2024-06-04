@@ -199,11 +199,11 @@ class ExerciseViewModel: ObservableObject {
             a.rank < b.rank
         })
         
-        if !UserPurchases.shared.hasPremium {
-            self.availableCards = self.availableCards.filter({ card in
-                card.rank < 600
-            })
-        }
+//        if !UserPurchases.shared.hasPremium {
+//            self.availableCards = self.availableCards.filter({ card in
+//                card.rank < 600
+//            })
+//        }
 
         goodCount = 0
         mediumCount = 0

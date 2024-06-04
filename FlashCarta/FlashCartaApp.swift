@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct FlashCartaApp: App {
     
-    @StateObject private var store = DeckStore()
+//    @StateObject private var store = DeckStore()
     
     //Need to initialize viewModel here to load initial cards into CoreData
     @StateObject private var exerciseViewModel = ExerciseViewModel()
@@ -18,7 +18,7 @@ struct FlashCartaApp: App {
     var body: some Scene {
         WindowGroup{
             ContentView()
-                .environmentObject(store)
+//                .environmentObject(store)
                 .environmentObject(exerciseViewModel)
         }
     }
