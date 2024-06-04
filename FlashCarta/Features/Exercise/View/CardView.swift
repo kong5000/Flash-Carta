@@ -140,7 +140,6 @@ struct CardView: View {
                 .onEnded{ _ in
                     if abs(offSet.height) > 45 {
                         removal?(.medium)
-                        print("middle")
                     }
                     else if abs(offSet.width) > 100 {
                         if(offSet.width > 100){

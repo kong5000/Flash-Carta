@@ -90,9 +90,6 @@ class ExerciseViewModel: ObservableObject {
         for card in self.cards {
             sum += calculateExperience(card: card)
         }
-        print(sum)
-        print()
-    
         self.experience = sum
         
         self.level = self.experience / LEVEL_DIVIDER + 1
@@ -160,7 +157,6 @@ class ExerciseViewModel: ObservableObject {
     }
     
     func dueCards() -> [Card] {
-        print(availableCards.count)
         let due = availableCards.filter{
             if let date = $0.nextReview {
                 return date <= Date()
