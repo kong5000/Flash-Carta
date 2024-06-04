@@ -9,10 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("firstTimeUser") private var firstTimeUser = true
-    @State private var tabSelection = 1
+    @State private var tabSelection = 0
     
     var body: some View {
-        
         TabView(selection: $tabSelection) {
             Group{
                 Group{
@@ -30,7 +29,6 @@ struct ContentView: View {
                             }
                     }
                 }.tag(0)
-                
                 StatsView()
                     .background(Theme.primary.opacity(0.85).ignoresSafeArea())
                     .tabItem {
